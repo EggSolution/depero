@@ -1,3 +1,3 @@
 link:
 
-# https://alienozzo.github.io/depero/
+# https://s3rgi0s.github.io/depero/
