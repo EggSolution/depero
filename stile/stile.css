@@ -2,3 +2,21 @@
     padding: 0;
     margin: 0;
 }
+.corpo {
+	width: 100%;
+	background: black;
+	overflow-x: hidden;
+}
+.home {
+	height: 100%;
+	width: 100%;
+	background-image: url('../img/home.png');
+    background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.logo {
+	font-family: 'Lobster', cursive;
+	color: white;
+}
