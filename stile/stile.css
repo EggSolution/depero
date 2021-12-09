@@ -39,7 +39,7 @@ html,body {
 	color: white;
 }
 .bottoni_menù{
-    position: absolute;
+    position: relative;
     color: white;
     left: 10px;
 }
