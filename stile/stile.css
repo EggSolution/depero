@@ -42,9 +42,8 @@ html,body {
     position: relative;
     color: white;
     left: 10px;
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+
+
 }
-.prova{
-    color: white;
-    position: relative;
-}
-    
