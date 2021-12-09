@@ -38,3 +38,8 @@ html,body {
 	font-family: 'Lobster', cursive;
 	color: white;
 }
+.bottoni_menù{
+    position: absolute;
+    color: white;
+    left: 10px;
+}
