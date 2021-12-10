@@ -16,6 +16,8 @@ html,body {
     background-color: transparent;
 	top: 0;
 	left: 0;
+    display: flex;
+    flex-direction: column;
 }
 .sfondo-scorri {
     width: 200%;
@@ -38,10 +40,12 @@ html,body {
 	font-family: 'Lobster', cursive;
 	color: white;
 }
-.bottoni_menù{
+.home a{
     position: relative;
     color: white;
     left: 10px;
     font-family: 'Century Gothic', cursive;
     text-decoration: none;
+    padding-top: 40px;
+    padding-left: 20px
 }
