@@ -2,14 +2,33 @@
     color: white;
     position: absolute;
     left: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 .sopra{
-    display: flex;
-    flex-direction: row;
+    height: 50%;
+    width: 100%;
+    position: relative;
+    
+    
 
 }
 .sotto{
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+.personaggio{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+.sopra_sinistra a{
+    margin-top: 30px;
+    left: 20px;
+}
+.sopra_destra a{
 
 }
+
