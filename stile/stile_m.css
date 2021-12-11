@@ -1,5 +1,5 @@
 .personaggio{
-    position: absolute;
+    position: relative;
     left: 10px;
     display: flex;
     flex-direction: column;
