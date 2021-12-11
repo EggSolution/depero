@@ -3,3 +3,13 @@
     position: absolute;
     left: 10px;
 }
+.sopra{
+    display: flex;
+    flex-direction: row;
+
+}
+.sotto{
+    display: flex;
+    flex-direction: row;
+
+}
