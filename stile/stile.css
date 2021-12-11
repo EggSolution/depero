@@ -37,18 +37,18 @@ html,body {
     background-color: rgb(46, 46, 46);
 }
 .scritteMenu {
-    transform: translateY(50%);
+    transform: translateY(calc(50% - 50px));
     position: absolute;
     margin-left: 30px;
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 300px;
 }
 .logo {
 	font-family: 'Lobster', cursive;
 	color: white;
     font-size: 60px;
-    margin-bottom: 100px;
-    margin-left: 20px;
+    margin-bottom: 90px;
+    margin-left: 30px;
 }
 .home a {
     position: relative;
@@ -60,16 +60,37 @@ html,body {
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
 }
-.lS1 {
+.scrittaMenu1 {
+    transition: 0.5s linear;
+}
+.scrittaMenu2 {
+    transition: 0.5s linear;
+}
+.scrittaMenu3 {
+    transition: 0.5s linear;
+}
+.scrittaMenu4 {
+    transition: 0.5s linear;
+}
+#scrittaMenu:hover + #lineaSotto {
+    width: 100px;
+    transition: 0.5s;
+}
+.scrittaMenu1:hover > .lS1 {
+    width: 200px;
+}
+#lineaSotto {
     height: 4px;
     width: 30px;
     background-color: white;
     position: relative;
     margin-top: 2px;
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-bottom: 25px;
+
 }
 /* hover menu */
 .scrittaMenu1:hover > .lS1 {
     width: 90px;
-    transition: 1s;
+    transition: 1s linear;
 }
