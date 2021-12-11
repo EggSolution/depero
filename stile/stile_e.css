@@ -3,6 +3,14 @@
     margin: 0;
 }
 .viaggi{
-    display: flax: flax-direction: row
+    display: flex;
+    flex-direction: column;
 
+
+}
+
+.gg{
+    color: rgb(250, 11, 11);
+    position: absolute;
+    left: 20px;
 }
