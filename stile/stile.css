@@ -39,15 +39,23 @@ html,body {
 .logo {
 	font-family: 'Lobster', cursive;
 	color: white;
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.home {
+    margin-left: 40px;
+    transform: translateY(-50%);
 }
 .home a {
     position: relative;
     color: white;
     left: 10px;
     text-decoration: none;
-    padding-top: 40px;
-    padding-left: 20px;
-    font-size: 50px;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 .lS1 {
     height: 4px;
@@ -55,7 +63,7 @@ html,body {
     background-color: white;
     position: relative;
     margin-top: 2px;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 /* hover menu */
 .scrittaMenu1:hover > .lS1 {
