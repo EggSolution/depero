@@ -1,5 +1,4 @@
-.personaggio a{
-    color: white;
+.personaggio{
     position: absolute;
     left: 10px;
     display: flex;
