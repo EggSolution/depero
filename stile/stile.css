@@ -72,12 +72,21 @@ html,body {
 .scrittaMenu4 {
     transition: 0.5s linear;
 }
-#scrittaMenu:hover + #lineaSotto {
+#scrittaMenu1:hover + #lineaSotto {
+    width: 160px;
+    transition: 0.5s;
+}
+#scrittaMenu2:hover + #lineaSotto {
     width: 100px;
     transition: 0.5s;
 }
-.scrittaMenu1:hover > .lS1 {
-    width: 200px;
+#scrittaMenu3:hover + #lineaSotto {
+    width: 100px;
+    transition: 0.5s;
+}
+#scrittaMenu4:hover + #lineaSotto {
+    width: 100px;
+    transition: 0.5s;
 }
 #lineaSotto {
     height: 4px;
