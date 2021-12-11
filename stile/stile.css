@@ -36,16 +36,19 @@ html,body {
     width: 100%;
     background-color: rgb(46, 46, 46);
 }
+.scritteMenu {
+    transform: translateY(50%);
+    position: absolute;
+    margin-left: 30px;
+    height: 400px;
+    width: 400px;
+}
 .logo {
 	font-family: 'Lobster', cursive;
 	color: white;
     font-size: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     margin-left: 20px;
-}
-.home {
-    margin-left: 40px;
-    transform: translateY(-50%);
 }
 .home a {
     position: relative;
