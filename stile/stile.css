@@ -68,16 +68,16 @@ html,body {
 #lineaSotto {
     transition: 0.5s;
 }
-#scrittaMenu1:hover + #lineaSotto {
+#scrittaMenu1Id:hover + #lineaSotto {
     width: 200px;
 }
-#scrittaMenu2:hover + #lineaSotto {
+#scrittaMenu2Id:hover + #lineaSotto {
     width: 85px;
 }
-#scrittaMenu3:hover + #lineaSotto {
+#scrittaMenu3Id:hover + #lineaSotto {
     width: 80px;
 }
-#scrittaMenu4:hover + #lineaSotto {
+#scrittaMenu4Id:hover + #lineaSotto {
     width: 190px;
 }
 #lineaSotto {
