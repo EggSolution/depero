@@ -8,29 +8,29 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    background-color: #bdbbbb;
+    position: relative;
+    background-color: #4f4d4d;
 }
-.sopra{
+.sopra-p{
     height: 50%;
     width: 100%;
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
 }
-.sotto{
+.sotto-p{
     height: 50%;
     width: 100%;
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
 }
-.sopra_sinistra {
+.sopra_sinistra-p {
     width: 50%;
     height :100%;
     position: relative;
 }
-.sopra_destra {
+.sopra_destra-p {
     width: 50%;
     height :100%;
     position: relative;
@@ -43,12 +43,12 @@
     margin-top: 10px;
 }
 
-.sotto_sinistra{
+.sotto_sinistra-p{
     width: 50%;
     height :100%;
     position: relative;
 }
-.sotto_destra{
+.sotto_destra-p{
     width: 50%;
     height :100%;
     position: relative;
