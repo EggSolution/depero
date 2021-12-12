@@ -73,11 +73,11 @@ html,body {
     transition: 0.5s linear;
 }
 #scrittaMenu1:hover + #lineaSotto {
-    width: 160px;
+    width: 180px;
     transition: 0.5s;
 }
 #scrittaMenu2:hover + #lineaSotto {
-    width: 100px;
+    width: 80px;
     transition: 0.5s;
 }
 #scrittaMenu3:hover + #lineaSotto {
