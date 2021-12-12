@@ -1,6 +1,5 @@
-.personaggio{
+.viaggi{
     position: relative;
-    left: 10px;
     display: flex;
     flex-direction: column;
     height: 100%;
