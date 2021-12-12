@@ -10,6 +10,26 @@ html,body {
 	background: black;
     overflow-X: hidden;
 }
+.sfondo-scorri {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    transition: 0.2s;
+}
+.sfondo1 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+    z-index: 1;
+}
+.sfondo2 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+    z-index: 1;
+}
 .home {
 	height: 100%;
 	width: 100%;
@@ -19,23 +39,7 @@ html,body {
 	left: 0;
     display: flex;
     flex-direction: column;
-}
-.sfondo-scorri {
-    width: 200%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-}
-.sfondo1 {
-    height: 100%;
-    width: 100%;
-    background-color: rgb(71, 71, 71);
-}
-.sfondo2 {
-    height: 100%;
-    width: 100%;
-    background-color: rgb(46, 46, 46);
+    z-index: 2;
 }
 .scritteMenu {
     transform: translateY(calc(50% - 60px));
@@ -79,10 +83,9 @@ html,body {
 #lineaSotto {
     height: 4px;
     width: 30px;
-    background-color: white;
     position: relative;
     margin-top: 2px;
     margin-left: 30px;
     margin-bottom: 25px;
-
+    background-color: white;
 }
