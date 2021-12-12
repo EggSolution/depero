@@ -3,59 +3,8 @@
     margin: 0px;
 }
 .viaggi{
-    display: flex;
     height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
     position: relative;
-    background-color: #bdbbbb;
-}
-.sopra_v{
-    height: 50%;
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-}
-.sotto_v{
-    height: 50%;
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-}
-.sopra_sinistra_v {
-    width: 50%;
-    height :100%;
-    position: relative;
-}
-.sopra_destra_v {
-    width: 50%;
-    height :100%;
-    position: relative;
-}
-.depero_persona_v{
-    position: relative;
-    z-index:1;
-    margin-left: 90px;
-    height: 90%;
-    margin-top: 10px;
-}
-
-.sotto_sinistra_v{
-    width: 50%;
-    height :100%;
-    position: relative;
-}
-.sotto_destra_v{
-    width: 50%;
-    height :100%;
-    position: relative;
-}
-.viaggi a{
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
-    font-size: 20px;
-    color: white;
+    background-color: rgb(71, 71, 71);
 }
