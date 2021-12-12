@@ -2,13 +2,14 @@
     padding: 0px;
     margin: 0px;
 }
+/*personaggio*/
 .personaggio{
     height: 100%;
     width: 100%;
     position: relative;
     background-color: #4f4d4d;
 }
-.personaggioFlex {
+.sezioneFlex {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -69,13 +70,13 @@
     font-size: 20px;
     color: white;
 }
-.titolo-p {
+.titolo-sezione {
     width: 100%;
     height: 150px;
     display: flex;
     justify-content: center;
 }
-.titoloTesto-p {
+.titoloTesto-sezione {
     display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
@@ -83,7 +84,7 @@
     position: relative;
     padding-top: 20px;
 }
-.titoloDiv-p{
+.titoloDiv-sezione{
     position: absolute;
     height: 4px;
     background-color: white;
@@ -97,10 +98,4 @@
     width: 100%;
     position: relative;
     background-color: #4f4d4d;
-}
-.storiaFlex {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
 }
