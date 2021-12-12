@@ -69,12 +69,25 @@
     font-size: 20px;
     color: white;
 }
-
-
-
-
-    
-
-
-    
-
+.titolo-p {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+.titoloTesto-p {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    padding-top: 20px;
+}
+.titoloDiv-p{
+    position: absolute;
+    height: 4px;
+    background-color: white;
+    width: 100px;
+    margin-top: 20px;
+    top: 50px;
+}
