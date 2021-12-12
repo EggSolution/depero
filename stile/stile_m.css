@@ -11,6 +11,22 @@
     position: relative;
     background-color: #4f4d4d;
 }
+.titolo_personaggio{
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.linea_di_titolo-p{
+    height: 4px;
+    width: 100px;
+    background-color: white;
+    position: relative;
+    left: calc(50%-50px);
+}
 .sopra-p{
     height: 50%;
     width: 100%;
@@ -53,12 +69,22 @@
     height :100%;
     position: relative;
 }
-.personaggio a{
+.sopra-p a{
     font-family: 'Roboto', sans-serif;
     margin: 20px;
     font-size: 20px;
     color: white;
 }
+.sotto-p a{
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
     
 
 
