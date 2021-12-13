@@ -21,7 +21,7 @@ html,body {
     display: flex;
     flex-direction: row;
     background-color: transparent;
-    transition: 0.2s;
+    transition: 1s;
 }
 .sfondo1 {
     height: 100%;
