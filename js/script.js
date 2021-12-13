@@ -1,3 +1,8 @@
+import ciao from "../puntiniModule/puntini.js";
+
+allert(ciao);
+
+
 window.onload = function(){
     const img = document.getElementById("sfondoScorriId");
     tempo = 3000;
