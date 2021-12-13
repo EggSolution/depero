@@ -132,6 +132,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
+    background-color: #6e6a6a;
 }
 .mezzoSinistra-s{
     width: 50%;
@@ -178,7 +179,7 @@
     height: 100%;
     width: 100%;
     position: relative;
-    background-color: rgb(71, 71, 71);
+    background-color: #363535;
     display: flex;
     flex-direction:column;
     
@@ -190,8 +191,30 @@
     display: flex;
     flex-direction: row;
 }
+.sopraSinistra-t{
+    height:100%;
+    width: 50%;
+    position: relative;
+}
+.sopraDestra-t{
+    height:100%;
+    width: 50%;
+    position: relative;
+}
 .sotto-t{
     height: 50%;
     width: 100%;
     position:relative;
+}
+.sopra-t{
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    font-size: 20px;
+    color: white;
+}
+.sotto-t{
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    font-size: 20px;
+    color: white;
 }
