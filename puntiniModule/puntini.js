@@ -1,3 +1,1 @@
-export function scrivi(x){
-    console.log(x);
-}
+export let ciao = "ciaoind";
