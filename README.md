@@ -1,3 +1,3 @@
 link:
 
-# https://s3rgi0s.github.io/depero/
+# https://eggs-enterprise.github.io/depero/
