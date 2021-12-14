@@ -11,29 +11,9 @@ html,body {
     scroll-behavior: smooth;
 }
 .corpo {
-	width: 100%;
+    width: 100%;
 	background: black;
     overflow-X: hidden;
-}
-.sfondo-scorri {
-    width: 200%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-    transition: 1s;
-}
-.sfondo1 {
-    height: 100%;
-    width: 100%;
-    background-color: rgb(71, 71, 71);
-    z-index: 1;
-}
-.sfondo2 {
-    height: 100%;
-    width: 100%;
-    background-color: rgb(46, 46, 46);
-    z-index: 1;
 }
 .home {
 	height: 100%;
@@ -92,5 +72,59 @@ html,body {
     margin-top: 2px;
     margin-left: 30px;
     margin-bottom: 25px;
+    background-color: white;
+}
+.sfondo-scorri {
+    width: 300%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    transition: 1.5s;
+}
+.sfondo1, .sfondo2, .sfondo3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sfondo1 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+    z-index: 1;
+}
+.sfondo2 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+    z-index: 1;
+}
+.sfondo3 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+    z-index: 1;
+}
+.sfondo1 a, .sfondo2 a, .sfondo3 a {
+    position: absolute;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #363636;
+    font-weight: bold
+}
+.bottoniSlide {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    top: calc(100% - 60px);
+}
+.bottoniSlide div {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: white;
 }

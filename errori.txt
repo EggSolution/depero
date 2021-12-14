@@ -1,0 +1,4 @@
+Lista errori:
+    - error 1: la funzione cambio slide non funziona correttamente
+    - error 2: la funzione cambio automatico non funziona correttamente
+    
