@@ -120,13 +120,21 @@ html,body {
     justify-content: center;
     top: calc(100% - 60px);
 }
-.bottoniSlide div {
+.bottoniSlide button {
+    border: solid 0;
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: white;
+    margin-left: 6px;
+    margin-right: 6px;
+    background-color: #696969;
 }
-
-/* */
+.bottoniSlide button:hover {
+    border: solid 0;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-left: 6px;
+    margin-right: 6px;
+    background-color: #525252;
+}
