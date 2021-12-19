@@ -1,14 +1,25 @@
 // import ciao from "../puntiniModule/puntini.js";
 
 window.onload = function(){
+
+    //variabili SLIDE
     const img = document.querySelector("#sfondoScorriId");
+    // intanto non servono ma lasciali qui
     const bottoneSlide1 = document.querySelector(".bottoneSlide1");
     const bottoneSlide2 = document.querySelector(".bottoneSlide2");
     const bottoneSlide3 = document.querySelector(".bottoneSlide3");
+    // 
     var incrementazione = 0;
     var posizione = 0;
     var tempo = 8;
     tempo *= 1000;
+
+    //variabili BOTTONI QUADRI
+    var coordinate;
+
+
+
+    // SLIDE
 
     window.cambioSlide=function(direzione) {
         switch(direzione){
@@ -20,13 +31,11 @@ window.onload = function(){
                 }
                 img.style.transform = String("translate(-"+incrementazione+"%)");
                 posizione += 1;
-                console.log(incrementazione);
                 break;
             case "indietro":
                 incrementazione = 0;
                 img.style.transform = String("translate(-"+incrementazione+"%)");
                 posizione = 0;
-                console.log(incrementazione);
                 break;
             case "uno":
                 incrementazione = 0;
@@ -66,13 +75,14 @@ window.onload = function(){
             default:
                 alert("error 2: la funzione cambioAutomatico non funziona correttamente");
         }
-        console.log(posizione);
     }
 
-    // cambioSlide(0)
-    // cambioSlide(1)
-    // cambioSlide(2)
-
-
     setInterval(cambioAutomatico, tempo);
+
+
+    // BOTTONI QUADRI
+
+    function bottoneQuadro(coordinate, nomeQuadro, descrizione, link){
+        
+    }
 };
