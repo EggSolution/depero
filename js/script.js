@@ -5,9 +5,9 @@ window.onload = function(){
     //variabili SLIDE
     const img = document.querySelector("#sfondoScorriId");
     // intanto non servono ma lasciali qui
-    const bottoneSlide1 = document.querySelector(".bottoneSlide1");
-    const bottoneSlide2 = document.querySelector(".bottoneSlide2");
-    const bottoneSlide3 = document.querySelector(".bottoneSlide3");
+    // const bottoneSlide1 = document.querySelector(".bottoneSlide1");
+    // const bottoneSlide2 = document.querySelector(".bottoneSlide2");
+    // const bottoneSlide3 = document.querySelector(".bottoneSlide3");
     // 
     var incrementazione = 0;
     var posizione = 0;
@@ -15,8 +15,6 @@ window.onload = function(){
     tempo *= 1000;
 
     //variabili BOTTONI QUADRI
-    var coordinate;
-
 
 
     // SLIDE
@@ -82,7 +80,42 @@ window.onload = function(){
 
     // BOTTONI QUADRI
 
-    function bottoneQuadro(coordinate, nomeQuadro, descrizione, link){
-        
+    function bottoneQuadro(x, y, colore){
+
+        var bottone = document.createElement("div");
+        bottone.textContent = "";
+        document.querySelector(".home").appendChild(bottone);
+        bottone.className = "bottoneQuadro";
+        // stile
+        bottone.style.color = colore;
+        bottone.style.background  = colore;
+        bottone.style.position = "absolute";
+        bottone.style.height = "12px";
+        bottone.style.width = "12px";
+        bottone.style.borderRadius = "50%";
+        bottone.style.left = ""+y+"px";
+        bottone.style.top = ""+x+"px";
+        bottone.style.top = ""+x+"px";
+        windows.bottoneQ = document.querySelector(".bottoneQuadro");
     }
+
+    function mostraVignetta(){
+        console.log("dihfblsdfjbsdljf");
+        var vignetta = document.createElement("div");
+        vignetta.textContent = "";
+        vignetta.querySelector(".home").appendChild(vignetta);
+        // stile
+        vignetta.style.color = "black";
+        vignetta.style.background = "white";
+        vignetta.style.height = "20px";
+        vignetta.style.width = "40px";
+        vignetta.style.borderRadius = "5px";
+    }
+
+    bottoneQuadro(300, 500, "#faff00");
+    bottoneQuadro(200, 400, "#faff00");
+
+    // coordinate, nomeQuadro, descrizione, link
+
+    bottoneQ.addEventListener("mouseover", mostraVignetta);
 };
