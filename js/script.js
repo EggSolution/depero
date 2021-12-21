@@ -141,7 +141,7 @@ window.onload = function(){
     bottoneQuadro(300, 500, "#faff00");
     bottoneQuadro(200, 400, "#faff00");
 
-    // coordinate, nomeQuadro, descrizione, link
+    // coordinate, nomeQuadro, descrizione, link(opzionale)
 
     bottoneQ.addEventListener("mouseover", mostraVignetta);
     bottoneQ.addEventListener("mouseout", nascondiVignetta);
