@@ -79,14 +79,33 @@ window.onload = function(){
 
 
     // BOTTONI QUADRI
+    var vignetta;
+    var vignettaX;
+    var vignettaY;
+    var Nbottoni = 0;
 
     function bottoneQuadro(x, y, colore){
+        Nbottoni += 1;
+
+        eval("vignattaX"+Nbottoni+" = x");
+        eval("vignettaY"+Nbottoni+" = y");
+
+        var bottoniQuadri = document.createElement("div");
+        bottoniQuadri.textContent = '';
+        document.querySelector(".home").appendChild(bottoniQuadri);
+        bottoniQuadri.className = "bottoneQuadro";
 
         var bottone = document.createElement("div");
-        bottone.textContent = "";
-        document.querySelector(".home").appendChild(bottone);
-        bottone.className = "bottoneQuadro";
+        bottone.textContent = '';
+        document.querySelector(".bottoneQuadro").appendChild(bottone);
+
+        vignetta = document.createElement("div");
+        vignetta.textContent = "";
+        document.querySelector(".bottoneQuadro").appendChild(vignetta);
+
         // stile
+        bottoniQuadri.style.left = ""+y+"px";
+        bottoniQuadri.style.top = ""+x+"px";
         bottone.style.color = colore;
         bottone.style.background  = colore;
         bottone.style.position = "absolute";
@@ -95,21 +114,28 @@ window.onload = function(){
         bottone.style.borderRadius = "50%";
         bottone.style.left = ""+y+"px";
         bottone.style.top = ""+x+"px";
-        bottone.style.top = ""+x+"px";
-        windows.bottoneQ = document.querySelector(".bottoneQuadro");
-    }
 
-    function mostraVignetta(){
-        console.log("dihfblsdfjbsdljf");
-        var vignetta = document.createElement("div");
-        vignetta.textContent = "";
-        vignetta.querySelector(".home").appendChild(vignetta);
-        // stile
         vignetta.style.color = "black";
         vignetta.style.background = "white";
         vignetta.style.height = "20px";
         vignetta.style.width = "40px";
         vignetta.style.borderRadius = "5px";
+        vignetta.style.position = "absolute";
+        vignetta.style.left = "vignettaY"+Nbottoni+"px";
+        vignetta.style.top = "vignattaX"+Nbottoni+"px";
+        vignetta.style.display = "none";
+
+        window.bottoneQ = document.querySelector(".bottoneQuadro");
+
+        console.log(Nbottoni);
+    }
+
+    function mostraVignetta(){
+        vignetta.style.display = "block";
+    }
+    
+    function nascondiVignetta(){
+        vignetta.style.display = "none";
     }
 
     bottoneQuadro(300, 500, "#faff00");
@@ -118,4 +144,6 @@ window.onload = function(){
     // coordinate, nomeQuadro, descrizione, link
 
     bottoneQ.addEventListener("mouseover", mostraVignetta);
+    bottoneQ.addEventListener("mouseout", nascondiVignetta);
+
 };
