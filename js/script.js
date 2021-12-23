@@ -74,76 +74,67 @@ window.onload = function(){
                 alert("error 2: la funzione cambioAutomatico non funziona correttamente");
         }
     }
-
     setInterval(cambioAutomatico, tempo);
 
-
     // BOTTONI QUADRI
-    var vignetta;
-    var vignettaX;
-    var vignettaY;
     var Nbottoni = 0;
-
-    function bottoneQuadro(x, y, colore){
+    
+    function bottoneQuadro(x, y, colore, testo){
         Nbottoni += 1;
 
-        eval("vignattaX"+Nbottoni+" = x");
-        eval("vignettaY"+Nbottoni+" = y");
-
-        var bottoniQuadri = document.createElement("div");
-        bottoniQuadri.textContent = '';
-        document.querySelector(".home").appendChild(bottoniQuadri);
-        bottoniQuadri.className = "bottoneQuadro";
-
-        var bottone = document.createElement("div");
-        bottone.textContent = '';
-        document.querySelector(".bottoneQuadro").appendChild(bottone);
-
-        vignetta = document.createElement("div");
-        vignetta.textContent = "";
-        document.querySelector(".bottoneQuadro").appendChild(vignetta);
-
-        // stile
-        bottoniQuadri.style.left = ""+y+"px";
-        bottoniQuadri.style.top = ""+x+"px";
-        bottone.style.color = colore;
-        bottone.style.background  = colore;
-        bottone.style.position = "absolute";
-        bottone.style.height = "12px";
-        bottone.style.width = "12px";
-        bottone.style.borderRadius = "50%";
-        bottone.style.left = ""+y+"px";
-        bottone.style.top = ""+x+"px";
-
-        vignetta.style.color = "black";
-        vignetta.style.background = "white";
-        vignetta.style.height = "20px";
-        vignetta.style.width = "40px";
-        vignetta.style.borderRadius = "5px";
-        vignetta.style.position = "absolute";
-        vignetta.style.left = "vignettaY"+Nbottoni+"px";
-        vignetta.style.top = "vignattaX"+Nbottoni+"px";
-        vignetta.style.display = "none";
-
-        window.bottoneQ = document.querySelector(".bottoneQuadro");
-
-        console.log(Nbottoni);
-    }
-
-    function mostraVignetta(){
-        vignetta.style.display = "block";
-    }
+        function bottoneQuadro2(Nbottoni){
+            eval('var bottoniQuadri'+Nbottoni+' = document.createElement("div");');
+            eval('bottoniQuadri'+Nbottoni+'.textContent = ""');
+            eval('document.querySelector(".home").appendChild(bottoniQuadri'+Nbottoni+');');
+            eval('bottoniQuadri'+Nbottoni+'.className = "bottoneQuadro'+Nbottoni+'";');
     
-    function nascondiVignetta(){
-        vignetta.style.display = "none";
+            eval('var bottone'+Nbottoni+' = document.createElement("div");');
+            eval('bottone'+Nbottoni+'.textContent = "";');
+            eval('document.querySelector(".bottoneQuadro'+Nbottoni+'").appendChild(bottone'+Nbottoni+');');
+    
+            eval('vignetta'+Nbottoni+' = document.createElement("div");');
+            eval('vignetta'+Nbottoni+'.textContent = "'+testo+'";');
+            eval('document.querySelector(".bottoneQuadro'+Nbottoni+'").appendChild(vignetta'+Nbottoni+');');
+    
+            // stile
+            eval('bottoniQuadri'+Nbottoni+'.style.left = ""+y+"px";');
+            eval('bottoniQuadri'+Nbottoni+'.style.top = ""+x+"px";');
+            eval('bottone'+Nbottoni+'.style.color = colore;');
+            eval('bottone'+Nbottoni+'.style.background  = colore;');
+            eval('bottone'+Nbottoni+'.style.position = "absolute";');
+            eval('bottone'+Nbottoni+'.style.height = "12px";');
+            eval('bottone'+Nbottoni+'.style.width = "12px";');
+            eval('bottone'+Nbottoni+'.style.borderRadius = "50%";');
+            eval('bottone'+Nbottoni+'.style.left = ""+y+"px";');
+            eval('bottone'+Nbottoni+'.style.top = ""+x+"px";');
+
+            eval('vignetta'+Nbottoni+'.style.color = "black";');
+            eval('vignetta'+Nbottoni+'.style.background = "white";');
+            eval('vignetta'+Nbottoni+'.style.height = "40px";');
+            eval('vignetta'+Nbottoni+'.style.width = "100px";');
+            eval('vignetta'+Nbottoni+'.style.borderRadius = "5px";');
+            eval('vignetta'+Nbottoni+'.style.position = "absolute";');
+
+            eval('var larghezzaVignetta = vignetta'+Nbottoni+'.style.width;');
+            var x2 = x + 20;
+            var y2 = y - (larghezzaVignetta / 2);
+            eval('vignettaX'+Nbottoni+' = String('+x2+'+"px");');
+            eval('vignettaY'+Nbottoni+' = String('+y2+'+"px");');
+
+            eval('vignetta'+Nbottoni+'.style.left = vignettaY'+Nbottoni+';');
+            eval('vignetta'+Nbottoni+'.style.top = vignettaX'+Nbottoni+';');
+            eval('vignetta'+Nbottoni+'.style.display = "none";');
+
+            eval('function mostraVignetta'+Nbottoni+'(){vignetta'+Nbottoni+'.style.display = "block";}');
+            eval('function nascondiVignetta'+Nbottoni+'(){vignetta'+Nbottoni+'.style.display = "none";}');
+            
+            eval('bottoniQuadri'+Nbottoni+'.addEventListener("mouseover", mostraVignetta'+Nbottoni+');');
+            eval('bottoniQuadri'+Nbottoni+'.addEventListener("mouseout", nascondiVignetta'+Nbottoni+');');
+
+        }
+        bottoneQuadro2(Nbottoni);
     }
 
-    bottoneQuadro(300, 500, "#faff00");
-    bottoneQuadro(200, 400, "#faff00");
-
-    // coordinate, nomeQuadro, descrizione, link(opzionale)
-
-    bottoneQ.addEventListener("mouseover", mostraVignetta);
-    bottoneQ.addEventListener("mouseout", nascondiVignetta);
-
+    bottoneQuadro(300, 500, "#faff00", "mjBFH");
+    bottoneQuadro(200, 400, "#faff00", "ciao");
 };
