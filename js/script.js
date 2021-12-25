@@ -77,7 +77,12 @@ window.onload = function(){
     setInterval(cambioAutomatico, tempo);
 
     // BOTTONI QUADRI
+    var larghezzaSchermo = screen.width;
     var Nbottoni = 0;
+    var x;
+    var y;
+
+    // clientWidth 
     
     function bottoneQuadro(x, y, colore, titolo, testo){
         Nbottoni += 1;
@@ -87,7 +92,7 @@ window.onload = function(){
 
             eval('var bottoniQuadri'+Nbottoni+' = document.createElement("div");');
             eval('bottoniQuadri'+Nbottoni+'.textContent = "";');
-            eval('document.querySelector(".home").appendChild(bottoniQuadri'+Nbottoni+');');
+            eval('document.querySelector(".sfondo-scorri").appendChild(bottoniQuadri'+Nbottoni+');');
             eval('bottoniQuadri'+Nbottoni+'.className = "bottoneQuadro'+Nbottoni+'";');
 
             eval('var bottone'+Nbottoni+' = document.createElement("div");');
@@ -96,7 +101,7 @@ window.onload = function(){
 
             eval('var vignetta'+Nbottoni+' = document.createElement("div");');
             eval('vignetta'+Nbottoni+'.textContent = "";');
-            eval('document.querySelector(".bottoneQuadro'+Nbottoni+'").appendChild(vignetta'+Nbottoni+');');
+            eval('document.querySelector(".sfondo-scorri").appendChild(vignetta'+Nbottoni+');');
             eval('vignetta'+Nbottoni+'.className = "vignetta'+Nbottoni+'";');
 
             eval('var titoloVignetta'+Nbottoni+' = document.createElement("div");');
@@ -125,10 +130,12 @@ window.onload = function(){
             eval('triangoloSopra'+Nbottoni+'.style.left = triangoloY'+Nbottoni+';');
             eval('triangoloSopra'+Nbottoni+'.style.top = triangoloX'+Nbottoni+';');
             eval('triangoloSopra'+Nbottoni+'.style.opacity = "0";');
-            eval('triangoloSopra'+Nbottoni+'.style.transition = "opacity 1s";');
+            eval('triangoloSopra'+Nbottoni+'.style.transition = "opacity 0.6s";');
+            eval('triangoloSopra'+Nbottoni+'.style.zIndex = "4";');
 
             eval('bottoniQuadri'+Nbottoni+'.style.left = ""+y+"px";');
             eval('bottoniQuadri'+Nbottoni+'.style.top = ""+x+"px";');
+
             eval('bottone'+Nbottoni+'.style.color = colore;');
             eval('bottone'+Nbottoni+'.style.background  = colore;');
             eval('bottone'+Nbottoni+'.style.position = "absolute";');
@@ -137,6 +144,7 @@ window.onload = function(){
             eval('bottone'+Nbottoni+'.style.borderRadius = "50%";');
             eval('bottone'+Nbottoni+'.style.left = ""+y+"px";');
             eval('bottone'+Nbottoni+'.style.top = ""+x+"px";');
+            eval('bottone'+Nbottoni+'.style.zIndex = "4";');
 
             larghezza = String(larghezza + "px");
             eval('vignetta'+Nbottoni+'.style.color = "black";');
@@ -150,9 +158,11 @@ window.onload = function(){
             eval('vignetta'+Nbottoni+'.style.flexDirection = "column";');
             eval('vignetta'+Nbottoni+'.style.justifyContent = "center";');
             eval('vignetta'+Nbottoni+'.style.padding = "10px";');
+            eval('vignetta'+Nbottoni+'.style.zIndex = "3";');
 
             eval('titoloVignetta'+Nbottoni+'.style.width = "'+larghezza+'";');
             eval('titoloVignetta'+Nbottoni+'.style.height = "20px";');
+            eval('titoloVignetta'+Nbottoni+'.style.zIndex = "4";');
 
             larghezza -= 0;
             larghezza = String(larghezza + "px");
@@ -160,6 +170,7 @@ window.onload = function(){
             eval('testoSotto'+Nbottoni+'.style.marginBottom = "10px";');
             eval('testoSotto'+Nbottoni+'.style.width = "'+larghezza+'";');
             eval('testoSotto'+Nbottoni+'.style.textAlign = "center";');
+            eval('testoSotto'+Nbottoni+'.style.zIndex = "4";');
             var x2 = x + 22;
             var y2 = y - (200 / 2) + 5;
             eval('vignettaX'+Nbottoni+' = String('+x2+'+"px");');
@@ -168,11 +179,15 @@ window.onload = function(){
             eval('vignetta'+Nbottoni+'.style.left = vignettaY'+Nbottoni+';');
             eval('vignetta'+Nbottoni+'.style.top = vignettaX'+Nbottoni+';');
             eval('vignetta'+Nbottoni+'.style.opacity = "0";');
-            eval('vignetta'+Nbottoni+'.style.transition = "opacity 1s";');
+            eval('vignetta'+Nbottoni+'.style.transition = "opacity 0.6s";');
 
             eval('function mostraVignetta'+Nbottoni+'(){vignetta'+Nbottoni+'.style.opacity = "1";triangoloSopra'+Nbottoni+'.style.opacity = "1";}');
             eval('function nascondiVignetta'+Nbottoni+'(){vignetta'+Nbottoni+'.style.opacity = "0";triangoloSopra'+Nbottoni+'.style.opacity = "0";}');
 
+            // tutti i casini dopo aver aggiunto questo
+            bottoneSlide1.addEventListener("click", cambioSlide('uno'))
+            bottoneSlide2.addEventListener("click", cambioSlide('due'))
+            bottoneSlide2.addEventListener("click", cambioSlide('tre'))
             eval('bottoniQuadri'+Nbottoni+'.addEventListener("mouseover", mostraVignetta'+Nbottoni+');');
             eval('bottoniQuadri'+Nbottoni+'.addEventListener("mouseout", nascondiVignetta'+Nbottoni+');');
         }
@@ -184,7 +199,7 @@ window.onload = function(){
     var testo3 = "Blanditiis laboriosam assumenda quisquam atque inventore illo. Et nulla et blanditiis natus quia aut omnis."
 
 
-//                 x:   y:    colore:    titolo:     testo:
+//                x:   y:    colore:    classe:          titolo:     testo:
     bottoneQuadro(300, 800, "#faff00", "Quadro 1", testo1);
     bottoneQuadro(200, 400, "#faff00", "Quadro 2", testo2);
     bottoneQuadro(400, 1000, "#faff00", "Quadro 3", testo3)
