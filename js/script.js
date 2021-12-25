@@ -79,24 +79,54 @@ window.onload = function(){
     // BOTTONI QUADRI
     var Nbottoni = 0;
     
-    function bottoneQuadro(x, y, colore, testo){
+    function bottoneQuadro(x, y, colore, titolo, testo){
         Nbottoni += 1;
 
         function bottoneQuadro2(Nbottoni){
+            var larghezza = 200;
+
             eval('var bottoniQuadri'+Nbottoni+' = document.createElement("div");');
-            eval('bottoniQuadri'+Nbottoni+'.textContent = ""');
+            eval('bottoniQuadri'+Nbottoni+'.textContent = "";');
             eval('document.querySelector(".home").appendChild(bottoniQuadri'+Nbottoni+');');
             eval('bottoniQuadri'+Nbottoni+'.className = "bottoneQuadro'+Nbottoni+'";');
-    
+
             eval('var bottone'+Nbottoni+' = document.createElement("div");');
             eval('bottone'+Nbottoni+'.textContent = "";');
             eval('document.querySelector(".bottoneQuadro'+Nbottoni+'").appendChild(bottone'+Nbottoni+');');
-    
-            eval('vignetta'+Nbottoni+' = document.createElement("div");');
-            eval('vignetta'+Nbottoni+'.textContent = "'+testo+'";');
+
+            eval('var vignetta'+Nbottoni+' = document.createElement("div");');
+            eval('vignetta'+Nbottoni+'.textContent = "";');
             eval('document.querySelector(".bottoneQuadro'+Nbottoni+'").appendChild(vignetta'+Nbottoni+');');
-    
-            // stile
+            eval('vignetta'+Nbottoni+'.className = "vignetta'+Nbottoni+'";');
+
+            eval('var titoloVignetta'+Nbottoni+' = document.createElement("div");');
+            eval('titoloVignetta'+Nbottoni+'.textContent = "'+titolo+'";');
+            eval('document.querySelector(".vignetta'+Nbottoni+'").appendChild(titoloVignetta'+Nbottoni+');');
+
+            eval('var testoSotto'+Nbottoni+' = document.createElement("div");');
+            eval('testoSotto'+Nbottoni+'.textContent = "'+testo+'";');
+            eval('document.querySelector(".vignetta'+Nbottoni+'").appendChild(testoSotto'+Nbottoni+');');
+
+            var x2 = x + 12;
+            var y2 = y - 4;
+            eval('triangoloX'+Nbottoni+' = String('+x2+'+"px");');
+            eval('triangoloY'+Nbottoni+' = String('+y2+'+"px");');
+
+            eval('triangoloSopra'+Nbottoni+' = document.createElement("div");');
+            eval('triangoloSopra'+Nbottoni+'.textContent = "";');
+            eval('document.querySelector(".bottoneQuadro'+Nbottoni+'").appendChild(triangoloSopra'+Nbottoni+');');
+
+            eval('triangoloSopra'+Nbottoni+'.style.height = "0px";');
+            eval('triangoloSopra'+Nbottoni+'.style.width = "0px";');
+            eval('triangoloSopra'+Nbottoni+'.style.borderBottom = "10px solid white";');
+            eval('triangoloSopra'+Nbottoni+'.style.borderLeft = "10px solid transparent";');
+            eval('triangoloSopra'+Nbottoni+'.style.borderRight = "10px solid transparent";');
+            eval('triangoloSopra'+Nbottoni+'.style.position = "absolute";');
+            eval('triangoloSopra'+Nbottoni+'.style.left = triangoloY'+Nbottoni+';');
+            eval('triangoloSopra'+Nbottoni+'.style.top = triangoloX'+Nbottoni+';');
+            eval('triangoloSopra'+Nbottoni+'.style.opacity = "0";');
+            eval('triangoloSopra'+Nbottoni+'.style.transition = "opacity 1s";');
+
             eval('bottoniQuadri'+Nbottoni+'.style.left = ""+y+"px";');
             eval('bottoniQuadri'+Nbottoni+'.style.top = ""+x+"px";');
             eval('bottone'+Nbottoni+'.style.color = colore;');
@@ -108,33 +138,54 @@ window.onload = function(){
             eval('bottone'+Nbottoni+'.style.left = ""+y+"px";');
             eval('bottone'+Nbottoni+'.style.top = ""+x+"px";');
 
+            larghezza = String(larghezza + "px");
             eval('vignetta'+Nbottoni+'.style.color = "black";');
             eval('vignetta'+Nbottoni+'.style.background = "white";');
-            eval('vignetta'+Nbottoni+'.style.height = "40px";');
-            eval('vignetta'+Nbottoni+'.style.width = "100px";');
-            eval('vignetta'+Nbottoni+'.style.borderRadius = "5px";');
+            eval('vignetta'+Nbottoni+'.style.minHeight = "80px";');
+            eval('vignetta'+Nbottoni+'.style.width = "'+larghezza+'";');
+            eval('vignetta'+Nbottoni+'.style.borderRadius = "20px";');
             eval('vignetta'+Nbottoni+'.style.position = "absolute";');
+            eval('vignetta'+Nbottoni+'.style.textAlign = "center";');
+            eval('vignetta'+Nbottoni+'.style.display = "flex";');
+            eval('vignetta'+Nbottoni+'.style.flexDirection = "column";');
+            eval('vignetta'+Nbottoni+'.style.justifyContent = "center";');
+            eval('vignetta'+Nbottoni+'.style.padding = "10px";');
 
-            eval('var larghezzaVignetta = vignetta'+Nbottoni+'.style.width;');
-            var x2 = x + 20;
-            var y2 = y - (larghezzaVignetta / 2);
+            eval('titoloVignetta'+Nbottoni+'.style.width = "'+larghezza+'";');
+            eval('titoloVignetta'+Nbottoni+'.style.height = "20px";');
+
+            larghezza -= 0;
+            larghezza = String(larghezza + "px");
+            eval('testoSotto'+Nbottoni+'.style.marginTop = "20px";');
+            eval('testoSotto'+Nbottoni+'.style.marginBottom = "10px";');
+            eval('testoSotto'+Nbottoni+'.style.width = "'+larghezza+'";');
+            eval('testoSotto'+Nbottoni+'.style.textAlign = "center";');
+            var x2 = x + 22;
+            var y2 = y - (200 / 2) + 5;
             eval('vignettaX'+Nbottoni+' = String('+x2+'+"px");');
             eval('vignettaY'+Nbottoni+' = String('+y2+'+"px");');
 
             eval('vignetta'+Nbottoni+'.style.left = vignettaY'+Nbottoni+';');
             eval('vignetta'+Nbottoni+'.style.top = vignettaX'+Nbottoni+';');
-            eval('vignetta'+Nbottoni+'.style.display = "none";');
+            eval('vignetta'+Nbottoni+'.style.opacity = "0";');
+            eval('vignetta'+Nbottoni+'.style.transition = "opacity 1s";');
 
-            eval('function mostraVignetta'+Nbottoni+'(){vignetta'+Nbottoni+'.style.display = "block";}');
-            eval('function nascondiVignetta'+Nbottoni+'(){vignetta'+Nbottoni+'.style.display = "none";}');
-            
+            eval('function mostraVignetta'+Nbottoni+'(){vignetta'+Nbottoni+'.style.opacity = "1";triangoloSopra'+Nbottoni+'.style.opacity = "1";}');
+            eval('function nascondiVignetta'+Nbottoni+'(){vignetta'+Nbottoni+'.style.opacity = "0";triangoloSopra'+Nbottoni+'.style.opacity = "0";}');
+
             eval('bottoniQuadri'+Nbottoni+'.addEventListener("mouseover", mostraVignetta'+Nbottoni+');');
             eval('bottoniQuadri'+Nbottoni+'.addEventListener("mouseout", nascondiVignetta'+Nbottoni+');');
-
         }
         bottoneQuadro2(Nbottoni);
     }
 
-    bottoneQuadro(300, 500, "#faff00", "mjBFH");
-    bottoneQuadro(200, 400, "#faff00", "ciao");
+    var testo1 = "Quis ut sed sed perferendis excepturi. Qui sit ut temporibus qui earum doloribus. Voluptatum sit hic voluptatem distinctio cum dolorum eveniet et. Incidunt consequuntur a ea sunt quae dolor neque sunt. Laboriosam in ut eveniet quos odit quo numquam qui."
+    var testo2 = "Fugit voluptatem ipsa consequatur fugiat distinctio veritatis nihil aperiam. Quia vel laudantium doloribus ea architecto itaque earum."
+    var testo3 = "Blanditiis laboriosam assumenda quisquam atque inventore illo. Et nulla et blanditiis natus quia aut omnis."
+
+
+//                 x:   y:    colore:    titolo:     testo:
+    bottoneQuadro(300, 800, "#faff00", "Quadro 1", testo1);
+    bottoneQuadro(200, 400, "#faff00", "Quadro 2", testo2);
+    bottoneQuadro(400, 1000, "#faff00", "Quadro 3", testo3)
 };
