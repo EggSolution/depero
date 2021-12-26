@@ -24,7 +24,6 @@ html,body {
 	left: 0;
     display: flex;
     flex-direction: column;
-    z-index: 3;
 }
 .scritteMenu {
     transform: translateY(calc(50% - 60px));
@@ -81,6 +80,7 @@ html,body {
     flex-direction: row;
     background-color: transparent;
     transition: 1.5s;
+    z-index: 2;
 }
 .sfondo1, .sfondo2, .sfondo3 {
     display: flex;
@@ -134,4 +134,10 @@ html,body {
     margin-left: 6px;
     margin-right: 6px;
     background-color: #525252;
+}
+.bottoniGenerale{
+    width: 300%;
+    height: 100%;
+    background-color: transparent;
+    transition: 1.5s;
 }
