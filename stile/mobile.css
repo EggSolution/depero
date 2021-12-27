@@ -4,7 +4,7 @@
         z-index: 3;
     }
     .incopatibile{
-        z-index: 4;
+        z-index: 6;
         padding: 2  0px;
         display: block;
         height: 100%;
@@ -76,7 +76,7 @@
 /* cellulare orizzontale */
 @media screen and (max-device-width: 640px) and (orientation: landscape){
     .compatibile {
-        z-index: 3;
+        z-index: 6;
     }
     .incopatibile{
         z-index: 4;
