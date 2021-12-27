@@ -1,9 +1,10 @@
 /* cellulare dritto */
 @media screen and (max-device-width: 800px) and (orientation: portrait){
     .compatibile {
-        display: none;
+        z-index: 3;
     }
     .incopatibile{
+        z-index: 4;
         padding: 2  0px;
         display: block;
         height: 100%;

@@ -11,10 +11,13 @@ html,body {
     height: 100%;
     scroll-behavior: smooth;
 }
-.incompatibile{
-    display: none;
+.incopatibile{
+    color: transparent;
+    position: absolute;
+
 }
 .corpo {
+    z-index: 2;
     width: 100%;
 	background: black;
     overflow-X: hidden;
@@ -84,7 +87,7 @@ html,body {
     flex-direction: row;
     background-color: transparent;
     transition: 1.5s;
-    z-index: 2;
+    z-index: 3;
 }
 .sfondo1, .sfondo2, .sfondo3 {
     display: flex;
@@ -160,7 +163,7 @@ footer a{
     min-width: 80px;
     background: rgb(200, 200, 200);
     margin-left: 10px;
-    z-index: 6;
+    z-index: 4;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 16px;
