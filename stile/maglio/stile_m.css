@@ -64,12 +64,12 @@
     margin-top: 10px;
 }
 .sotto_sinistra-p{
-    width: 50%;
+    width: 40%;
     height :100%;
     position: relative;
 }
 .sotto_destra-p{
-    width: 50%;
+    width: 60%;
     height :100%;
     position: relative;
 }
@@ -117,6 +117,17 @@
     top: 40%;
     left: 20%;
 }
+.scritteP-sotto{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    margin-left: 20px;
+    transform: translate(-15%,-50%);
+    top: 40%;
+    left: 20%;
+}
+
 
 /*Storia*/
 .storia{
