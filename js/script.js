@@ -1,4 +1,5 @@
 window.onload = function(){
+    //posizione mouse
     // BOTTONI QUADRI
     var larghezzaSchermo = screen.width;
     var Nbottoni = 0;
@@ -41,8 +42,8 @@ window.onload = function(){
             eval('var testoSotto'+Nbottoni+' = document.createElement("div");');
             eval('testoSotto'+Nbottoni+'.textContent = "'+testo+'";');
             eval('document.querySelector(".vignetta'+Nbottoni+'").appendChild(testoSotto'+Nbottoni+');');
-            var x2 = x + 12;
-            var y2 = y - 4;
+            var x2 = x + 20;
+            var y2 = y - 0;
             eval('triangoloX'+Nbottoni+' = String('+x2+'+"px");');
             eval('triangoloY'+Nbottoni+' = String('+y2+'+"px");');
             eval('triangoloSopra'+Nbottoni+' = document.createElement("div");');
@@ -64,8 +65,8 @@ window.onload = function(){
             eval('bottone'+Nbottoni+'.style.color = colore;');
             eval('bottone'+Nbottoni+'.style.background  = colore;');
             eval('bottone'+Nbottoni+'.style.position = "absolute";');
-            eval('bottone'+Nbottoni+'.style.height = "12px";');
-            eval('bottone'+Nbottoni+'.style.width = "12px";');
+            eval('bottone'+Nbottoni+'.style.height = "20px";');
+            eval('bottone'+Nbottoni+'.style.width = "20px";');
             eval('bottone'+Nbottoni+'.style.borderRadius = "50%";');
             eval('bottone'+Nbottoni+'.style.left = ""+y+"px";');
             eval('bottone'+Nbottoni+'.style.top = ""+x+"px";');
@@ -93,8 +94,8 @@ window.onload = function(){
             eval('testoSotto'+Nbottoni+'.style.width = "'+larghezza+'";');
             eval('testoSotto'+Nbottoni+'.style.textAlign = "center";');
             eval('testoSotto'+Nbottoni+'.style.zIndex = "6";');
-            var x2 = x + 22;
-            var y2 = y - (200 / 2) + 5;
+            var x2 = x + 30;
+            var y2 = y - (200 / 2) + 2;
             eval('vignettaX'+Nbottoni+' = String('+x2+'+"px");');
             eval('vignettaY'+Nbottoni+' = String('+y2+'+"px");');
             eval('vignetta'+Nbottoni+'.style.left = vignettaY'+Nbottoni+';');
@@ -112,9 +113,17 @@ window.onload = function(){
     var testo2 = "Fugit voluptatem ipsa consequatur fugiat distinctio veritatis nihil aperiam. Quia vel laudantium doloribus ea architecto itaque earum."
     var testo3 = "Blanditiis laboriosam assumenda quisquam atque inventore illo. Et nulla et blanditiis natus quia aut omnis."
     //            x:   y:    colore:   appartenenza: titolo:     testo:
-    bottoneQuadro(300, 800, "#faff00", "sfondo1",   "Quadro 1", testo1);
-    bottoneQuadro(400, 600, "#faff00", "sfondo2",   "Quadro 2", testo2);
-    bottoneQuadro(400, 1000, "#faff00", "sfondo3",  "Quadro 3", testo3);
+    bottoneQuadro(500, 370, "#e6fa07", "sfondo1",   "Quadro 1", testo1);
+    bottoneQuadro(500, 770, "#e6fa07", "sfondo1",   "Quadro 2", testo1);
+    bottoneQuadro(510, 1600, "#e6fa07", "sfondo1",   "Quadro 3", testo1);
+    bottoneQuadro(630, 420, "#e6fa07", "sfondo2",   "Quadro 4", testo2);
+    bottoneQuadro(625, 740, "#e6fa07", "sfondo2",   "Quadro 5", testo2);
+    bottoneQuadro(630, 1040, "#e6fa07", "sfondo2",   "Quadro 6", testo2);
+    bottoneQuadro(623, 1670, "#e6fa07", "sfondo2",   "Quadro 7", testo2);
+    bottoneQuadro(510, 980, "#e6fa07", "sfondo3",  "Quadro 9", testo3);
+    bottoneQuadro(490, 772, "#e6fa07", "sfondo3",  "Quadro 8", testo3);
+    bottoneQuadro(512, 1375, "#e6fa07", "sfondo3",  "Quadro 10", testo3);
+    bottoneQuadro(504, 1660, "#e6fa07", "sfondo3",  "Quadro 11", testo3);
 
     //variabili SLIDE
     const img = document.querySelector("#sfondoScorriId");
@@ -124,7 +133,7 @@ window.onload = function(){
     // const bottoneSlide3 = document.querySelector(".bottoneSlide3");
     var incrementazione = 0;
     var posizione = 0;
-    var tempo = 8;
+    var tempo = 90;
     tempo *= 1000;
     // SLIDE
     window.cambioSlide=function(direzione) {
