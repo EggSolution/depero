@@ -19,7 +19,7 @@
 }
 /*personaggio*/
 .personaggio{
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     position: relative;
     background-color: #4f4d4d;
@@ -75,13 +75,11 @@
 }
 .sopra-p a{
     font-family: 'Roboto', sans-serif;
-    margin: 20px;
     font-size: 20px;
     color: white;
 }
 .sotto-p a{
     font-family: 'Roboto', sans-serif;
-    margin: 20px;
     font-size: 20px;
     color: white;
 }
@@ -90,6 +88,7 @@
     height: 150px;
     display: flex;
     justify-content: center;
+    margin-bottom: 15Spx
 }
 .titoloTesto-sezione {
     display: block;
@@ -113,7 +112,7 @@
     color: white;
     position: absolute;
     margin-left: 20px;
-    transform: translate(-15%,-50%);
+    transform: translate(-15%,0);
     top: 40%;
     left: 20%;
 }
@@ -123,12 +122,21 @@
     color: white;
     position: absolute;
     margin-left: 20px;
-    transform: translate(-15%,-50%);
+    transform: translate(-50px,15px);
     top: 40%;
     left: 20%;
 }
+.imgDeperoP1{
+    height: 110%;
+    width: 80%;
 
-
+}
+.imgDeperoP2{
+    height: 80%;
+    width: 80%;
+    margin-left: 40px;
+    transform:translate( 0px,-140px)
+}
 /*Storia*/
 .storia{
     height: 150%;
