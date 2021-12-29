@@ -34,7 +34,7 @@ html,body {
 	left: 0;
     display: flex;
     flex-direction: column;
-    padding-top: 12%;
+    padding-top: calc(50% - 700px);
 }
 .scritteMenu {
     position: absolute;
