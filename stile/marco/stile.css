@@ -1,3 +1,6 @@
+:root{
+    --coloreHome: white;
+}
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&family=Yantramanav:wght@100;300&display=swap');
 *{
     padding: 0;
@@ -41,14 +44,14 @@ html,body {
 }
 .logo {
 	font-family: 'Lobster', cursive;
-	color: white;
+    color: var(--coloreHome);
     font-size: 60px;
     margin-bottom: 100px;
     margin-left: 30px;
 }
 .home a {
     position: relative;
-    color: white;
+    color: var(--coloreHome);
     left: 10px;
     text-decoration: none;
     margin-top: 40px;
@@ -78,7 +81,7 @@ html,body {
     margin-top: 2px;
     margin-left: 30px;
     margin-bottom: 25px;
-    background-color: white;
+    background: var(--coloreHome);
 }
 .sfondo-scorri {
     width: 300%;
@@ -89,32 +92,29 @@ html,body {
     transition: 1.5s;
     z-index: 3;
 }
-.sfondo1, .sfondo2, .sfondo3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .sfondo1 {
     height: 100%;
     width: 100%;
-    background-color: rgb(71, 71, 71);
+    background-image: url('../../img/home/futuristaHome.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .sfondo2 {
     height: 100%;
     width: 100%;
-    background-color: rgb(46, 46, 46);
+    background-image: url('../../img/home/pubblicitaHome.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .sfondo3 {
     height: 100%;
     width: 100%;
-    background-color: rgb(29, 29, 29);
-}
-.sfondo1 a, .sfondo2 a, .sfondo3 a {
-    position: absolute;
-    font-size: 40px;
-    font-family: 'Roboto', sans-serif;
-    color: #363636;
-    font-weight: bold
+    background-image: url('../../img/home/bohHome.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .bottoniSlide {
     position: absolute;
@@ -131,7 +131,7 @@ html,body {
     border-radius: 50%;
     margin-left: 6px;
     margin-right: 6px;
-    background-color: #696969;
+    background: rgb(36, 36, 36);
 }
 .bottoniSlide button:hover {
     border: solid 0;
