@@ -6,8 +6,8 @@ window.onload = function(){
     var x, y, x1, y1;
     function bottoneQuadro(x1, y1, colore, apparteneza, titolo, testo){
         Nbottoni += 1;
-        x1 = x1 - 955 + window.innerHeight;
-        y1 = y1 - 1920 + window.innerWidth;
+        x1 = (x1 - 955 + window.innerHeight)/2;
+        y1 = (y1 - 1920 + window.innerWidth)/2;
         function bottoneQuadro2(Nbottoni, x, y){
             var larghezza = 200;
 
