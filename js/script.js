@@ -6,6 +6,8 @@ window.onload = function(){
     var x, y, x1, y1;
     function bottoneQuadro(x1, y1, colore, apparteneza, titolo, testo){
         Nbottoni += 1;
+        x1 = x1 - 955 + window.innerHeight;
+        y1 = y1 - 1920 + window.innerWidth;
         function bottoneQuadro2(Nbottoni, x, y){
             var larghezza = 200;
 
@@ -190,5 +192,8 @@ window.onload = function(){
                 alert("error 2: la funzione cambioAutomatico non funziona correttamente");
         }
     }
+    var g = window.innerHeight;
+    var f = window.innerWidth;
+    console.log(g+" - "+f)
     setInterval(cambioAutomatico, tempo);
 };
