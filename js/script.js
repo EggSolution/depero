@@ -2,7 +2,8 @@ window.onload = function(){
     //posizione mouse
     // BOTTONI QUADRI
     var larghezzaSchermo = screen.width;
-    var Nbottoni = 0;
+    var Nbottoni;
+    window.Nbottoni = 0;
     var x, y, x1, y1;
     function bottoneQuadro(x1, y1, colore, apparteneza, titolo, testo){
         window.Nbottoni += 1;
@@ -106,8 +107,8 @@ window.onload = function(){
             eval('vignetta'+window.Nbottoni+'.style.top = vignettaX'+window.Nbottoni+';');
             eval('vignetta'+window.Nbottoni+'.style.opacity = "0";');
             eval('vignetta'+window.Nbottoni+'.style.transition = "opacity 0.6s";');
-            eval('function mostraVignetta'+window.Nbottoni+'(){vignetta'+window.Nbottoni+'.style.opacity = "1";triangoloSopra'+window.Nbottoni+'.style.opacity = "1";}');
-            eval('function nascondiVignetta'+window.Nbottoni+'(){vignetta'+window.Nbottoni+'.style.opacity = "0";triangoloSopra'+window.Nbottoni+'.style.opacity = "0";}');
+            eval('window.mostraVignetta'+window.Nbottoni+' = function(){vignetta'+window.Nbottoni+'.style.opacity = "1";triangoloSopra'+window.Nbottoni+'.style.opacity = "1";}');
+            eval('window.nascondiVignetta'+window.Nbottoni+' = function(){vignetta'+window.Nbottoni+'.style.opacity = "0";triangoloSopra'+window.Nbottoni+'.style.opacity = "0";}');
         }
         bottoneQuadro2(Nbottoni, x1, y1);
     }
@@ -129,10 +130,9 @@ window.onload = function(){
 
     //variabili SLIDE
     const img = document.querySelector("#sfondoScorriId");
-    // intanto non servono ma lasciali qui
-    // const bottoneSlide1 = document.querySelector(".bottoneSlide1");
-    // const bottoneSlide2 = document.querySelector(".bottoneSlide2");
-    // const bottoneSlide3 = document.querySelector(".bottoneSlide3");
+    var bottoneSlide1;
+    var bottoneSlide2;
+    var bottoneSlide3;
     var incrementazione = 0;
     var posizione = 0;
     var tempo = 90;
@@ -159,25 +159,27 @@ window.onload = function(){
                 img.style.transform = String("translate(-"+incrementazione+"%)");
                 incrementazione = 0;
                 posizione = 0;
+                console.log("ciao1");
                 break;
             case "due":
                 incrementazione = 100/3;
                 img.style.transform = String("translate(-"+incrementazione+"%)");
                 incrementazione = 0;
                 posizione = 1;
+                console.log("ciao2");
                 break;
             case "tre":
                 incrementazione = (100/3)*2;
                 img.style.transform = String("translate(-"+incrementazione+"%)");
                 incrementazione = 0;
                 posizione = 2;
+                console.log("ciao3");
                 break;
             default:
                 alert("error 1: la funzione cambioSlide non funziona correttamente");
         }
     }
     function cambioAutomatico(){
-
         switch(posizione){
             case 0:
                 cambioSlide("avanti");
@@ -193,12 +195,19 @@ window.onload = function(){
         }
     }
     setInterval(cambioAutomatico, tempo);
+    document.querySelector(".bottoneSlide1").addEventListener("click", function (){
+        window.cambioSlide('uno')
+    });
+    document.querySelector(".bottoneSlide2").addEventListener("click", function (){
+        window.cambioSlide('due')
+    });
+    document.querySelector(".bottoneSlide3").addEventListener("click", function (){
+        window.cambioSlide('tre')
+    });
     var i = 0;
-    console.log(window.Nbottoni);
     while(i < window.Nbottoni){
         i += 1;
         eval('bottone'+i+'.addEventListener("mouseover", mostraVignetta'+i+');');
         eval('bottone'+i+'.addEventListener("mouseout", nascondiVignetta'+i+');');
-        console.log(i);
     }
 };

@@ -20,7 +20,6 @@ html,body{
 
 }
 .corpo{
-    z-index: 2;
     width: 100%;
 	background: black;
     overflow-X: hidden;
@@ -41,6 +40,7 @@ html,body{
     margin-left: 30px;
     height: 500px;
     width: 300px;
+    z-index: 2;
 }
 .logo{
 	font-family: 'Lobster', cursive;
@@ -88,7 +88,7 @@ html,body{
     flex-direction: row;
     background-color: transparent;
     transition: 1.5s;
-    z-index: 6;
+    z-index: 1;
 }
 .sfondo1{
     height: 100%;
@@ -121,6 +121,7 @@ html,body{
     display: flex;
     justify-content: center;
     top: calc(100% - 60px);
+    z-index: 2;
 }
 .bottoniSlide button{
     border: solid 0;
@@ -159,7 +160,7 @@ footer a{
     height: 40px;
     width: 120px;
     margin-left: 10px;
-    z-index: 4; 
+    z-index: 2; 
 }
 .copyright{
     right: 15px;
