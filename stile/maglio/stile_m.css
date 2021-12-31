@@ -19,7 +19,7 @@
 }
 /*personaggio*/
 .personaggio{
-    min-height: 100%;
+    height: 150%;
     width: 100%;
     position: relative;
     background-color: #4f4d4d;
@@ -31,6 +31,7 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 .sopra-p{
     height: 50%;

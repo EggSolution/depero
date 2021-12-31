@@ -1,5 +1,8 @@
 window.onload = function(){
-    //posizione mouse
+    // ALTEZZA SCRITTE MENU
+    var altezzaHome = document.querySelector(".home").clientHeight;
+    var yBottoni = (200 * altezzaHome) / 955;
+    document.querySelector('.scritteMenu').style.marginTop = String(yBottoni+"px");
     // BOTTONI QUADRI
     var larghezzaSchermo = screen.width;
     var Nbottoni;
@@ -12,7 +15,6 @@ window.onload = function(){
         function bottoneQuadro2(Nbottoni, x, y){
             eval('var bottone'+Nbottoni+';');
             var larghezza = 250;
-
             switch(apparteneza){
                 case "sfondo1":
                     var x = x1;
@@ -210,4 +212,5 @@ window.onload = function(){
         eval('bottone'+i+'.addEventListener("mouseover", mostraVignetta'+i+');');
         eval('bottone'+i+'.addEventListener("mouseout", nascondiVignetta'+i+');');
     }
+
 };
