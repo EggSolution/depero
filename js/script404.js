@@ -1,5 +1,5 @@
 function redirectHome(){
-    var realLink = window.location.href.slice(0, -8);
-    var realLink = realLink+"index.html"
-    window.location.replace(realLink);
+    var realLink = window.location.href.replace(window.location.pathname, "index.com");
+    console.log(realLink);
+    //window.location.replace(realLink);
 }
