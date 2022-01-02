@@ -20,13 +20,14 @@ body{
     position: relative;
 }
 .centrato{
+    padding-top: 20px;
     position: absolute;
     vertical-align: center;
     top: 50%;
     left: 50%;
     margin-top: -300px;
     margin-left: -600px;
-    height: 520px;
+    height: 600px;
     width: 1200px;
     /* border: 2px solid white; */
 }
@@ -38,18 +39,20 @@ body{
     position: absolute;
     height: 400px;
     width: 700px;
-    padding: 30px;
+    padding-left: 30px;
 }
 .e404-1{
     font-size: 65px;
     font-weight: 400;
     font-family: 'Rubik', sans-serif;
     margin-right: 40px;
+    color: black;
 }
 .e404-2{
     font-size: 65px;
     font-weight: 400;
     font-family: 'Rubik', sans-serif;
+    color: black;
 }
 .scritte1 div{
     height: 50px;
@@ -60,6 +63,22 @@ body{
     font-size: 40px;
     font-weight: 300;
     font-family: 'Rubik', sans-serif;
+}
+.linkHome{
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Rubik', sans-serif;
+}
+.returnHome{
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Rubik', sans-serif;
+    height: 60px;
+    width: 180px;
+    background-color: #3a3a3a;
+    color: white;
+    border: 0;
+    margin-top: 20px;
 }
 .eggMan{
     height: 400px;
