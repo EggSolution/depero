@@ -13,6 +13,9 @@ body{
     width: 100%;
     background-color: #4f4d4d;
 }
+a{
+    color: white;
+}
 .flex {
     display: flex;
     width: 100%;
@@ -46,13 +49,11 @@ body{
     font-weight: 400;
     font-family: 'Rubik', sans-serif;
     margin-right: 40px;
-    color: black;
 }
 .e404-2{
     font-size: 65px;
     font-weight: 400;
     font-family: 'Rubik', sans-serif;
-    color: black;
 }
 .scritte1 div{
     height: 50px;
