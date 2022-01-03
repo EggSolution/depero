@@ -3,6 +3,14 @@
     html,body {
       overflow-x: hidden;
     }
+    .corpo{
+        height: 100%;
+        width: 100%;
+    }
+    .home{
+        height: 100%;
+        width: 100%;
+    }
     .bottoniQuadri0{
         display: none;
     }
@@ -14,9 +22,33 @@
     .logo{
         display: block;
         color: #242424;
-        padding-left: 10px;
+        padding-left: 30px;
+        padding-top: 10px;
         margin: 0;
-        font-size: 30px;
+        font-size: 50px;
+    }
+    .scritteMenu{
+        width: 100%;
+    }
+    .hamburgerMenu{
+        display: block;
+        top: 0;
+        right: 0;
+        position: absolute;
+        margin-top: 23px;
+        margin-right: 30px;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        height: 40px;
+        width: 40px;
+    }
+    .meet1,.meet2,.meet3{
+        border-radius: 10px;
+        height: 6px;
+        width: 40px;
+        margin-top: 6px;
+        background-color: #242424;
     }
     #scrittaMenu1Id{
         display: none;

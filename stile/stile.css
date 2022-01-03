@@ -44,6 +44,9 @@ html,body{
     width: 300px;
     z-index: 2;
 }
+.hamburgerMenu{
+    display: none;
+}
 .logo{
 	font-family: 'Lobster', cursive;
     color: var(--coloreHome);
