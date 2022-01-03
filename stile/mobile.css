@@ -26,10 +26,12 @@
         padding-top: 10px;
         margin: 0;
         font-size: 50px;
+        z-index: 5;
     }
     .scritteMenu{
         width: 100%;
         height: 80px;
+        z-index: 5;
     }
     .hamburgerMenu{
         display: block;
@@ -50,16 +52,89 @@
         height: 6px;
         width: 40px;
         margin-top: 6px;
-        background-color: #242424;
         z-index: 5;
     }
     .menuMobile{
         position: absolute;
-        display: none;
         height: 100%;
         width: 100%;
         background-color: black;
         z-index: 4;
+        transition: opacity 0.5s;
+    }
+    .menuMobileScritte{
+        margin-top: 240px;
+        position: absolute;
+        margin-left: 10px;
+        height: 500px;
+        width: 300px;
+    }
+    .scrittaMenu1M{
+        position: relative;
+        color: white;
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 30px;
+        
+    }
+    .scrittaMenu2M{
+        position: relative;
+        color: white;
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 30px;
+    }
+    .scrittaMenu3M{
+        position: relative;
+        color: white;
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 30px;
+    }
+    .scrittaMenu4M{
+        position: relative;
+        color: white;
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 30px;
+    }
+    .lS1M{
+        background-color: white;
+        height: 4px;
+        width: 30px;
+        position: relative;
+        margin-top: 2px;
+        margin-left: 30px;
+        margin-bottom: 25px;
+        transition: 0.5s;
+    }
+    .lS2M{
+        background-color: white;
+        height: 4px;
+        width: 30px;
+        position: relative;
+        margin-top: 2px;
+        margin-left: 30px;
+        margin-bottom: 25px;
+        transition: 0.5s;
+    }
+    .lS3M{
+        background-color: white;
+        height: 4px;
+        width: 30px;
+        position: relative;
+        margin-top: 2px;
+        margin-left: 30px;
+        margin-bottom: 25px;
+    }
+    .lS4M{
+        background-color: white;
+        height: 4px;
+        width: 30px;
+        position: relative;
+        margin-top: 2px;
+        margin-left: 30px;
+        margin-bottom: 25px;
     }
     #scrittaMenu1Id{
         display: none;

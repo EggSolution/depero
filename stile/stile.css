@@ -38,6 +38,7 @@ html,body{
 }
 .menuMobile{
     position: absolute;
+    opacity: 0;
 }
 .scritteMenu{
     margin-top: 200px;

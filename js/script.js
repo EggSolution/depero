@@ -217,27 +217,33 @@ window.onload = function(){
     // MOBILE
     if(window.screen.availWidth < 800){
         document.querySelector('.scritteMenu').style.marginTop = '0px';
+        // menu
+        var menu = document.querySelector('.hamburgerMenu');
+        var meet1 = document.querySelector('.meet1');
+        var meet2 = document.querySelector('.meet2');
+        var meet3 = document.querySelector('.meet3');
+        var menuEsteso = document.querySelector('.menuMobile');
+        var logo = document.querySelector('.logo');
+        menuEsteso.style.opacity = "0";
+        meet1.style.backgroundColor = "#242424";
+        meet2.style.backgroundColor = "#242424";
+        meet3.style.backgroundColor = "#242424";
+        menu.addEventListener('click', function(){
+            if(menuEsteso.style.opacity === "1"){
+                menuEsteso.style.opacity = "0";
+                meet1.style.backgroundColor = "#242424";
+                meet2.style.backgroundColor = "#242424";
+                meet3.style.backgroundColor = "#242424";
+                logo.style.color = "#242424";
+            }else if(menuEsteso.style.opacity === "0"){
+                menuEsteso.style.opacity = "1";
+                meet1.style.backgroundColor = "#FFFFFF";
+                meet2.style.backgroundColor = "#FFFFFF";
+                meet3.style.backgroundColor = "#FFFFFF";
+                logo.style.color = "#FFFFFF";
+            }else{
+                alert('error 4: l event listener che aspetta il click del menu mobile non funziona');
+            }
+        });
     }
-    // menu
-    var menu = document.querySelector('.hamburgerMenu');
-    var meet1 = document.querySelector('.meet1');
-    var meet2 = document.querySelector('.meet2');
-    var meet3 = document.querySelector('.meet3');
-    var menuEsteso = document.querySelector('.menuMobile');
-    menuEsteso.style.display = "none";
-    menu.addEventListener('click', function(){
-        if(menuEsteso.style.display == "none"){
-            menuEsteso.style.display = "block";
-            meet1.style.backgroundColor = "white";
-            meet2.style.backgroundColor = "white";
-            meet3.style.backgroundColor = "white";
-        }else if(menuEsteso.style.display == "block"){
-            menuEsteso.style.display = "none";
-            meet1.style.backgroundColor = "#242424";
-            meet2.style.backgroundColor = "#242424";
-            meet3.style.backgroundColor = "#242424";
-        }else{
-            alert('error 4: l event listener che aspetta il click del menu mobile non funziona');
-        }
-    });
 };
