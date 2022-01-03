@@ -36,6 +36,9 @@ html,body{
     display: flex;
     flex-direction: column;
 }
+.menuMobile{
+    position: absolute;
+}
 .scritteMenu{
     margin-top: 200px;
     position: absolute;

@@ -198,13 +198,13 @@ window.onload = function(){
         }
     }
     setInterval(cambioAutomatico, tempo);
-    document.querySelector(".bottoneSlide1").addEventListener("click", function (){
+    document.querySelector(".bottoneSlide1").addEventListener("click", function(){
         window.cambioSlide('uno')
     });
-    document.querySelector(".bottoneSlide2").addEventListener("click", function (){
+    document.querySelector(".bottoneSlide2").addEventListener("click", function(){
         window.cambioSlide('due')
     });
-    document.querySelector(".bottoneSlide3").addEventListener("click", function (){
+    document.querySelector(".bottoneSlide3").addEventListener("click", function(){
         window.cambioSlide('tre')
     });
     var i = 0;
@@ -218,4 +218,26 @@ window.onload = function(){
     if(window.screen.availWidth < 800){
         document.querySelector('.scritteMenu').style.marginTop = '0px';
     }
+    // menu
+    var menu = document.querySelector('.hamburgerMenu');
+    var meet1 = document.querySelector('.meet1');
+    var meet2 = document.querySelector('.meet2');
+    var meet3 = document.querySelector('.meet3');
+    var menuEsteso = document.querySelector('.menuMobile');
+    menuEsteso.style.display = "none";
+    menu.addEventListener('click', function(){
+        if(menuEsteso.style.display == "none"){
+            menuEsteso.style.display = "block";
+            meet1.style.backgroundColor = "white";
+            meet2.style.backgroundColor = "white";
+            meet3.style.backgroundColor = "white";
+        }else if(menuEsteso.style.display == "block"){
+            menuEsteso.style.display = "none";
+            meet1.style.backgroundColor = "#242424";
+            meet2.style.backgroundColor = "#242424";
+            meet3.style.backgroundColor = "#242424";
+        }else{
+            alert('error 4: l event listener che aspetta il click del menu mobile non funziona');
+        }
+    });
 };
