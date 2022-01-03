@@ -228,7 +228,7 @@ window.onload = function(){
         meet1.style.backgroundColor = "#242424";
         meet2.style.backgroundColor = "#242424";
         meet3.style.backgroundColor = "#242424";
-        menu.addEventListener('click', function(){
+        function menuCliccato(){
             if(menuEsteso.style.opacity === "1"){
                 menuEsteso.style.opacity = "0";
                 meet1.style.backgroundColor = "#242424";
@@ -244,6 +244,9 @@ window.onload = function(){
             }else{
                 alert('error 4: l event listener che aspetta il click del menu mobile non funziona');
             }
+        }
+        menu.addEventListener('click', function(){
+            menuCliccato()
         });
     }
 };
