@@ -8,6 +8,9 @@ window.onload = function(){
     var Nbottoni;
     window.Nbottoni = 0;
     var x, y, x1, y1;
+    var bottoniQuadri0 = document.createElement("div");
+    bottoniQuadri0.textContent = "";
+    bottoniQuadri0.className = "bottoniQuadri0";
     function bottoneQuadro(x1, y1, colore, apparteneza, titolo, testo){
         window.Nbottoni += 1;
         x1 = (x1 * window.innerHeight) / 955;
@@ -31,16 +34,17 @@ window.onload = function(){
                 default:
                     allert('error 3: la funzione non è stata chiamata con un parametro adeguata');
             }
+            eval('document.querySelector(".sfondo-scorri").appendChild(bottoniQuadri0);');
             eval('var bottoniQuadri'+window.Nbottoni+' = document.createElement("div");');
             eval('bottoniQuadri'+window.Nbottoni+'.textContent = "";');
-            eval('document.querySelector(".sfondo-scorri").appendChild(bottoniQuadri'+window.Nbottoni+');');
+            eval('document.querySelector(".bottoniQuadri0").appendChild(bottoniQuadri'+window.Nbottoni+');');
             eval('bottoniQuadri'+window.Nbottoni+'.className = "bottoneQuadro'+window.Nbottoni+'";');
             eval('bottone'+window.Nbottoni+' = document.createElement("div");');
             eval('bottone'+window.Nbottoni+'.textContent = "";');
             eval('document.querySelector(".bottoneQuadro'+window.Nbottoni+'").appendChild(bottone'+window.Nbottoni+');');
             eval('var vignetta'+window.Nbottoni+' = document.createElement("div");');
             eval('vignetta'+window.Nbottoni+'.textContent = "";');
-            eval('document.querySelector(".sfondo-scorri").appendChild(vignetta'+window.Nbottoni+');');
+            eval('document.querySelector(".bottoniQuadri0").appendChild(vignetta'+window.Nbottoni+');');
             eval('vignetta'+window.Nbottoni+'.className = "vignetta'+window.Nbottoni+'";');
             eval('var titoloVignetta'+window.Nbottoni+' = document.createElement("div");');
             eval('titoloVignetta'+window.Nbottoni+'.textContent = "'+titolo+'";');
@@ -161,21 +165,18 @@ window.onload = function(){
                 img.style.transform = String("translate(-"+incrementazione+"%)");
                 incrementazione = 0;
                 posizione = 0;
-                console.log("ciao1");
                 break;
             case "due":
                 incrementazione = 100/3;
                 img.style.transform = String("translate(-"+incrementazione+"%)");
                 incrementazione = 0;
                 posizione = 1;
-                console.log("ciao2");
                 break;
             case "tre":
                 incrementazione = (100/3)*2;
                 img.style.transform = String("translate(-"+incrementazione+"%)");
                 incrementazione = 0;
                 posizione = 2;
-                console.log("ciao3");
                 break;
             default:
                 alert("error 1: la funzione cambioSlide non funziona correttamente");
@@ -213,4 +214,8 @@ window.onload = function(){
         eval('bottone'+i+'.addEventListener("mouseout", nascondiVignetta'+i+');');
     }
 
+    // MOBILE
+    if(window.screen.availWidth < 800){
+        document.querySelector('.scritteMenu').style.marginTop = '0px';
+    }
 };
