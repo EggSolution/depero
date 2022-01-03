@@ -1,3 +1,177 @@
+/* BERTA */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&family=Yantramanav:wght@100;300&display=swap');
+:root{
+    --coloreHome: white;
+}
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+html,body{ 
+    height: 100%;
+    scroll-behavior: smooth;
+}
+.incopatibile{
+    color: transparent;
+    position: absolute;
+
+}
+.corpo{
+    width: 100%;
+	background: black;
+    overflow-X: hidden;
+}
+.home{
+	height: 100%;
+	width: 100%;
+	position: relative;
+    background-color: transparent;
+	top: 0;
+	left: 0;
+    display: flex;
+    flex-direction: column;
+}
+.scritteMenu{
+    margin-top: 200px;
+    position: absolute;
+    margin-left: 30px;
+    height: 500px;
+    width: 300px;
+    z-index: 2;
+}
+.logo{
+	font-family: 'Lobster', cursive;
+    color: var(--coloreHome);
+    font-size: 60px;
+    margin-bottom: 100px;
+    margin-left: 30px;
+}
+.home a{
+    position: relative;
+    color: var(--coloreHome);
+    left: 10px;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+#lineaSotto{
+    background-color: var(--coloreHome);
+    height: 4px;
+    width: 30px;
+    position: relative;
+    margin-top: 2px;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    transition: 0.5s;
+}
+#scrittaMenu1Id:hover + #lineaSotto{
+    width: 200px;
+}
+#scrittaMenu2Id:hover + #lineaSotto{
+    width: 85px;
+}
+#scrittaMenu3Id:hover + #lineaSotto{
+    width: 80px;
+}
+#scrittaMenu4Id:hover + #lineaSotto{
+    width: 190px;
+}
+.sfondo-scorri{
+    width: 300%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    transition: 1.5s;
+    z-index: 1;
+    position: absolute;
+}
+.sfondo1{
+    height: 100%;
+    width: 100%;
+    background-image: url('../../img/home/futuristaHome.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sfondo2{
+    height: 100%;
+    width: 100%;
+    background-image: url('../../img/home/pubblicitaHome.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sfondo3{
+    height: 100%;
+    width: 100%;
+    background-image: url('../../img/home/bohHome.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bottoniSlide{
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    top: calc(100% - 60px);
+    z-index: 2;
+}
+.bottoniSlide button{
+    border: solid 0;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-left: 6px;
+    margin-right: 6px;
+    background: rgb(36, 36, 36);
+}
+.bottoniSlide button:hover{
+    border: solid 0;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-left: 6px;
+    margin-right: 6px;
+    background-color: #525252;
+}
+footer{
+    height: 80px;
+    width: 100%;
+    position: relative;
+    background: rgb(36, 36, 36);
+    display: flex;
+    align-items: center;
+}
+footer a{
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: light;
+    font-size: 20px;
+    margin-left: 20px;
+    color: rgb(218, 218, 218);
+}
+.immagineLogo{
+    height: 36px;
+    margin-left: 10px;
+    z-index: 2; 
+}
+.copyright{
+    right: 15px;
+    position: absolute;
+}
+
+/* MAGLIO */
+
+
 *{
     padding: 0px;
     margin: 0px;
@@ -261,4 +435,18 @@
     margin: 20px;
     font-size: 20px;
     color: white;
+}
+
+
+/* MODENA */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.viaggi{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #363535;
 }

@@ -22,11 +22,11 @@ window.onload = function(){
                     break;
                 case "sfondo2":
                     var x = x1;
-                    var y = y1 + screen.width;
+                    var y = y1 + (window.innerWidth);
                     break;
                 case "sfondo3":
                     var x = x1;
-                    var y = y1 + screen.width * 2;
+                    var y = y1 + (window.innerWidth) * 2;
                     break;
                 default:
                     allert('error 3: la funzione non è stata chiamata con un parametro adeguata');
