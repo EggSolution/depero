@@ -1,8 +1,11 @@
-link:
+>Link sito:
+>[Depero](https://eggs-enterprise.github.io/depero/)
 
-# https://eggs-enterprise.github.io/depero/
+<br/>
 
-Lista errori debug:
-    - error 1: la funzione cambio slide non funziona correttamente
-    - error 2: la funzione cambio automatico non funziona correttamente
-    - error 3: la funzione bottone quadro non è stata chiamata con una classe adeguata
+>Lista errori debug:
+>|N.|Descrizione|File|
+>|:--|:-----------|:----|
+>|1|la funzione cambio slide non funziona correttamente|js/script.js|
+>|2|la funzione cambio automatico non funziona correttamente|js/script.js|
+>|3|la funzione bottone quadro non è stata chiamata con una classe adeguata|js/script.js|
