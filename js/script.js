@@ -200,6 +200,7 @@ window.onload = function(){
     setInterval(cambioAutomatico, tempo);
     document.querySelector(".bottoneSlide1").addEventListener("click", function(){
         window.cambioSlide('uno')
+        console.log("ciao");
     });
     document.querySelector(".bottoneSlide2").addEventListener("click", function(){
         window.cambioSlide('due')
@@ -218,12 +219,16 @@ window.onload = function(){
     if(window.screen.availWidth < 800){
         document.querySelector('.scritteMenu').style.marginTop = '0px';
         // menu
+        var corpo = document.querySelector('body');
         var menu = document.querySelector('.hamburgerMenu');
         var meet1 = document.querySelector('.meet1');
         var meet2 = document.querySelector('.meet2');
         var meet3 = document.querySelector('.meet3');
         var menuEsteso = document.querySelector('.menuMobile');
         var logo = document.querySelector('.logo');
+        var bottoneSlide1 = document.querySelector('.bottoneSlide1');
+        var bottoneSlide2 = document.querySelector('.bottoneSlide2');
+        var bottoneSlide3 = document.querySelector('.bottoneSlide3');
         menuEsteso.style.opacity = "0";
         meet1.style.backgroundColor = "#242424";
         meet2.style.backgroundColor = "#242424";
@@ -235,18 +240,34 @@ window.onload = function(){
                 meet2.style.backgroundColor = "#242424";
                 meet3.style.backgroundColor = "#242424";
                 logo.style.color = "#242424";
+                menuEsteso.style.zIndex = "1";
             }else if(menuEsteso.style.opacity === "0"){
                 menuEsteso.style.opacity = "1";
                 meet1.style.backgroundColor = "#FFFFFF";
                 meet2.style.backgroundColor = "#FFFFFF";
                 meet3.style.backgroundColor = "#FFFFFF";
                 logo.style.color = "#FFFFFF";
+                menuEsteso.style.zIndex = "4";
             }else{
                 alert('error 4: l event listener che aspetta il click del menu mobile non funziona');
             }
         }
+        function printScrollCoord(){
+            var gianni = corpo.scrollHeight - corpo.clientHeight;
+            console.log(gianni);
+        }
         menu.addEventListener('click', function(){
             menuCliccato()
         });
+        bottoneSlide1.addEventListener("click", function(){
+            window.cambioSlide('uno')
+        });
+        bottoneSlide2.addEventListener("click", function(){
+            window.cambioSlide('due')
+        });
+        bottoneSlide3.addEventListener("click", function(){
+            window.cambioSlide('tre')
+        });
+        setInterval(printScrollCoord(), 1000);
     }
 };

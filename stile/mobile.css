@@ -45,7 +45,7 @@
         flex-direction: column;
         height: 40px;
         width: 40px;
-        z-index: 5;
+        z-index: 6;
     }
     .meet1,.meet2,.meet3{
         border-radius: 10px;
@@ -60,14 +60,14 @@
         width: 100%;
         background-color: black;
         z-index: 4;
-        transition: opacity 0.5s;
+        transition: opacity 0.2s;
     }
     .menuMobileScritte{
         margin-top: 240px;
         position: absolute;
         margin-left: 10px;
-        height: 500px;
-        width: 300px;
+        height: 300px;
+        width: 260px;
     }
     .scrittaMenu1M{
         position: relative;
@@ -152,7 +152,7 @@
         display: none;
     }
 }
-  
+
 /* cellulare orizzontale */
 @media screen and (max-device-width: 640px) and (orientation: landscape){
     .compatibile {
