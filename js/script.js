@@ -252,9 +252,12 @@ window.onload = function(){
                 alert('error 4: l event listener che aspetta il click del menu mobile non funziona');
             }
         }
-        function printScrollCoord(){
-            var gianni = corpo.scrollHeight - corpo.clientHeight;
-            console.log(gianni);
+        function hideMenu(){
+            if(corpo.scrollTop >= 760){
+                if(menuEsteso.style.opacity === "1"){
+                    menuCliccato()
+                }
+            }
         }
         menu.addEventListener('click', function(){
             menuCliccato()
@@ -268,6 +271,6 @@ window.onload = function(){
         bottoneSlide3.addEventListener("click", function(){
             window.cambioSlide('tre')
         });
-        setInterval(printScrollCoord(), 1000);
+        setInterval(hideMenu, 500);
     }
 };
