@@ -151,6 +151,21 @@
     #lineaSotto{
         display: none;
     }
+    footer {
+        height: 40px;
+    }
+    footer a{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .immagineLogo{
+        height: 18px;
+        margin-left: 5px;
+    }
+    .copyright{
+        right: 10px;
+        position: absolute;
+    }
 }
 
 /* cellulare orizzontale */
