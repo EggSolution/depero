@@ -136,20 +136,45 @@
         margin-left: 30px;
         margin-bottom: 25px;
     }
-    #scrittaMenu1Id{
-        display: none;
-    }
-    #scrittaMenu2Id{
-        display: none;
-    }
-    #scrittaMenu3Id{
-        display: none;
-    }
-    #scrittaMenu4Id{
-        display: none;
-    }
+    #scrittaMenu1Id,
+    #scrittaMenu2Id,
+    #scrittaMenu3Id,
+    #scrittaMenu4Id,
+    #scrittaMenu4Id,
     #lineaSotto{
         display: none;
+    }
+    .scritteP-sopra{
+        position: relative;
+    }
+    .scritteP-sotto{
+        position: relative;
+    }
+    .sopra-p,
+    .sotto-p{
+        flex-direction: column;
+        position: relative;
+    }
+    .sopra_sinistra-p,
+    .sopra_destra-p,
+    .sopra_destra-p,
+    .sotto_sinistra-p,
+    .sotto_destra-p{
+        width: 100%;
+    }
+    .sopra_sinistra-p{
+        position: relative;
+    }
+    .spazioVideo{
+        height: auto;
+    }
+    .videoPersone{
+        position: relative;
+        width: calc(100% - 40px);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        height: auto;
     }
     footer {
         height: 40px;

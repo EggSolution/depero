@@ -103,7 +103,7 @@ html,body{
 .sfondo1{
     height: 100%;
     width: 100%;
-    background-image: url('../img/home/futuristaHome.jpeg');
+    background-image: url('../media/img/home/futuristaHome.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,7 +111,7 @@ html,body{
 .sfondo2{
     height: 100%;
     width: 100%;
-    background-image: url('../img/home/pubblicitaHome.jpeg');
+    background-image: url('../media/img/home/pubblicitaHome.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,7 +119,7 @@ html,body{
 .sfondo3{
     height: 100%;
     width: 100%;
-    background-image: url('../img/home/bohHome.jpeg');
+    background-image: url('../media/img/home/bohHome.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -228,14 +228,9 @@ footer a{
     display: flex;
     flex-direction: row;
 }
-.sopra_sinistra-p {
-    width: 60%;
-    height :100%;
-    position: relative;
-}
 .sopra_destra-p {
     width: 40%;
-    height :100%;
+    height: 100%;
     position: relative;
 }
 .depero_persona{
@@ -247,12 +242,12 @@ footer a{
 }
 .sotto_sinistra-p{
     width: 40%;
-    height :100%;
+    height: 100%;
     position: relative;
 }
 .sotto_destra-p{
     width: 60%;
-    height :100%;
+    height: 100%;
     position: relative;
 }
 .sopra-p a{
@@ -309,15 +304,11 @@ footer a{
     left: 20%;
 }
 .imgDeperoP1{
-    height: 110%;
-    width: 80%;
-
+    height: 90%;
 }
 .imgDeperoP2{
     height: 80%;
-    width: 80%;
     margin-left: 40px;
-    transform:translate( 0px,-140px)
 }
 /*Storia*/
 .storia{
