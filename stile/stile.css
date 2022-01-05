@@ -176,27 +176,14 @@ footer a{
     position: absolute;
 }
 
+
 /* MAGLIO */
 
-
-*{
-    padding: 0px;
-    margin: 0px;
-}
 .spazioVideo{
     height: 60%;
     width:100%;
     background-color: rgb(51, 48, 48);
     position: relative;
-}
-.sfondoVideo{
-    height: 65%;
-    width: 65%;
-    position: relative;
-    background-color: rgb(107, 106, 106);
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
 }
 /*personaggio*/
 .personaggio{
@@ -287,21 +274,15 @@ footer a{
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
     color: white;
-    position: absolute;
+    position: relative;
     margin-left: 20px;
-    transform: translate(-15%,0);
-    top: 40%;
-    left: 20%;
 }
 .scritteP-sotto{
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
     color: white;
-    position: absolute;
+    position: relative;
     margin-left: 20px;
-    transform: translate(-50px,15px);
-    top: 40%;
-    left: 20%;
 }
 .imgDeperoP1{
     height: 90%;

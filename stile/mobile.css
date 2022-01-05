@@ -144,15 +144,22 @@
     #lineaSotto{
         display: none;
     }
-    .scritteP-sopra{
-        position: relative;
+    .personaggio{
+        height: auto;
     }
-    .scritteP-sotto{
-        position: relative;
+    .titoloTesto-sezione{
+        font-size: 30px;
     }
-    .sopra-p,
-    .sotto-p{
+    .titoloDiv-sezione{
+        width: 80px;
+        margin-top: 10px;
+    }
+    .sopra-p{
         flex-direction: column;
+        position: relative;
+    }
+    .sotto-p{
+        flex-direction: column-reverse;
         position: relative;
     }
     .sopra_sinistra-p,
@@ -160,13 +167,45 @@
     .sopra_destra-p,
     .sotto_sinistra-p,
     .sotto_destra-p{
-        width: 100%;
-    }
-    .sopra_sinistra-p{
+        width: calc(100% - 20px);
+        height: auto;
+        margin: 0;
         position: relative;
+        padding: 10px;
+        font-size: 8px;
+    }
+    .titolo-sezione{
+        height: 120px;
+    }
+    .titoloTesto-sezione{
+        height: 70px;
+    }
+    .scritteP-sopra{
+        margin: 0;
+        width: auto;
+        height: auto;
+        position: relative;
+    }
+    .scritteP-sopra a,
+    .scritteP-sotto a{
+        position: relative;
+        font-size: 16px;
+        line-height: normal;
+    }
+    .scritteP-sotto{
+        position: relative;
+        margin: 0;
     }
     .spazioVideo{
         height: auto;
+    }
+    .imgDeperoP2{
+        margin: 0;
+        position: relative;
+    }
+    .imgDeperoP1{
+        margin: 0;
+        position: relative;
     }
     .videoPersone{
         position: relative;
