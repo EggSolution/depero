@@ -327,12 +327,12 @@ footer a{
     flex-direction: row;
 }
 .sopraSinistra-s{
-    width: 50%;
+    width: 60%;
     height: 100%;
     position: relative;
 }
 .sopraDestra-s{
-    width: 50%;
+    width: 40%;
     height: 100%;
     position: relative;
 }
@@ -351,12 +351,12 @@ footer a{
     background-color: #6e6a6a;
 }
 .mezzoSinistra-s{
-    width: 50%;
+    width: 40%;
     height: 100%;
     position: relative;
 }
 .mezzoDestra-s{
-    width: 50%;
+    width: 60%;
     height: 100%;
     position: relative;
 }
@@ -375,12 +375,12 @@ footer a{
     flex-direction: row;
 }
 .sottoSinistra-s{
-    width: 50%;
+    width: 60%;
     height: 100%;
     position: relative;
 }
 .sottoDestra-s{
-    width: 50%;
+    width: 40%;
     height: 100%;
     position: relative;
 }
@@ -389,6 +389,38 @@ footer a{
     margin: 20px;
     font-size: 20px;
     color: white;
+}
+.scritteS-sopra{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    margin-left: 20px;
+}
+.scritteS-mezzoSopra{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    margin-right: 20px;
+}
+.separazione{
+    position: relative;
+    height: 30px;
+}
+.scritteS-mezzoSotto{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    margin-right: 20px;
+}
+.scritteS-sotto{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    margin-left: 20px;
 }
 /*tecniche*/
 .tecniche{
