@@ -103,7 +103,7 @@ html,body{
 .sfondo1{
     height: 100%;
     width: 100%;
-    background-image: url('../img/home/futuristaHome.jpeg');
+    background-image: url('../media/img/home/futuristaHome.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,7 +111,7 @@ html,body{
 .sfondo2{
     height: 100%;
     width: 100%;
-    background-image: url('../img/home/pubblicitaHome.jpeg');
+    background-image: url('../media/img/home/pubblicitaHome.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,7 +119,7 @@ html,body{
 .sfondo3{
     height: 100%;
     width: 100%;
-    background-image: url('../img/home/bohHome.jpeg');
+    background-image: url('../media/img/home/bohHome.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -564,7 +564,8 @@ footer a{
     height: 100%;
 }
 
-scritte_sopra-v{
+.scritte_sopra-v{
     font-family: 'Roboto', sans-serif;
     color: white;
+    margin: 40px;
 }
