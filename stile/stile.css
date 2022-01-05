@@ -456,8 +456,56 @@ footer a{
     margin: 0px;
 }
 .viaggi{
-    height: 100%;
+    height: 150%;
     width: 100%;
     position: relative;
     background-color: #363535;
+    display: flex;
+    flex-direction: column;
+}
+.sezioneFlex-v{
+    flex-direction: column;
+    display: flex;
+    height: 150%;
+    width: 100%;
+    position: relative;
+}
+
+.sopra-v{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.sopra_sinistra-v{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.sopra_destra-v{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.sotto-v{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.sotto_sinistra-v{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+scritte_sopra-v{
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
