@@ -316,7 +316,7 @@ footer a{
 }
 /*Storia*/
 .storia{
-    height: 190%;
+    height: 200%;
     width: 100%;
     position: relative;
     background-color: rgb(46, 46, 46);
@@ -325,7 +325,7 @@ footer a{
 }
 .sopra-s{
     width: 100%;
-    height: 165%;
+    height: 180%;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -337,10 +337,11 @@ footer a{
 }
 .scritteSopraSinistra-s{
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 20px;
     color: white;
     position: absolute;
-    margin-left: 20px;
+    margin: 25px;
+    margin-top: 50px;
 }
 .sopraDestra-s{
     width: 40%;
@@ -348,14 +349,7 @@ footer a{
     position: relative;
 }
 .quadroCampari-s{
-    height: 80%;
     width: 80%;
-}
-.sopra-s a{
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
-    font-size: 20px;
-    color: white;
 }
 .mezzo-s{
     width: 100%;
@@ -379,8 +373,8 @@ footer a{
     position: relative;
 }
 .quadroColoriFreddi-s{
-    height: 100%;
-    width: 80%;
+    width: 100%;
+    position: relative;
 }
 .mezzoSopraDestra-s{
     width: 50%;
@@ -392,7 +386,8 @@ footer a{
     font-size: 20px;
     color: white;
     position: absolute;
-    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 120px;
 }
 .mezzoSotto-s{
     width: 100%;
@@ -414,6 +409,7 @@ footer a{
     color: white;
     position: absolute;
     margin-left: 20px;
+    margin-top: 150px;
 }
 .mezzoSottoDestra-s{
     width: 50%;
@@ -422,13 +418,13 @@ footer a{
     background-color: rgb(46, 46, 46);
 }
 .manifestoFascista-s{
-    height: 80%;
-    width: 50%;
+    position: absolute;
+    height: 100%;
 }
 
 .sotto-s{
     width: 100%;
-    height: 120%;
+    height: 190%;
     position: relative;
     background-color: rgb(46, 46, 46);
     display: flex;
@@ -448,6 +444,7 @@ footer a{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: white;
+    position: relative;
 }
 /*tecniche*/
 .tecniche{
