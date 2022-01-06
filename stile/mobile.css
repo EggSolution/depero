@@ -182,19 +182,27 @@
     }
     .scritteP-sopra{
         margin: 0;
-        width: auto;
+        width: calc(100% - 40px);
         height: auto;
         position: relative;
+        margin-left: 20px;
+        top: 0;
+        left: 0;
     }
     .scritteP-sotto{
-        position: relative;
         margin: 0;
+        width: calc(100% - 40px);
+        height: auto;
+        position: relative;
+        margin-left: 20px;
+        top: 0;
+        left: 0;
     }
     .scritteP-sopra a,
     .scritteP-sotto a{
         position: relative;
         font-size: 16px;
-        line-height: normal;
+        line-height: 5px;
     }
     .spazioVideo{
         height: auto;
@@ -202,10 +210,14 @@
     .imgDeperoP2{
         margin: 0;
         position: relative;
+        width: calc(100% - 40px);
+        margin-left: 20px;
     }
     .imgDeperoP1{
         margin: 0;
         position: relative;
+        width: calc(100% - 40px);
+        margin-left: 20px;
     }
     .videoPersone{
         position: relative;
