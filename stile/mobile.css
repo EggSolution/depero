@@ -154,6 +154,9 @@
         width: 80px;
         margin-top: 10px;
     }
+    .titolo-sezione{
+        height: 150px;
+    }
     .sopra-p{
         flex-direction: column;
         position: relative;
@@ -164,7 +167,6 @@
     }
     .sopra_sinistra-p,
     .sopra_destra-p,
-    .sopra_destra-p,
     .sotto_sinistra-p,
     .sotto_destra-p{
         width: calc(100% - 20px);
@@ -173,9 +175,11 @@
         position: relative;
         padding: 10px;
         font-size: 8px;
+        margin-bottom: 40px;
     }
-    .titolo-sezione{
-        height: 120px;
+    .sotto_destra-p,
+    .sotto_sinistra-p{
+        display: block;
     }
     .titoloTesto-sezione{
         height: 70px;
@@ -212,6 +216,7 @@
         position: relative;
         width: calc(100% - 40px);
         margin-left: 20px;
+        height: auto;
     }
     .imgDeperoP1{
         margin: 0;
