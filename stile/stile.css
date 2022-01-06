@@ -325,7 +325,7 @@ footer a{
 }
 .sopra-s{
     width: 100%;
-    height: 180%;
+    height: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -350,6 +350,8 @@ footer a{
 }
 .quadroCampari-s{
     width: 80%;
+    margin-top: 30px;
+    margin-left: 20px;
 }
 .mezzo-s{
     width: 100%;
@@ -373,8 +375,9 @@ footer a{
     position: relative;
 }
 .quadroColoriFreddi-s{
-    width: 100%;
+    height: 100%;
     position: relative;
+    margin-left: 50px;
 }
 .mezzoSopraDestra-s{
     width: 50%;
@@ -424,7 +427,7 @@ footer a{
 
 .sotto-s{
     width: 100%;
-    height: 190%;
+    height: 100%;
     position: relative;
     background-color: rgb(46, 46, 46);
     display: flex;
@@ -444,7 +447,10 @@ footer a{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: white;
-    position: relative;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-right: 50px;
 }
 /*tecniche*/
 .tecniche{
