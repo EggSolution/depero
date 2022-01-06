@@ -341,9 +341,6 @@ footer a{
     color: white;
     position: absolute;
     margin-left: 20px;
-    transform: translate(-20%,-80%);
-    top: 50%;
-    left: 20%;
 }
 .sopraDestra-s{
     width: 40%;
@@ -353,7 +350,6 @@ footer a{
 .quadroCampari-s{
     height: 80%;
     width: 80%;
-    transform: translate(-20%,0%);
 }
 .sopra-s a{
     font-family: 'Roboto', sans-serif;
@@ -385,7 +381,6 @@ footer a{
 .quadroColoriFreddi-s{
     height: 100%;
     width: 80%;
-    transform: translate(30%,10%);
 }
 .mezzoSopraDestra-s{
     width: 50%;
@@ -398,8 +393,6 @@ footer a{
     color: white;
     position: absolute;
     margin-left: 20px;
-    top: 50%;
-    left: 20%;
 }
 .mezzoSotto-s{
     width: 100%;
@@ -421,8 +414,6 @@ footer a{
     color: white;
     position: absolute;
     margin-left: 20px;
-    top: 50%;
-    left: 20%;
 }
 .mezzoSottoDestra-s{
     width: 50%;
@@ -433,7 +424,6 @@ footer a{
 .manifestoFascista-s{
     height: 80%;
     width: 50%;
-    transform: translate(60%,10%);
 }
 
 .sotto-s{
@@ -458,7 +448,6 @@ footer a{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: white;
-    transform: translate(50%,0%)
 }
 /*tecniche*/
 .tecniche{

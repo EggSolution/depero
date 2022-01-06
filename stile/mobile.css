@@ -7,6 +7,8 @@
         height: 100%;
         width: 100%;
     }
+
+    /* HOME */
     .home{
         height: 100%;
         width: 100%;
@@ -144,6 +146,8 @@
     #lineaSotto{
         display: none;
     }
+
+    /* PERSONAGGIO */
     .personaggio{
         height: auto;
     }
@@ -184,15 +188,7 @@
     .titoloTesto-sezione{
         height: 70px;
     }
-    .scritteP-sopra{
-        margin: 0;
-        width: calc(100% - 40px);
-        height: auto;
-        position: relative;
-        margin-left: 20px;
-        top: 0;
-        left: 0;
-    }
+    .scritteP-sopra,
     .scritteP-sotto{
         margin: 0;
         width: calc(100% - 40px);
@@ -211,18 +207,13 @@
     .spazioVideo{
         height: auto;
     }
-    .imgDeperoP2{
-        margin: 0;
-        position: relative;
-        width: calc(100% - 40px);
-        margin-left: 20px;
-        height: auto;
-    }
+    .imgDeperoP2,
     .imgDeperoP1{
         margin: 0;
         position: relative;
         width: calc(100% - 40px);
         margin-left: 20px;
+        height: auto;
     }
     .videoPersone{
         position: relative;
@@ -230,6 +221,89 @@
         padding-bottom: 20px;
         height: auto;
     }
+
+    /* STORIA */
+    .storia{
+        height: auto;
+    }
+    .sopra-s{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .mezzo-s{
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .mezzoSotto-s{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .sotto-s{
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .sopraSinistra-s,
+    .mezzoSopraDestra-s,
+    .mezzoSottoSinistra-s,
+    .sottoDestra-s{
+        width: calc(100% - 60px);
+        height: auto;
+        margin: 0;
+        position: relative;
+        padding: 10px;
+        font-size: 8px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        top: 0;
+        left: 0;
+    }
+    .sopraDestra-s,
+    .mezzoSopraSinistra-s,
+    .mezzoSottoDestra-s,
+    .sottoSinistra-s{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        position: relative;
+        margin-bottom: 40px;
+        top: 0;
+        left: 0;
+    }
+    .titoloTesto-sezione{
+        height: 70px;
+    }
+    .sopraSinistra-s a,
+    .sopraDestra-s a,
+    .mezzoSopraSinistra-s a,
+    .mezzoSopraDestra-s a,
+    .mezzoSottoSinistra-s a,
+    .mezzoSottoDestra-s a,
+    .sottoSinistra-s a,
+    .sottoDestra-s a{
+        margin: 0;
+        position: relative;
+        font-size: 16px;
+        line-height: 50px;
+    }
+    .quadroCampari-s,
+    .quadroColoriFreddi-s,
+    .manifestoFascista-s{
+        margin: 0;
+        position: relative;
+        width: calc(100% - 60px);
+        margin-left: 30px;
+        height: auto;
+    }
+    .mezzoSopra-s{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* FOOTER */
     footer {
         height: 40px;
     }
