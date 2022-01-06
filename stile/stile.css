@@ -314,6 +314,12 @@ footer a{
     width: 80%;
     margin-left: 40px;
 }
+/*bottoni mobile nascosti*/
+.vediAltroP,
+.vediAltroS{
+    position: absolute;
+    display: none;
+}
 /*Storia*/
 .storia{
     height: 190%;

@@ -147,6 +147,24 @@
         display: none;
     }
 
+    /* BOTTONI 'Leggi altro' */
+    .vediAltroP,
+    .vediAltroS{
+        display: block;
+        position: relative;
+        margin-left: calc(50% - 110px/2);
+        height: 50px;
+        width: 110px;
+        border-radius: 0;
+        border: solid 4px rgb(122, 122, 122);
+        color: rgb(122, 122, 122);
+        background-color: #2e2e2e;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
     /* PERSONAGGIO */
     .personaggio{
         height: auto;
