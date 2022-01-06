@@ -316,7 +316,7 @@ footer a{
 }
 /*Storia*/
 .storia{
-    height: 150%;
+    height: 190%;
     width: 100%;
     position: relative;
     background-color: rgb(46, 46, 46);
@@ -325,7 +325,7 @@ footer a{
 }
 .sopra-s{
     width: 100%;
-    height: 100%;
+    height: 165%;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -335,18 +335,25 @@ footer a{
     height: 100%;
     position: relative;
 }
+.scritteSopraSinistra-s{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    margin-left: 20px;
+    transform: translate(-20%,-80%);
+    top: 50%;
+    left: 20%;
+}
 .sopraDestra-s{
     width: 40%;
     height: 100%;
     position: relative;
 }
 .quadroCampari-s{
-    height: 100%;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    z-index: 6;
+    height: 80%;
+    width: 80%;
+    transform: translate(-20%,0%);
 }
 .sopra-s a{
     font-family: 'Roboto', sans-serif;
@@ -356,7 +363,7 @@ footer a{
 }
 .mezzo-s{
     width: 100%;
-    height: 150%;
+    height: 200%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -374,17 +381,20 @@ footer a{
     width: 50%;
     height: 100%;
     position: relative;
-    background-color: rgb(46, 46, 46);
+}
+.quadroColoriFreddi-s{
+    height: 100%;
+    width: 80%;
+    transform: translate(30%,10%);
 }
 .mezzoSopraDestra-s{
     width: 50%;
     height: 100%;
     position: relative;
-    background-color: rgb(46, 46, 46);
 }
 .scritteMezzoSopraDestra-s{
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 20px;
     color: white;
     position: absolute;
     margin-left: 20px;
@@ -407,7 +417,7 @@ footer a{
 }
 .scritteMezzoSottoSinistra-s{
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 20px;
     color: white;
     position: absolute;
     margin-left: 20px;
@@ -420,14 +430,15 @@ footer a{
     position: relative;
     background-color: rgb(46, 46, 46);
 }
-.mezzo-s a{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: white;
+.manifestoFascista-s{
+    height: 80%;
+    width: 50%;
+    transform: translate(60%,10%);
 }
+
 .sotto-s{
     width: 100%;
-    height: 100%;
+    height: 120%;
     position: relative;
     background-color: rgb(46, 46, 46);
     display: flex;
@@ -445,28 +456,9 @@ footer a{
 }
 .scritteSottoDestra-s{
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    color: white;
-    position: absolute;
-    margin-left: 20px;
-    top: 50%;
-    left: 20%;
-}
-.sotto-s a{
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
     font-size: 20px;
     color: white;
-}
-.scritteS-sopra{
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    color: white;
-    position: absolute;
-    margin-left: 20px;
-    transform: translate(-20%,-50%);
-    top: 50%;
-    left: 20%;
+    transform: translate(50%,0%)
 }
 /*tecniche*/
 .tecniche{
