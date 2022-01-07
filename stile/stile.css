@@ -219,29 +219,38 @@ footer a{
     display: flex;
     flex-direction: row;
 }
-.sotto-p{
-    height: 50%;
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
+.sopra-p a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
 }
 .sopra_sinistra-p {
     width: 60%;
     height :100%;
     position: relative;
 }
+.scritteP-sopra{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
 .sopra_destra-p {
     width: 40%;
     height :100%;
     position: relative;
 }
-.depero_persona{
+.imgDeperoP1{
+    height: 100%;
+}
+.sotto-p{
+    height: 50%;
+    width: 100%;
     position: relative;
-    z-index:1;
-    margin-left: 90px;
-    height: 90%;
-    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
 }
 .sotto_sinistra-p{
     width: 40%;
@@ -252,11 +261,6 @@ footer a{
     width: 60%;
     height :100%;
     position: relative;
-}
-.sopra-p a{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: white;
 }
 .sotto-p a{
     font-family: 'Roboto', sans-serif;
@@ -286,15 +290,6 @@ footer a{
     margin-top: 20px;
     top: 50px;
 }
-.scritteP-sopra{
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    color: white;
-    position: absolute;
-    margin-left: 20px;
-    top: 40%;
-    left: 20%;
-}
 .scritteP-sotto{
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
@@ -307,7 +302,6 @@ footer a{
 .imgDeperoP1{
     height: 110%;
     width: 80%;
-
 }
 .imgDeperoP2{
     height: 80%;
@@ -407,7 +401,7 @@ footer a{
     background-color: rgb(46, 46, 46);
 }
 .mezzoSottoSinistra-s{
-    width: 50%;
+    width: 60%;
     height: 100%;
     position: relative;
     background-color: rgb(46, 46, 46);
@@ -417,11 +411,11 @@ footer a{
     font-size: 20px;
     color: white;
     position: absolute;
-    margin-left: 20px;
+    margin-left: 50px;
     margin-top: 150px;
 }
 .mezzoSottoDestra-s{
-    width: 50%;
+    width: 40%;
     height: 100%;
     position: relative;
     background-color: rgb(46, 46, 46);
@@ -429,6 +423,7 @@ footer a{
 .manifestoFascista-s{
     position: absolute;
     height: 100%;
+    margin-left: 50px;
 }
 
 .sotto-s{
@@ -443,6 +438,11 @@ footer a{
     width: 40%;
     height: 100%;
     position: relative;
+}
+.quadroArteNucleare-s{
+    height: 90%;
+    margin-left: 45px;
+    margin-top: 15px;
 }
 .sottoDestra-s{
     width: 60%;
