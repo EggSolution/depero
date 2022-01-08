@@ -520,7 +520,7 @@ footer a{
     margin: 0px;
 }
 .viaggi{
-    height: 150%;
+    height: 100%;
     width: 100%;
     position: relative;
     background-color: rgb(46, 46, 46);
@@ -530,7 +530,7 @@ footer a{
 .sezioneFlex-v{
     flex-direction: column;
     display: flex;
-    height: 150%;
+    height: 100%;
     width: 100%;
     position: relative;
 }
@@ -571,6 +571,25 @@ footer a{
 
 .scritte_sopra-v{
     font-family: 'Roboto', sans-serif;
+    font-size: 20;
+    position: relative;
     color: white;
-    margin: 40px;
+    height: 100%;
+    width: 100%;
+}
+
+.titoletto_sopra-v{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+.testo_sopra-v{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
 }
