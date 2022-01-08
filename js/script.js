@@ -259,6 +259,41 @@ window.onload = function(){
                 }
             }
         }
+        //BOTTONI VEDI ALTRO
+        var parteSottoPersonaggio = document.querySelector('.sotto-p');
+        var bottoneVediAltroP = document.getElementById('vediAltroP');
+        var parteSottoStoria1 = document.querySelector('.mezzo-s');
+        var parteSottoStoria2 = document.querySelector('.sotto-s');
+        var bottoneVediAltroS = document.getElementById('vediAltroS');
+        parteSottoPersonaggio.style.display = 'none';
+        parteSottoStoria1.style.display = 'none';
+        parteSottoStoria2.style.display = 'none';
+        var text1 = document.getElementById("vediAltroP").innerHTML;
+        var text2 = document.getElementById("vediAltroS").innerHTML;
+        function vediAltroP(){
+            if(parteSottoPersonaggio.style.display == 'flex'){
+                parteSottoPersonaggio.style.display = 'none';
+                bottoneVediAltroP.innerHTML = text1.replace ('meno', 'altro');
+            }else if(parteSottoPersonaggio.style.display == 'none'){
+                parteSottoPersonaggio.style.display = 'flex';
+                bottoneVediAltroP.innerHTML = text1.replace ('altro', 'meno');
+            }else{
+                console.log('Error 5: la funzione vediAltroP non funziona correttamente')
+            }
+        }
+        function vediAltroS(){
+            if(parteSottoStoria1.style.display == 'flex'){
+                parteSottoStoria1.style.display = 'none';
+                parteSottoStoria2.style.display = 'none';
+                bottoneVediAltroS.innerHTML = text2.replace ('meno', 'altro');
+            }else if(parteSottoStoria1.style.display == 'none'){
+                parteSottoStoria1.style.display = 'flex';
+                parteSottoStoria2.style.display = 'flex';
+                bottoneVediAltroS.innerHTML = text2.replace ('altro', 'meno');
+            }else{
+                console.log('Error 6: la funzione vediAltroS non funziona correttamente')
+            }
+        }
         menu.addEventListener('click', function(){
             menuCliccato()
         });
@@ -271,6 +306,8 @@ window.onload = function(){
         bottoneSlide3.addEventListener("click", function(){
             window.cambioSlide('tre')
         });
+        bottoneVediAltroP.addEventListener("click", vediAltroP);
+        bottoneVediAltroS.addEventListener("click", vediAltroS);
         setInterval(hideMenu, 500);
     }
 };
