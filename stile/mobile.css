@@ -1,5 +1,5 @@
 /* cellulare dritto */
-@media screen and (max-device-width: 800px) and (orientation: portrait){
+@media screen and (max-device-width: 1000px) and (orientation: portrait){
     html,body {
       overflow-x: hidden;
     }
