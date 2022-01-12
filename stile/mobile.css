@@ -149,7 +149,8 @@
 
     /* BOTTONI 'Leggi altro' */
     .vediAltroP,
-    .vediAltroS{
+    .vediAltroS,
+    .vediAltroT{
         display: block;
         position: relative;
         margin-left: calc(50% - 110px/2);
@@ -187,27 +188,26 @@
         flex-direction: column-reverse;
         position: relative;
     }
-    .sopra_sinistra-p,
-    .sopra_destra-p,
-    .sotto_sinistra-p,
-    .sotto_destra-p{
+    .sopraSinistra-p,
+    .sopraDestra-p,
+    .sottoSinistra-p,
+    .sottoDestra-p{
         width: calc(100% - 20px);
         height: auto;
         margin: 0;
         position: relative;
         padding: 10px;
-        font-size: 8px;
         margin-bottom: 40px;
     }
-    .sotto_destra-p,
-    .sotto_sinistra-p{
+    .sottoDestra-p,
+    .sottoSinistra-p{
         display: block;
     }
     .titoloTesto-sezione{
         height: 70px;
     }
-    .scritteP-sopra,
-    .scritteP-sotto{
+    .sopraSinistra-p,
+    .sottoDestra-p{
         margin: 0;
         width: calc(100% - 40px);
         height: auto;
@@ -215,18 +215,22 @@
         margin-left: 20px;
         top: 0;
         left: 0;
+        margin-bottom: 30px;
     }
-    .scritteP-sopra a,
-    .scritteP-sotto a{
+    .sopraSinistra-p a,
+    .sottoDestra-p a{
         position: relative;
         font-size: 16px;
-        line-height: 5px;
+        line-height: 40px;
+        margin-left: 0;
+        margin-top: 0;
+        margin-right: 0;
     }
     .spazioVideo{
         height: auto;
     }
-    .imgDeperoP2,
-    .imgDeperoP1{
+    .immagineDepero2-p,
+    .immagineDepero1-p{
         margin: 0;
         position: relative;
         width: calc(100% - 40px);
@@ -239,6 +243,58 @@
         padding-bottom: 20px;
         height: auto;
     }
+
+    /* VIAGGI */
+    .titolo-sezione{
+        position: relative;
+    }
+    .titoltetto_sopra-v {
+        display: none;
+    }
+    .sopra-v {
+        flex-direction: column;
+        position: relative;
+    }
+    .sopra-v {
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .testo_sopra-v,
+    .sotto_destra-v {
+        margin: 0;
+        width: calc(100% - 40px);
+        height: auto;
+        position: relative;
+        margin-left: 20px;
+        top: 0;
+        left: 0;
+        margin-bottom: 30px;
+    }
+    .testo_sopra-v a,
+    .sotto_destra-v a {
+        position: relative;
+        font-size: 16px;
+        line-height: 40px;
+        margin-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .sopra_destra-v,
+    .sotto_sinistra-v {
+        display: block;
+    }
+    .sopra_sinistra-v,
+    .sopra_destra-v,
+    .sotto_sinistra-v,
+    .sotto_destra-v{
+        width: calc(100% - 20px);
+        height: auto;
+        margin: 0;
+        position: relative;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+
 
     /* STORIA */
     .storia{
@@ -305,11 +361,12 @@
         margin: 0;
         position: relative;
         font-size: 16px;
-        line-height: 50px;
+        line-height: 40px;
     }
     .quadroCampari-s,
     .quadroColoriFreddi-s,
-    .manifestoFascista-s{
+    .manifestoFascista-s,
+    .quadroArteNucleare-s{
         margin: 0;
         position: relative;
         width: calc(100% - 60px);
@@ -336,6 +393,68 @@
     .copyright{
         right: 10px;
         position: absolute;
+    }
+
+    /* TECNICHE */
+    .tecniche{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: auto;
+    }
+    .sezioneFlex {
+        height: auto;
+    }
+    .sopra-t {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .sotto-t {
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .sopraSinistra-t,
+    .sottoDestra-t{
+        width: calc(100% - 60px);
+        height: auto;
+        margin: 0;
+        position: relative;
+        padding: 10px;
+        font-size: 8px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        top: 0;
+        left: 0;
+    }
+    .sopraDestra-t,
+    .sottoSinistra-t{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        position: relative;
+        margin-bottom: 40px;
+        top: 0;
+        left: 0;
+    }
+    .sopraSinistra-t a,
+    .sottoDestra-t a {
+        margin: 0;
+        position: relative;
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .fotoTecniche1-t,
+    .fotoTecniche2-t {
+        margin: 0;
+        position: relative;
+        width: calc(100% - 60px);
+        margin-left: 30px;
+        height: auto;
+    }
+    .separatoreTecniche {
+        display: none;
     }
 }
 

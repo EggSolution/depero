@@ -265,9 +265,12 @@ window.onload = function(){
         var parteSottoStoria1 = document.querySelector('.mezzo-s');
         var parteSottoStoria2 = document.querySelector('.sotto-s');
         var bottoneVediAltroS = document.getElementById('vediAltroS');
+        var parteSottoTecniche = document.querySelector('.sotto-t');
+        var bottoneVediAltroT = document.querySelector('.vediAltroT');
         parteSottoPersonaggio.style.display = 'none';
         parteSottoStoria1.style.display = 'none';
         parteSottoStoria2.style.display = 'none';
+        parteSottoTecniche.style.display = 'none';
         var text1 = document.getElementById("vediAltroP").innerHTML;
         var text2 = document.getElementById("vediAltroS").innerHTML;
         function vediAltroP(){
@@ -294,6 +297,17 @@ window.onload = function(){
                 console.log('Error 6: la funzione vediAltroS non funziona correttamente')
             }
         }
+        function vediAltroT(){
+            if(parteSottoTecniche.style.display == 'flex'){
+                parteSottoTecniche.style.display = 'none';
+                bottoneVediAltroT.innerHTML = text2.replace ('meno', 'altro');
+            }else if(parteSottoTecniche.style.display == 'none'){
+                parteSottoTecniche.style.display = 'flex';
+                bottoneVediAltroT.innerHTML = text2.replace ('altro', 'meno');
+            }else{
+                console.log('Error 7: la funzione vediAltroT non funziona correttamente')
+            }
+        }
         menu.addEventListener('click', function(){
             menuCliccato()
         });
@@ -308,6 +322,7 @@ window.onload = function(){
         });
         bottoneVediAltroP.addEventListener("click", vediAltroP);
         bottoneVediAltroS.addEventListener("click", vediAltroS);
+        bottoneVediAltroT.addEventListener("click", vediAltroT);
         setInterval(hideMenu, 500);
     }
 };
