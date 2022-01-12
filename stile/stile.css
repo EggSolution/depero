@@ -196,73 +196,6 @@ footer a{
     margin-top: 30px;
     position: relative;
 }
-/*personaggio*/
-.personaggio{
-    height: 150%;
-    width: 100%;
-    position: relative;
-    background-color: rgb(46, 46, 46);
-    display: flex;
-    flex-direction: column;
-}
-.sezioneFlex {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.sopra-p{
-    height: 50%;
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-}
-.sotto-p{
-    height: 50%;
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-}
-.sopra_sinistra-p {
-    width: 60%;
-    height :100%;
-    position: relative;
-}
-.sopra_destra-p {
-    width: 40%;
-    height :100%;
-    position: relative;
-}
-.depero_persona{
-    position: relative;
-    z-index:1;
-    margin-left: 90px;
-    height: 90%;
-    margin-top: 10px;
-}
-.sotto_sinistra-p{
-    width: 40%;
-    height :100%;
-    position: relative;
-}
-.sotto_destra-p{
-    width: 60%;
-    height :100%;
-    position: relative;
-}
-.sopra-p a{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: white;
-}
-.sotto-p a{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: white;
-}
 .titolo-sezione {
     width: 100%;
     height: 150px;
@@ -286,33 +219,84 @@ footer a{
     margin-top: 20px;
     top: 50px;
 }
-.scritteP-sopra{
+/*personaggio*/
+.personaggio{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: column;
+}
+.sezioneFlex{
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.sopra-p{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.sopraSinistra-p{
+    height: 100%;
+    width: 60%;
+    position: relative;
+}
+.scritteSopraSinistra-p{
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 28px;
     color: white;
     position: absolute;
-    margin-left: 20px;
-    top: 40%;
-    left: 20%;
+    margin-left: 30px;
+    margin-top: 170px;
+    margin-right: 25px;
 }
-.scritteP-sotto{
+.sopraDestra-p{
+    height: 130%;
+    width: 40%;
+    position: relative;
+}
+.immagineDepero2-p{
+    height: 95%;
+    position: relative;
+    margin-left: 35px;
+}
+.sotto-p{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.sottoSinistra-p{
+    height: 100%;
+    width: 40%;
+    position: relative;
+}
+.immagineDepero1-p{
+    height: 95%;
+    position: relative;
+    margin-left: 60px;
+    margin-top: 15px;
+}
+.sottoDestra-p{
+    height: 70%;
+    width: 60%;
+    position: relative;
+}
+.scritteSottoDestra-p{
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 28px;
     color: white;
     position: absolute;
-    margin-left: 20px;
-    top: 40%;
-    left: 20%;
-}
-.imgDeperoP1{
-    height: 110%;
-    width: 80%;
-
-}
-.imgDeperoP2{
-    height: 80%;
-    width: 80%;
     margin-left: 40px;
+    margin-top: 200px;
+    margin-right: 55px;
 }
 /*bottoni mobile nascosti*/
 .vediAltroP,
@@ -343,7 +327,7 @@ footer a{
 }
 .scritteSopraSinistra-s{
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 28px;
     color: white;
     position: absolute;
     margin: 25px;
@@ -392,7 +376,7 @@ footer a{
 }
 .scritteMezzoSopraDestra-s{
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 28px;
     color: white;
     position: absolute;
     margin-right: 40px;
@@ -407,21 +391,21 @@ footer a{
     background-color: rgb(46, 46, 46);
 }
 .mezzoSottoSinistra-s{
-    width: 50%;
+    width: 60%;
     height: 100%;
     position: relative;
     background-color: rgb(46, 46, 46);
 }
 .scritteMezzoSottoSinistra-s{
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 28px;
     color: white;
     position: absolute;
-    margin-left: 20px;
+    margin-left: 50px;
     margin-top: 150px;
 }
 .mezzoSottoDestra-s{
-    width: 50%;
+    width: 40%;
     height: 100%;
     position: relative;
     background-color: rgb(46, 46, 46);
@@ -429,6 +413,7 @@ footer a{
 .manifestoFascista-s{
     position: absolute;
     height: 100%;
+    margin-left: 50px;
 }
 
 .sotto-s{
@@ -444,6 +429,11 @@ footer a{
     height: 100%;
     position: relative;
 }
+.quadroArteNucleare-s{
+    height: 90%;
+    margin-left: 45px;
+    margin-top: 15px;
+}
 .sottoDestra-s{
     width: 60%;
     height: 100%;
@@ -451,7 +441,7 @@ footer a{
 }
 .scritteSottoDestra-s{
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 28px;
     color: white;
     position: absolute;
     margin-top: 80px;
@@ -476,32 +466,60 @@ footer a{
 }
 .sopraSinistra-t{
     height:100%;
-    width: 50%;
+    width: 60%;
     position: relative;
+}
+.scritteSopraSinistra-t{
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: white;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 150px;
 }
 .sopraDestra-t{
     height:100%;
-    width: 50%;
+    width: 40%;
     position: relative;
+}
+.fotoTecniche1-t{
+    height: 90%;
+    margin-top: 8px;
+    margin-left:20px;
 }
 .sotto-t{
     height: 50%;
     width: 100%;
     position:relative;
+    display: flex;
+    flex-direction: row;
 }
-.sopra-t{
+.sottoSinistra-t{
+    height: 100%;
+    width: 40%;
+    position: relative;
+}
+.fotoTecniche2-t{
+    height: 90%;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.sottoDestra-t{
+    height: 100%;
+    width: 60%;
+    position: relative;
+}
+.scritteSottoDestra-t{
     font-family: 'Roboto', sans-serif;
-    margin: 20px;
-    font-size: 20px;
+    font-size: 28px;
     color: white;
+    position: absolute;
+    margin-top: 150px;
 }
-.sotto-t{
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
-    font-size: 20px;
-    color: white;
+.separatoreTecniche{
+    background-color: rgb(46, 46, 46);
+    height:10%;
 }
-
 
 /* MODENA */
 
@@ -510,7 +528,7 @@ footer a{
     margin: 0px;
 }
 .viaggi{
-    height: 150%;
+    height: 100%;
     width: 100%;
     position: relative;
     background-color: rgb(46, 46, 46);
@@ -520,7 +538,7 @@ footer a{
 .sezioneFlex-v{
     flex-direction: column;
     display: flex;
-    height: 150%;
+    height: 100%;
     width: 100%;
     position: relative;
 }
@@ -561,6 +579,25 @@ footer a{
 
 .scritte_sopra-v{
     font-family: 'Roboto', sans-serif;
+    font-size: 20;
+    position: relative;
     color: white;
-    margin: 40px;
+    height: 100%;
+    width: 100%;
+}
+
+.titoletto_sopra-v{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+.testo_sopra-v{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
 }
