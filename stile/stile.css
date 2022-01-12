@@ -475,12 +475,17 @@ footer a{
     color: white;
     position: absolute;
     margin-left: 40px;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 .sopraDestra-t{
     height:100%;
     width: 40%;
     position: relative;
+}
+.fotoTecniche1-t{
+    height: 90%;
+    margin-top: 8px;
+    margin-left:20px;
 }
 .sotto-t{
     height: 50%;
@@ -494,6 +499,11 @@ footer a{
     width: 40%;
     position: relative;
 }
+.fotoTecniche2-t{
+    height: 90%;
+    margin-top: 5px;
+    margin-left: 20px;
+}
 .sottoDestra-t{
     height: 100%;
     width: 60%;
@@ -504,7 +514,11 @@ footer a{
     font-size: 28px;
     color: white;
     position: absolute;
-    margin-top: 40px;
+    margin-top: 150px;
+}
+.separatoreTecniche{
+    background-color: rgb(46, 46, 46);
+    height:10%;
 }
 
 /* MODENA */
