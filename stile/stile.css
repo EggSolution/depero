@@ -466,12 +466,20 @@ footer a{
 }
 .sopraSinistra-t{
     height:100%;
-    width: 50%;
+    width: 60%;
     position: relative;
+}
+.scritteSopraSinistra-t{
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: white;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 50px;
 }
 .sopraDestra-t{
     height:100%;
-    width: 50%;
+    width: 40%;
     position: relative;
 }
 .sotto-t{
@@ -483,15 +491,21 @@ footer a{
 }
 .sottoSinistra-t{
     height: 100%;
-    width: 50%;
+    width: 40%;
     position: relative;
 }
 .sottoDestra-t{
     height: 100%;
-    width: 50%;
+    width: 60%;
     position: relative;
 }
-
+.scritteSottoDestra-t{
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: white;
+    position: absolute;
+    margin-top: 40px;
+}
 
 /* MODENA */
 
