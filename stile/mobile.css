@@ -252,10 +252,12 @@
         display: none;
     }
     .sopra-v {
+        display: flex;
         flex-direction: column;
         position: relative;
     }
     .sopra-v {
+        display: flex;
         flex-direction: column-reverse;
         position: relative;
     }
@@ -279,10 +281,6 @@
         margin-top: 0;
         margin-right: 0;
     }
-    .sopra_destra-v,
-    .sotto_sinistra-v {
-        display: block;
-    }
     .sopra_sinistra-v,
     .sopra_destra-v,
     .sotto_sinistra-v,
@@ -293,6 +291,12 @@
         position: relative;
         padding: 10px;
         margin-bottom: 40px;
+        margin-top: 0;
+    }
+    .sopra_destra-v,
+    .sotto_sinistra-v {
+        margin-top: 40px;
+        display: block;
     }
 
 
