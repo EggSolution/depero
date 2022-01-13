@@ -144,7 +144,7 @@ window.onload = function(){
     var tempo = 90;
     tempo *= 1000;
     // SLIDE
-    window.cambioSlide=function(direzione) {
+    window.cambioSlide = function(direzione) {
         switch(direzione){
             case "avanti":
                 if(posizione === 0){
@@ -216,20 +216,32 @@ window.onload = function(){
     }
 
     // MOBILE
-    if(window.screen.availWidth < 800){
+    if(window.screen.availWidth < 1000){
         document.querySelector('.scritteMenu').style.marginTop = '0px';
         // menu
         var corpo = document.querySelector('body');
         var menu = document.querySelector('.hamburgerMenu');
+        var sfondoSlide = document.querySelector('#sfondoScorriId');
         var meet1 = document.querySelector('.meet1');
         var meet2 = document.querySelector('.meet2');
         var meet3 = document.querySelector('.meet3');
         var menuEsteso = document.querySelector('.menuMobile');
+        var testoMenu = document.querySelector('.menuMobileScritte');
         var logo = document.querySelector('.logo');
         var bottoneSlide1 = document.querySelector('.bottoneSlide1');
         var bottoneSlide2 = document.querySelector('.bottoneSlide2');
         var bottoneSlide3 = document.querySelector('.bottoneSlide3');
+        var bottoneMenu1 = document.querySelector('.scrittaMenu1M');
+        var bottoneMenu2 = document.querySelector('.scrittaMenu2M');
+        var bottoneMenu3 = document.querySelector('.scrittaMenu3M');
+        var bottoneMenu4 = document.querySelector('.scrittaMenu4M');
         menuEsteso.style.opacity = "0";
+        testoMenu.style.zIndex = "0";
+        bottoneMenu1.style.zIndex = "0";
+        bottoneMenu2.style.zIndex = "0";
+        bottoneMenu3.style.zIndex = "0";
+        bottoneMenu4.style.zIndex = "0";
+        sfondoSlide.style.zIndex = "2";
         meet1.style.backgroundColor = "#242424";
         meet2.style.backgroundColor = "#242424";
         meet3.style.backgroundColor = "#242424";
@@ -241,6 +253,11 @@ window.onload = function(){
                 meet3.style.backgroundColor = "#242424";
                 logo.style.color = "#242424";
                 menuEsteso.style.zIndex = "1";
+                testoMenu.style.zIndex = "1";
+                bottoneMenu1.style.zIndex = "1";
+                bottoneMenu2.style.zIndex = "1";
+                bottoneMenu3.style.zIndex = "1";
+                bottoneMenu4.style.zIndex = "1";
             }else if(menuEsteso.style.opacity === "0"){
                 menuEsteso.style.opacity = "1";
                 meet1.style.backgroundColor = "#FFFFFF";
@@ -248,6 +265,11 @@ window.onload = function(){
                 meet3.style.backgroundColor = "#FFFFFF";
                 logo.style.color = "#FFFFFF";
                 menuEsteso.style.zIndex = "4";
+                testoMenu.style.zIndex = "5";
+                bottoneMenu1.style.zIndex = "5";
+                bottoneMenu2.style.zIndex = "5";
+                bottoneMenu3.style.zIndex = "5";
+                bottoneMenu4.style.zIndex = "5";
             }else{
                 alert('error 4: l event listener che aspetta il click del menu mobile non funziona');
             }

@@ -61,7 +61,6 @@
         height: 100%;
         width: 100%;
         background-color: black;
-        z-index: 4;
         transition: opacity 0.2s;
     }
     .menuMobileScritte{
@@ -145,6 +144,40 @@
     #scrittaMenu4Id,
     #lineaSotto{
         display: none;
+    }
+    .bottoniSlide {
+        z-index: 0;
+    }
+    @keyframes freccia1 {
+        0% {
+            bottom: 12px;
+        }
+        50% {
+            bottom: 26px;
+        }
+        100% {
+            bottom: 12px;
+        }
+    }
+    .frecciaScendi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 50px;
+        width: 30px;
+        bottom: 12px;
+        left: calc(50% - 30px/2);
+        z-index: 6;
+        display: block;
+        animation: freccia1 2s linear infinite;
+    }
+    .freccia1 {
+        border: solid #242424;
+        border-width: 0 10px 10px 0;
+        display: inline-block;
+        padding: 10px;
+        transform: rotate(45deg);
     }
 
     /* BOTTONI 'Leggi altro' */
@@ -245,6 +278,9 @@
     }
 
     /* VIAGGI */
+    .viaggi {
+        height: auto;
+    }
     .titolo-sezione{
         position: relative;
     }
@@ -256,7 +292,7 @@
         flex-direction: column;
         position: relative;
     }
-    .sopra-v {
+    .sotto-v {
         display: flex;
         flex-direction: column-reverse;
         position: relative;
@@ -463,7 +499,7 @@
 }
 
 /* cellulare orizzontale */
-@media screen and (max-device-width: 640px) and (orientation: landscape){
+@media screen and (max-device-width: 1000px) and (orientation: landscape){
     .compatibile {
         z-index: 6;
     }

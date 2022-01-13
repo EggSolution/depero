@@ -48,7 +48,9 @@ html,body{
     width: 160px;
     z-index: 2;
 }
-.hamburgerMenu{
+.hamburgerMenu,
+.frecciaScendi {
+    position: absolute;
     display: none;
 }
 .logo{
