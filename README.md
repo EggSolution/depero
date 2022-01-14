@@ -12,3 +12,4 @@
 >|4|l'event listener che aspetta il click del menu mobile non funziona|js/script.js|
 >|5|la funzione vediAltroP non funziona correttamente|js/script.js|
 >|6|la funzione vediAltroS non funziona correttamente|js/script.js|
+>|7|la funzione vediAltroT non funziona correttamente|js/script.js|
