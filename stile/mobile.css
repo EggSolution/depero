@@ -145,6 +145,27 @@
     #lineaSotto{
         display: none;
     }
+    .poweredBy {
+        height: 40px;
+        width: 100%;
+        position: absolute;
+        background: transparent;
+        display: flex;
+        flex-direction: row;
+        top: calc(100% - 40px);
+    }
+    .poweredBy a {
+        position: relative;
+        font-size: 14px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .immagineLogoM {
+        position: relative;
+        height: 26px;
+        margin-left: 5px;
+        left: 14px;
+    }
     .bottoniSlide {
         z-index: 0;
     }
@@ -159,26 +180,33 @@
             bottom: 12px;
         }
     }
+    /* DEVO VEDERE SE METTERLO */
     .frecciaScendi {
+        display: block;
+        display: none;
+        background: transparent;
+        border: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        height: 50px;
-        width: 30px;
+        height: 33.9333px;
+        width: 33.9333px;
         bottom: 12px;
         left: calc(50% - 30px/2);
         z-index: 6;
-        display: block;
         animation: freccia1 2s linear infinite;
     }
     .freccia1 {
-        border: solid #242424;
-        border-width: 0 10px 10px 0;
         display: inline-block;
+        display: none;
+        border: solid #242424;
+        border-width: 0 4px 4px 0;
         padding: 10px;
         transform: rotate(45deg);
     }
+    /* ------- */
+
 
     /* BOTTONI 'Leggi altro' */
     .vediAltroP,
@@ -418,23 +446,6 @@
         flex-direction: column-reverse;
     }
 
-    /* FOOTER */
-    footer {
-        height: 40px;
-    }
-    footer a{
-        font-size: 10px;
-        margin-left: 10px;
-    }
-    .immagineLogo{
-        height: 18px;
-        margin-left: 5px;
-    }
-    .copyright{
-        right: 10px;
-        position: absolute;
-    }
-
     /* TECNICHE */
     .tecniche{
         display: flex;
@@ -495,6 +506,23 @@
     }
     .separatoreTecniche {
         display: none;
+    }
+    
+    /* FOOTER */
+    footer {
+        height: 40px;
+    }
+    footer a{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .immagineLogo{
+        height: 18px;
+        margin-left: 5px;
+    }
+    .copyright{
+        right: 10px;
+        position: absolute;
     }
 }
 
