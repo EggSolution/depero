@@ -555,13 +555,13 @@ footer a{
 
 .sopra_sinistra-v{
     position: relative;
-    width: 50%;
+    width: 60%;
     height: 100%;
 }
 
 .sopra_destra-v{
     position: relative;
-    width: 50%;
+    width: 40%;
     height: 100%;
 }
 
@@ -575,31 +575,46 @@ footer a{
 
 .sotto_sinistra-v{
     position: relative;
-    width: 50%;
+    width: 40%;
     height: 100%;
+}
+
+.sotto_destra-v{
+    position: relative;
+    width: 60%;
+    height: 100%; 
 }
 
 .scritte_sopra-v{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20;
     position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
     color: white;
-    height: 100%;
-    width: 100%;
+    margin-left: 30px;
+    margin-top: 170px;
+    margin-right: 25px;
+
 }
 
-.titoletto_sopra-v{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    position: absolute;
-    top: 10%;
-    left: 40%;
+.immagineDepero1-v{
+    height: 95%;
+    position: relative;
+    margin-left: 150px;
 }
 
-.testo_sopra-v{
+.scritte_sotto-v{
+    position: relative;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    position: absolute;
-    top: 10%;
-    left: 20%;
+    font-size: 28px;
+    color: white;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-right: 25px;
 }
+
+.immagineDepero2-v{
+    height: 75%;
+    position: relative;
+    margin-left: 30px;
+}
+
