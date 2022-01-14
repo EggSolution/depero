@@ -1,6 +1,8 @@
-window.onload = function(){
-    var body = document.querySelector ("#body");
-    var height = window.innerHeight
-    console.log (height)
-    body.style.height = height + "px";
-} 
+//window.onload = function(){
+//variabili
+    //var home= document.querySelector ("#home");
+    //var altezzaHome = window.innerHeight;
+//codice
+    //home.style.height = altezzaHome + "px";
+    //console.log (altezzaHome + "px");
+//} 
