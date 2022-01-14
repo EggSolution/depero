@@ -1,4 +1,8 @@
 window.onload = function(){
+    // RICARICA JAVASCRIPT
+    function ricaricaJS(){
+        location.reload(true);
+    }
     // ALTEZZA SCRITTE MENU
     var altezzaHome = document.querySelector(".home").clientHeight;
     var yBottoni = (200 * altezzaHome) / 955;
@@ -216,7 +220,7 @@ window.onload = function(){
     }
 
     // MOBILE
-    if(window.screen.availWidth < 1000){
+    if(window.screen.availWidth < 1480){
         document.querySelector('.scritteMenu').style.marginTop = '0px';
         // menu
         var corpo = document.querySelector('body');
@@ -342,6 +346,7 @@ window.onload = function(){
         bottoneSlide3.addEventListener("click", function(){
             window.cambioSlide('tre')
         });
+        window.addEventListener('resize', ricaricaJS);
         bottoneVediAltroP.addEventListener("click", vediAltroP);
         bottoneVediAltroS.addEventListener("click", vediAltroS);
         bottoneVediAltroT.addEventListener("click", vediAltroT);
