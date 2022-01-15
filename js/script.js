@@ -36,7 +36,7 @@ window.onload = function(){
                     var y = y1 + (window.innerWidth) * 2;
                     break;
                 default:
-                    allert('error 3: la funzione non è stata chiamata con un parametro adeguata');
+                    console.error('error 3: la funzione non è stata chiamata con un parametro adeguata');
             }
             eval('document.querySelector(".sfondo-scorri").appendChild(bottoniQuadri0);');
             eval('var bottoniQuadri'+window.Nbottoni+' = document.createElement("div");');
@@ -183,7 +183,7 @@ window.onload = function(){
                 posizione = 2;
                 break;
             default:
-                alert("error 1: la funzione cambioSlide non funziona correttamente");
+                console.error("error 1: la funzione cambioSlide non funziona correttamente");
         }
     }
     function cambioAutomatico(){
@@ -198,7 +198,7 @@ window.onload = function(){
                 cambioSlide("indietro");
                 break;
             default:
-                alert("error 2: la funzione cambioAutomatico non funziona correttamente");
+                console.error("error 2: la funzione cambioAutomatico non funziona correttamente");
         }
     }
     setInterval(cambioAutomatico, tempo);
@@ -275,7 +275,7 @@ window.onload = function(){
                 bottoneMenu3.style.zIndex = "5";
                 bottoneMenu4.style.zIndex = "5";
             }else{
-                alert('error 4: l event listener che aspetta il click del menu mobile non funziona');
+                console.error('error 4: l event listener che aspetta il click del menu mobile non funziona');
             }
         }
         function hideMenu(){
@@ -288,12 +288,16 @@ window.onload = function(){
         //BOTTONI VEDI ALTRO
         var parteSottoPersonaggio = document.querySelector('.sotto-p');
         var bottoneVediAltroP = document.getElementById('vediAltroP');
+        var parteSottoViaggi = document.querySelector('.sotto-v');
+        var bottoneVediAltroV = document.querySelector('.vediAltroV');
         var parteSottoStoria1 = document.querySelector('.mezzo-s');
         var parteSottoStoria2 = document.querySelector('.sotto-s');
         var bottoneVediAltroS = document.getElementById('vediAltroS');
         var parteSottoTecniche = document.querySelector('.sotto-t');
         var bottoneVediAltroT = document.querySelector('.vediAltroT');
         parteSottoPersonaggio.style.display = 'none';
+        parteSottoViaggi.style.display = 'none';
+        parteSottoTecniche.style.display = 'none';
         parteSottoStoria1.style.display = 'none';
         parteSottoStoria2.style.display = 'none';
         parteSottoTecniche.style.display = 'none';
@@ -307,7 +311,18 @@ window.onload = function(){
                 parteSottoPersonaggio.style.display = 'flex';
                 bottoneVediAltroP.innerHTML = text1.replace ('altro', 'meno');
             }else{
-                console.log('Error 5: la funzione vediAltroP non funziona correttamente')
+                console.error('Error 5: la funzione vediAltroP non funziona correttamente')
+            }
+        }
+        function vediAltroV(){
+            if(parteSottoViaggi.style.display == 'flex'){
+                parteSottoViaggi.style.display = 'none';
+                bottoneVediAltroV.innerHTML = text1.replace ('meno', 'altro');
+            }else if(parteSottoViaggi.style.display == 'none'){
+                parteSottoViaggi.style.display = 'flex';
+                bottoneVediAltroV.innerHTML = text1.replace ('altro', 'meno');
+            }else{
+                console.error('Error 8: la funzione vediAltroV non funziona correttamente')
             }
         }
         function vediAltroS(){
@@ -320,7 +335,7 @@ window.onload = function(){
                 parteSottoStoria2.style.display = 'flex';
                 bottoneVediAltroS.innerHTML = text2.replace ('altro', 'meno');
             }else{
-                console.log('Error 6: la funzione vediAltroS non funziona correttamente')
+                console.error('Error 6: la funzione vediAltroS non funziona correttamente')
             }
         }
         function vediAltroT(){
@@ -331,7 +346,7 @@ window.onload = function(){
                 parteSottoTecniche.style.display = 'flex';
                 bottoneVediAltroT.innerHTML = text2.replace ('altro', 'meno');
             }else{
-                console.log('Error 7: la funzione vediAltroT non funziona correttamente')
+                console.error('Error 7: la funzione vediAltroT non funziona correttamente')
             }
         }
         menu.addEventListener('click', function(){
@@ -348,6 +363,7 @@ window.onload = function(){
         });
         window.addEventListener('resize', ricaricaJS);
         bottoneVediAltroP.addEventListener("click", vediAltroP);
+        bottoneVediAltroV.addEventListener("click", vediAltroV);
         bottoneVediAltroS.addEventListener("click", vediAltroS);
         bottoneVediAltroT.addEventListener("click", vediAltroT);
         setInterval(hideMenu, 500);

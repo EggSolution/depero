@@ -211,7 +211,8 @@
     /* BOTTONI 'Leggi altro' */
     .vediAltroP,
     .vediAltroS,
-    .vediAltroT{
+    .vediAltroT,
+    .vediAltroV{
         display: block;
         position: relative;
         margin-left: calc(50% - 110px/2);
