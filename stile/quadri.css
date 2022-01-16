@@ -10,20 +10,13 @@
     height: auto;
 }
 .home{
+    position: relative;
     width: 100%;
     background-color: red;
 }
 .sezioneProva{
     width: 100%;
+    height: 50%;
     background-color: yellow;
-}
-.titoloSezione{
-    height: 10%;
-    width: 100%;
-    background-color:green;
-}
-.corpoSezione{
-    width: 100%;
-    height: 90%;
 }
 /*MODENA*/
