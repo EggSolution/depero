@@ -595,7 +595,7 @@ footer a{
     font-size: 28px;
     color: white;
     margin-left: 30px;
-    margin-top: 170px;
+    margin-top: 140px;
     margin-right: 25px;
 
 }
@@ -603,7 +603,8 @@ footer a{
 .immagineDepero1-v{
     height: 90%;
     position: relative;
-    margin-left: 100px;
+    margin-left: 180px;
+    margin-top: 30px;
 }
 
 .scritte_sotto-v{
@@ -612,13 +613,14 @@ footer a{
     font-size: 28px;
     color: white;
     margin-left: 30px;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-right: 25px;
 }
 
 .immagineDepero2-v{
-    height: 75%;
+    height: 85%;
     position: relative;
     margin-left: 30px;
+    margin-top: -20px;
 }
 
