@@ -50,6 +50,7 @@
     height: 1%;
     width: 60%;
     background-color: white;
+    z-index: 2;
 }
 .scritteScritteCorpo{
     height: 80%;
