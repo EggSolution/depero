@@ -1,10 +1,27 @@
 window.onload = function(){
 //variabili
     //variabili elementi
-    var sezione0 = document.querySelector ("#sezione0");
-    // variabili altezze
-    var altezza100 = window.innerHeight;
-    var altezza50 = altezza100/2;
+    var sezione = document.querySelector (".sezione");
+    var sezioneQuadri = document.querySelector ("#sezioneQuadri");
+    // variabile n° sezioni
+    var Nsezioni = 1;
 //codice
-    sezione0.style.height = altezza50 + "px";
+//funzione
+    function sezioniQuadri(testo, immagine, titolo){
+        window.Nsezioni += 1;
+        eval("var sezione" + Nsezioni + " = document.createElement ('div');");
+        eval("document.querySelector('#sezioneQuadri').appendChild (sezione" + Nsezioni + ");");
+        eval("sezione" + Nsezioni + ".textContent= '';");
+        eval("sezione" + Nsezioni + ".className = 'sezione' ")
+    }
+// funzione         testo        immagine    titolo
+    sezioniQuadri ("hkhjkhjkjh","kjhkjhjkh","gjhgjhg");
+    sezioniQuadri ("hkjhkjhkjh","gjhgjhghjg","ghkjhhjkh");
+//variabili 2  
+     // variabili altezze
+     var altezza100 = window.innerHeight;
+     var altezzaSezione = altezza100/2;
+     //altezze
+    sezione.style.height = altezzaSezione + "px";
+    sezioneQuadri.style.height = (altezzaSezione * Nsezioni) +"px";
 } 
