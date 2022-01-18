@@ -22,8 +22,20 @@
     display: flex;
     flex-direction: row;
 }
+.rigaSopra{
+    width: 100%;
+    height: 2%;
+    background-color: white;
+    position: relative;
+}
+.rigaSotto{
+    width: 100%;
+    height: 2%;
+    background-color: white;
+    position: relative;
+}
 .scritteCorpo{
-    height: 100%;
+    height: 96%;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -69,10 +81,10 @@
     color: white;
 }
 .fotoCorpo{
-    height: 100%;
+    height: 96%;
     width: 40%;
 }
-.quadroProva{
+.quadroSezione{
     height: 90%;
     margin-top: 15px;
 }

@@ -7,7 +7,7 @@ window.onload = function(){
     var altezza100 = window.innerHeight;
     var altezzaSezione = altezza100/2;
     // variabile n° sezioni
-    var Nsezioni = 1;
+    var Nsezioni = 0;
 //codice
 //funzione
     function sezioniQuadri(titolo1, testo, immagine){
@@ -19,11 +19,21 @@ window.onload = function(){
         eval("sezione" + Nsezioni + ".className = 'sezione' ")
         eval("sezione" + Nsezioni + ".style.height = altezzaSezione + 'px';");
         eval("sezioneQuadri.style.height = (" + altezzaSezione * Nsezioni + ") +'px';");
+        //RIGA SOPRA
+        eval("var rigaSopra = document.createElement ('div');");
+        eval("sezione" + Nsezioni + ".appendChild (rigaSopra);");
+        eval("rigaSopra.textContent = '';");
+        eval("rigaSopra.className = 'rigaSopra';");
         // CORPO SEZIONE
         eval("var corpoSezione = document.createElement ('div');");
         eval("sezione" + Nsezioni + ".appendChild (corpoSezione);");
         eval("corpoSezione.textContent = '';");
         eval("corpoSezione.className ='corpoSezione';");
+        //RIGA SOTTO
+        eval("var rigaSotto = document.createElement ('div');");
+        eval("sezione" + Nsezioni + ".appendChild (rigaSotto);");
+        eval("rigaSotto.textContent = '';");
+        eval("rigaSotto.className = 'rigaSotto';");
         // SCRITTE CORPO
         eval("var scritteCorpo = document.createElement ('div');");
         eval("corpoSezione.appendChild (scritteCorpo);");
@@ -77,5 +87,9 @@ window.onload = function(){
         eval("quadroSezione.className = 'quadroSezione'")
     }
 // funzione         titolo       testo        Nomeimmagine.Estensione
+    sezioniQuadri ("hkhjkhjkjh","jhjkhkjhkh", "quadro-prova.jpg")
+    sezioniQuadri ("hkhjkhjkjh","jhjkhkjhkh", "quadro-prova.jpg")
+    sezioniQuadri ("hkhjkhjkjh","jhjkhkjhkh", "quadro-prova.jpg")
+    sezioniQuadri ("hkhjkhjkjh","jhjkhkjhkh", "quadro-prova.jpg")
     sezioniQuadri ("hkhjkhjkjh","jhjkhkjhkh", "quadro-prova.jpg")
 } 
