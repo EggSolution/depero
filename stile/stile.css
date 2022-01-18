@@ -592,33 +592,33 @@ footer a{
 .scritte_sopra-v{
     position: relative;
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: 25px;
     color: white;
     margin-left: 30px;
-    margin-top: 140px;
+    margin-top: 190px;
     margin-right: 25px;
 
 }
 
 .immagineDepero1-v{
-    height: 90%;
+    height: 80%;
     position: relative;
     margin-left: 180px;
-    margin-top: 30px;
+    margin-top: 85px;
 }
 
 .scritte_sotto-v{
     position: relative;
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: 25px;
     color: white;
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 70px;
     margin-right: 25px;
 }
 
 .immagineDepero2-v{
-    height: 85%;
+    height: 80%;
     position: relative;
     margin-left: 30px;
     margin-top: -20px;
