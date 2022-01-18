@@ -10,7 +10,7 @@ window.onload = function(){
     var Nsezioni = 1;
 //codice
 //funzione
-    function sezioniQuadri(testo, immagine, titolo){
+    function sezioniQuadri(titolo1, testo, immagine){
         Nsezioni += 1;
         // SEZIONE
         eval("var sezione" + Nsezioni + " = document.createElement ('div');");
@@ -42,7 +42,7 @@ window.onload = function(){
         //  SCRITTE TITOLO
         eval("var scritteTitolo = document.createElement ('a');");
         eval("titolo.appendChild (scritteTitolo);");
-        eval("scritteTitolo.textContent = '';");
+        eval("scritteTitolo.textContent = '" + titolo1 +"';");
         eval("scritteTitolo.className = 'scritteTitolo';");
         // SEZIONE RIGA
         eval("var sezioneRiga = document.createElement ('div');");
@@ -62,7 +62,7 @@ window.onload = function(){
         // SCRITTE
         eval("var scritte = document.createElement ('a');");
         eval("scritteVere.appendChild (scritte);");
-        eval("scritte.textContent = '';");
+        eval("scritte.textContent = '" + testo +"';");
         eval("scritte.className = 'scritte';")
         // FOTO CORPO
         eval("var fotoCorpo = document.createElement ('div');");
@@ -71,10 +71,11 @@ window.onload = function(){
         eval("fotoCorpo.className = 'fotoCorpo';");
         // QUADRO SEZIONE
         eval("var quadroSezione = document.createElement ('img');");
+        eval("quadroSezione.src = 'media/img/quadri/" + immagine +"';")
         eval("fotoCorpo.appendChild (quadroSezione);");
         eval("quadroSezione.textContent = '';");
         eval("quadroSezione.className = 'quadroSezione'")
     }
-// funzione         testo        immagine    titolo
-    sezioniQuadri ("hkhjkhjkjh","kjhkjhjkh","gjhgjhg");
+// funzione         titolo       testo        Nomeimmagine.Estensione
+    sezioniQuadri ("hkhjkhjkjh","jhjkhkjhkh", "quadro-prova.jpg")
 } 
