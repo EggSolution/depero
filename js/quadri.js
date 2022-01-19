@@ -85,11 +85,21 @@ window.onload = function(){
         eval("fotoCorpo.appendChild (quadroSezione);");
         eval("quadroSezione.textContent = '';");
         eval("quadroSezione.className = 'quadroSezione'")
+        //ORIENTAMENTO SEZIONE
+        var orientamento = Nsezioni % 2;   
+        if (orientamento == 1){
+            console.log ( orientamento +"pari");
+            corpoSezione.style.flexDirection = "row";
+        }
+        else{
+            console.log(orientamento + "dispari");
+            corpoSezione.style.flexDirection = "row-reverse";
+        }
+        
     }
 // funzione         titolo       testo        Nomeimmagine.Estensione
     sezioniQuadri ("hkhjkhjkjh","jhjkhkjhkh", "quadro-prova.jpg")
     sezioniQuadri ("hkhjkhjkjh","jhjkhkjhkh", "quadro-prova.jpg")
     sezioniQuadri ("hkhjkhjkjh","jhjkhkjhkh", "quadro-prova.jpg")
-    sezioniQuadri ("hkhjkhjkjh","jhjkhkjhkh", "quadro-prova.jpg")
-    sezioniQuadri ("hkhjkhjkjh","jhjkhkjhkh", "quadro-prova.jpg")
+
 } 
