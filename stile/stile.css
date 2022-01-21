@@ -101,6 +101,7 @@ html,body{
     transition: 1.5s;
     z-index: 1;
     position: absolute;
+    margin-left: 333px;
 }
 .sfondo1{
     height: 100%;
@@ -622,5 +623,12 @@ footer a{
     position: relative;
     margin-left: 30px;
     margin-top: -20px;
+}
+
+.colonnaNera{
+    height: 100%;
+    width: 333px;
+    background-color: #525252;
+    z-index: 2;
 }
 

@@ -169,6 +169,13 @@
     .bottoniSlide {
         z-index: 0;
     }
+    .colonnaNera{
+        display: none;
+        z-index: 0;
+    }
+    .sfondo-scorri{
+        margin-left: 0;
+    }
     @keyframes freccia1 {
         0% {
             bottom: 12px;
