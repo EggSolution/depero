@@ -101,7 +101,6 @@ html,body{
     transition: 1.5s;
     z-index: 1;
     position: absolute;
-    margin-left: 333px;
 }
 .sfondo1{
     height: 100%;
@@ -110,6 +109,7 @@ html,body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: 333px;
 }
 .sfondo2{
     height: 100%;
@@ -118,6 +118,7 @@ html,body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: 333px;
 }
 .sfondo3{
     height: 100%;
@@ -126,6 +127,7 @@ html,body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: 333px;
 }
 .bottoniSlide{
     position: absolute;
@@ -182,6 +184,10 @@ footer a{
 .vediAltroV {
     display: none;
 }
+.vediAltroT{
+    display: none;
+}
+
 
 /* MAGLIO */
 
@@ -595,7 +601,7 @@ footer a{
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     color: white;
-    margin-left: 30px;
+    margin-left: 333px;
     margin-top: 190px;
     margin-right: 25px;
 
@@ -613,16 +619,16 @@ footer a{
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     color: white;
-    margin-left: 30px;
+    margin-left: 333px;
     margin-top: 70px;
     margin-right: 25px;
 }
 
 .immagineDepero2-v{
-    height: 80%;
+    height: 70%;
     position: relative;
-    margin-left: 30px;
-    margin-top: -20px;
+    margin-left: 333px;
+    margin-top: 50px;
 }
 
 .colonnaNera{
