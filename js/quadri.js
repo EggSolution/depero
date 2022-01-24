@@ -20,12 +20,52 @@ window.onload = function(){
     titolo.style.height = altezzaSezione + "px";
 //codice
 //FUNZIONE QUADRI
-    function sezioniQuadri(titolo1, testo, immagine, appartenenza){
+    function sezioniQuadri(titolo1, testo, immagine, appartenenza, titoloSezioneQuadro, testoSezioneQuadro){
         Nsezioni += 1;
         //VERIFICARE SE VUOLE IL TITOLO O NO
         if (appartenenza != ""){
             console.log ("sezione: " + Nsezioni + " vuole il titolo");
-                     
+        
+            //SEZIONE TITOLO 2
+            eval("var sezioneTitolo2" + Nsezioni + "= document.createElement ('div');");
+            eval("document.querySelector('#sezioneQuadri').appendChild (sezioneTitolo2" + Nsezioni + ");");
+            eval("sezioneTitolo2" + Nsezioni + ".textContent = '';");
+            eval("sezioneTitolo2" + Nsezioni + ".className = 'sezioneTitolo2';");
+            //TITOLO 2
+            eval("var titolo2 = document.createElement('div');");
+            eval("sezioneTitolo2" + Nsezioni + ".appendChild (titolo2);");
+            eval("titolo2.textContent = '';");
+            eval("titolo2.className = 'titolo2';");
+            //SEZIONE TITOLO 2
+            eval("var sezioneTitolo2 = document.createElement ('div');");
+            eval("titolo2.appendChild (sezioneTitolo2);");
+            eval("sezioneTitolo2.textContent = '';");
+            eval("sezioneTitolo2.className = 'sezioneTitolo2';");
+            //TITOLO RIGA 2
+            eval("var titoloRiga2 = document.createElement ('div');");
+            eval("sezioneTitolo2.appendChild (titoloRiga2);");
+            eval("titoloRiga2.textContent = '';");
+            eval("titoloRiga2.className = 'titoloRiga2';");
+            //SCRITTA TITOLO 2
+            eval("var scrittaTitolo2 = document.createElement ('a');");
+            eval("titoloRIga2.appendChild (scrittaTitolo2);");
+            eval("scrittaTitolo2.textContent ='" + titoloSezioneQuadro +"';");
+            eval("scrittaTitolo2.className = 'scrittaTitolo2';");
+            //RIGA2
+            eval("var riga2 = document.createElement ('div');");
+            eval("titoloriga2.appendChild (riga2);");
+            eval("riga2.textContent = '';");
+            eval("riga2.className = 'riga2';");
+            //SEZIONE CORPO 2
+            eval("var sezioneCorpo2 = document.createElement ('div');");
+            eval("titolo2.appendChild (sezioneCorpo2);");
+            eval("sezioneCorpo2.textContent = '';");
+            eval("sezioneCorpo2.className = 'sezioneCorpo2';");
+            //SCRITTE 2
+            eval("var scritte2 = document.createElement ('a');");
+            eval("sezioneCorpo2.appendChild (scritte2);");
+            eval("scritte2.textContent = '" + testoSezioneQuadro +"';");
+            eval("scritte2.className = 'scritte2';");
         }
          // SEZIONE
          eval("var sezione" + Nsezioni + " = document.createElement ('div');");
@@ -107,8 +147,7 @@ window.onload = function(){
         }
         else{
             corpoSezione.style.flexDirection = "row-reverse";
-        }
-        
+        }    
     }
 // funzione         titolo       testo        Nomeimmagine.Estensione
     //sezioniQuadri ("Titolo","", "quadro-prova.jpg","true")
