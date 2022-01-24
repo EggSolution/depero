@@ -101,7 +101,6 @@ html,body{
     transition: 1.5s;
     z-index: 1;
     position: absolute;
-    margin-left: 333px;
 }
 .sfondo1{
     height: 100%;
@@ -110,6 +109,7 @@ html,body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: 333px;
 }
 .sfondo2{
     height: 100%;
@@ -118,6 +118,7 @@ html,body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: 333px;
 }
 .sfondo3{
     height: 100%;
@@ -126,6 +127,7 @@ html,body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: 333px;
 }
 .bottoniSlide{
     position: absolute;
@@ -179,9 +181,11 @@ footer a{
     position: absolute;
 }
 
-.vediAltroV {
+.vediAltroV,
+.vediAltroT {
     display: none;
 }
+
 
 /* MAGLIO */
 
