@@ -181,12 +181,14 @@ footer a{
     position: absolute;
 }
 
-.vediAltroV {
+.vediAltroV,
+.vediAltroT {
     display: none;
 }
 .vediAltroT{
     display: none;
 }
+
 
 
 /* MAGLIO */
@@ -601,7 +603,7 @@ footer a{
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     color: white;
-    margin-left: 333px;
+    margin-left: 150px;
     margin-top: 190px;
     margin-right: 25px;
 
