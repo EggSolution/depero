@@ -8,7 +8,6 @@
     flex-direction: column;
     width: 100%;
 }
-
 .sezione{
     width: 100%;
     background-color: rgb(46, 46, 46);
@@ -21,7 +20,6 @@
     height: 100%;
     display: flex;
     position: relative;
-
 }
 .rigaSopra{
     width: 100%;
@@ -89,8 +87,9 @@
     height: 90%;
     margin-top: 15px;
 }
+
 /*TITOLO*/
-.sezioneTitolo-2{
+.sezioneTitolo2{
     width: 100%;
     height: 50%;
     background-color: rgb(46, 46, 46);
@@ -98,36 +97,35 @@
     display: flex;
     flex-direction: column;
 }
-.sezioneTitolo-2{
+.sezioneTitolo2{
     width: 100%;
     height: 20%;
 }
-.titoloRiga-2{
+.titoloRiga2{
     width: 300px;
     height: 100%;
     display: flex;
     flex-direction: column;
-
 }
-.scrittaTitolo-2{
+.scrittaTitolo2{
     height: 97%;
     width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 85px;
     color: white;
 }
-.riga-2{
+.riga2{
     width: 100%;
     height: 3%;
     background-color: white;
 }
-.sezioneCorpo-2{
+.sezioneCorpo2{
     width: 100%;
     height: 80%;
     position: relative;
     display: flex;
 }
-.scritte-2{
+.scritte2{
     width: 1500px;
     height: 80%;
     margin-top: 50px;
