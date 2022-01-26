@@ -91,7 +91,6 @@
 /*TITOLO*/
 .sezioneTitolo2{
     width: 100%;
-    height: 50%;
     background-color: rgb(46, 46, 46);
     position: relative;
     display: flex;
@@ -128,7 +127,7 @@
 .scritte2{
     width: 1500px;
     height: 80%;
-    margin-top: 50px;
+    margin-top: 100px;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     color: white;

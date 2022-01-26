@@ -2,12 +2,14 @@ window.onload = function(){
 //variabili
     //variabili elementi
     var sezioneQuadri = document.querySelector ("#sezioneQuadri");
-    var sezioneTitolo = document.querySelector ("titolo");
-    var titoloRiga2 = document.querySelector ("#titoloRiga-2");
-    var scritte2 = document.querySelector ("#scritte-2");
+    var sezioneTitolo = document.querySelector ("#titolo");
+    var sezioneTitolo2 = document.querySelector ("#sezioneTitolo2");
+    var titoloRiga2 = document.querySelector ("#titoloRiga2");
+    var scritte2 = document.querySelector ("#scritte2");
     // variabili altezze
     var altezza100 = window.innerHeight;
     var altezzaSezione = altezza100/2;
+    sezioneTitolo2.style.height = altezzaSezione + "px";
     //variabili larghezze
     var larghezza100 = window.innerWidth;
     var larghezza50 = larghezza100/2;
@@ -16,64 +18,69 @@ window.onload = function(){
     scritte2.style.marginLeft = (larghezza50 - 750) + "px";
     // variabile n° sezioni
     var Nsezioni = 0;
+    var NsezioniTitoli = 0;
     //altezza titolo
-    titolo.style.height = altezzaSezione + "px";
+    sezioneTitolo.style.height = altezzaSezione + "px";
+    //altezza sezione quadri
+    sezioneQuadri.style.height = (Nsezioni)
 //codice
 //FUNZIONE QUADRI
-    function sezioniQuadri(titolo1, testo, immagine, appartenenza, titoloSezioneQuadro, testoSezioneQuadro){
+    console.log("fuori funzione")
+    function titoloQuadri(titoloSezioneQuadro, testoSezioneQuadro){
+        NsezioniTitoli += 1;
+        console.log("titolo");
+         //SEZIONE TITOLO 2
+         eval("var sezioneTitolo2" + Nsezioni + "= document.createElement ('div');");
+         eval("document.querySelector('#sezioneQuadri').appendChild (sezioneTitolo2" + Nsezioni + ");");
+         eval("sezioneTitolo2" + Nsezioni + ".textContent = '';");
+         eval("sezioneTitolo2" + Nsezioni + ".className = 'sezioneTitolo2';");
+         //TITOLO 2
+         eval("var titolo2 = document.createElement('div');");
+         eval("sezioneTitolo2" + Nsezioni + ".appendChild (titolo2);");
+         eval("titolo2.textContent = '';");
+         eval("titolo2.className = 'titolo2';");
+         //SEZIONE TITOLO 2
+         eval("var sezioneTitolo2 = document.createElement ('div');");
+         eval("titolo2.appendChild (sezioneTitolo2);");
+         eval("sezioneTitolo2.textContent = '';");
+         eval("sezioneTitolo2.className = 'sezioneTitolo2';");
+         //TITOLO RIGA 2
+         eval("var titoloRiga2 = document.createElement ('div');");
+         eval("sezioneTitolo2.appendChild (titoloRiga2);");
+         eval("titoloRiga2.textContent = '';");
+         eval("titoloRiga2.className = 'titoloRiga2';");
+         //SCRITTA TITOLO 2
+         eval("var scrittaTitolo2 = document.createElement ('a');");
+         eval("titoloRIga2.appendChild (scrittaTitolo2);");
+         eval("scrittaTitolo2.textContent ='" + titoloSezioneQuadro +"';");
+         eval("scrittaTitolo2.className = 'scrittaTitolo2';");
+         //RIGA2
+         eval("var riga2 = document.createElement ('div');");
+         eval("titoloriga2.appendChild (riga2);");
+         eval("riga2.textContent = '';");
+         eval("riga2.className = 'riga2';");
+         //SEZIONE CORPO 2
+         eval("var sezioneCorpo2 = document.createElement ('div');");
+         eval("titolo2.appendChild (sezioneCorpo2);");
+         eval("sezioneCorpo2.textContent = '';");
+         eval("sezioneCorpo2.className = 'sezioneCorpo2';");
+         //SCRITTE 2
+         eval("var scritte2 = document.createElement ('a');");
+         eval("sezioneCorpo2.appendChild (scritte2);");
+         eval("scritte2.textContent = '" + testoSezioneQuadro +"';");
+         eval("scritte2.className = 'scritte2';");
+         //altezza sezione quadri
+         sezioniQuadri.style.height = [(Nsezioni + NsezioniTitoli) * altezzaSezione] + "px";
+    }
+    function sezioniQuadri(titolo1, testo, immagine,){
         Nsezioni += 1;
-        //VERIFICARE SE VUOLE IL TITOLO O NO
-        if (appartenenza != ""){
-            console.log ("sezione: " + Nsezioni + " vuole il titolo");
-        
-            //SEZIONE TITOLO 2
-            eval("var sezioneTitolo2" + Nsezioni + "= document.createElement ('div');");
-            eval("document.querySelector('#sezioneQuadri').appendChild (sezioneTitolo2" + Nsezioni + ");");
-            eval("sezioneTitolo2" + Nsezioni + ".textContent = '';");
-            eval("sezioneTitolo2" + Nsezioni + ".className = 'sezioneTitolo2';");
-            //TITOLO 2
-            eval("var titolo2 = document.createElement('div');");
-            eval("sezioneTitolo2" + Nsezioni + ".appendChild (titolo2);");
-            eval("titolo2.textContent = '';");
-            eval("titolo2.className = 'titolo2';");
-            //SEZIONE TITOLO 2
-            eval("var sezioneTitolo2 = document.createElement ('div');");
-            eval("titolo2.appendChild (sezioneTitolo2);");
-            eval("sezioneTitolo2.textContent = '';");
-            eval("sezioneTitolo2.className = 'sezioneTitolo2';");
-            //TITOLO RIGA 2
-            eval("var titoloRiga2 = document.createElement ('div');");
-            eval("sezioneTitolo2.appendChild (titoloRiga2);");
-            eval("titoloRiga2.textContent = '';");
-            eval("titoloRiga2.className = 'titoloRiga2';");
-            //SCRITTA TITOLO 2
-            eval("var scrittaTitolo2 = document.createElement ('a');");
-            eval("titoloRIga2.appendChild (scrittaTitolo2);");
-            eval("scrittaTitolo2.textContent ='" + titoloSezioneQuadro +"';");
-            eval("scrittaTitolo2.className = 'scrittaTitolo2';");
-            //RIGA2
-            eval("var riga2 = document.createElement ('div');");
-            eval("titoloriga2.appendChild (riga2);");
-            eval("riga2.textContent = '';");
-            eval("riga2.className = 'riga2';");
-            //SEZIONE CORPO 2
-            eval("var sezioneCorpo2 = document.createElement ('div');");
-            eval("titolo2.appendChild (sezioneCorpo2);");
-            eval("sezioneCorpo2.textContent = '';");
-            eval("sezioneCorpo2.className = 'sezioneCorpo2';");
-            //SCRITTE 2
-            eval("var scritte2 = document.createElement ('a');");
-            eval("sezioneCorpo2.appendChild (scritte2);");
-            eval("scritte2.textContent = '" + testoSezioneQuadro +"';");
-            eval("scritte2.className = 'scritte2';");
-        }
+        console.log("quadro");
          // SEZIONE
          eval("var sezione" + Nsezioni + " = document.createElement ('div');");
          eval("document.querySelector('#sezioneQuadri').appendChild (sezione" + Nsezioni + ");");
          eval("sezione" + Nsezioni + ".textContent= '';");
          eval("sezione" + Nsezioni + ".className = 'sezione' ")
          eval("sezione" + Nsezioni + ".style.height = altezzaSezione + 'px';");
-         eval("sezioneQuadri.style.height = (" + altezzaSezione * Nsezioni + ") +'px';");
          //RIGA SOPRA
          eval("var rigaSopra = document.createElement ('div');");
          eval("sezione" + Nsezioni + ".appendChild (rigaSopra);");
@@ -147,9 +154,11 @@ window.onload = function(){
         }
         else{
             corpoSezione.style.flexDirection = "row-reverse";
-        }    
+        }  
+         //altezza sezione quadri
+         sezioniQuadri.style.height = [(Nsezioni + NsezioniTitoli) * altezzaSezione] + "px";  
     }
 // funzione         titolo       testo        Nomeimmagine.Estensione
-    //sezioniQuadri ("Titolo","", "quadro-prova.jpg","true")
+    sezioniQuadri ("Titolo","", "quadro-prova.jpg")
     
 }
