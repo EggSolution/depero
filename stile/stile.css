@@ -264,12 +264,12 @@ footer a{
 }
 .scritteSopraSinistra-p{
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: 25px;
     color: white;
     position: absolute;
-    margin-left: 30px;
+    margin-left: 140px;
     margin-top: 170px;
-    margin-right: 25px;
+    margin-right: 20px;
 }
 .sopraDestra-p{
     height: 130%;
@@ -277,9 +277,10 @@ footer a{
     position: relative;
 }
 .immagineDepero2-p{
-    height: 95%;
+    height: 85%;
     position: relative;
-    margin-left: 35px;
+    margin-left: 20px;
+    margin-right: 140px;
 }
 .sotto-p{
     height: 50%;
@@ -296,8 +297,9 @@ footer a{
 .immagineDepero1-p{
     height: 95%;
     position: relative;
-    margin-left: 60px;
+    margin-left: 140px;
     margin-top: 15px;
+    margin-right: 20;
 }
 .sottoDestra-p{
     height: 70%;
@@ -603,17 +605,20 @@ footer a{
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     color: white;
-    margin-left: 150px;
+    margin-left: 140px;
     margin-top: 190px;
-    margin-right: 25px;
+    margin-right: 20px;
+    text-align: justify;
 
 }
 
 .immagineDepero1-v{
     height: 80%;
     position: relative;
-    margin-left: 180px;
+    margin-left: 120px;
     margin-top: 85px;
+    margin-right: 20px;
+
 }
 
 .scritte_sotto-v{
@@ -621,16 +626,18 @@ footer a{
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     color: white;
-    margin-left: 333px;
+    margin-left: 20px;
     margin-top: 70px;
-    margin-right: 25px;
+    margin-right: 140px;
+    text-align: justify;
 }
 
 .immagineDepero2-v{
     height: 70%;
     position: relative;
-    margin-left: 333px;
+    margin-left: 140px;
     margin-top: 50px;
+    margin-right: 20px;
 }
 
 .colonnaNera{
