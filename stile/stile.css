@@ -268,19 +268,20 @@ footer a{
     color: white;
     position: absolute;
     margin-left: 140px;
-    margin-top: 170px;
+    margin-top: 190px;
     margin-right: 20px;
 }
 .sopraDestra-p{
-    height: 130%;
+    height: 100%;
     width: 40%;
     position: relative;
 }
 .immagineDepero2-p{
-    height: 85%;
+    height: 90%;
     position: relative;
-    margin-left: 20px;
+    margin-left: 80px;
     margin-right: 140px;
+    margin-top: 85px;
 }
 .sotto-p{
     height: 50%;
@@ -295,25 +296,25 @@ footer a{
     position: relative;
 }
 .immagineDepero1-p{
-    height: 95%;
+    height: 90%;
     position: relative;
     margin-left: 140px;
     margin-top: 15px;
     margin-right: 20;
 }
 .sottoDestra-p{
-    height: 70%;
+    height: 100%;
     width: 60%;
     position: relative;
 }
 .scritteSottoDestra-p{
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: 25px;
     color: white;
     position: absolute;
-    margin-left: 40px;
-    margin-top: 200px;
-    margin-right: 55px;
+    margin-left: 20px;
+    margin-top: 150px;
+    margin-right: 140px;
 }
 /*bottoni mobile nascosti*/
 .vediAltroP,
@@ -613,7 +614,7 @@ footer a{
 }
 
 .immagineDepero1-v{
-    height: 80%;
+    height: 95%;
     position: relative;
     margin-left: 120px;
     margin-top: 85px;
