@@ -13,7 +13,7 @@ window.onload = function(){
     bottoniQuadri0.className = "bottoniQuadri0";
     function bottoneQuadro(x1, y1, colore, apparteneza, titolo, testo){
         window.Nbottoni += 1;
-        x1 = (x1 * window.innerHeight) / 955;
+        x1 = (x1 * window.innerHeight) / 947;
         y1 = (y1 * window.innerWidth) / 1920;
         function bottoneQuadro2(Nbottoni, x, y){
             eval('var bottone'+Nbottoni+';');
@@ -122,17 +122,20 @@ window.onload = function(){
     var testo2 = "Fugit voluptatem ipsa consequatur fugiat distinctio veritatis nihil aperiam. Quia vel laudantium doloribus ea architecto itaque earum."
     var testo3 = "Blanditiis laboriosam assumenda quisquam atque inventore illo. Et nulla et blanditiis natus quia aut omnis."
     //            x:   y:    colore:   appartenenza: titolo:     testo:
-    bottoneQuadro(500, 370, "#e6fa07", "sfondo1",   "Quadro 1", testo1);
-    bottoneQuadro(500, 770, "#e6fa07", "sfondo1",   "Quadro 2", testo1);
-    bottoneQuadro(510, 1600, "#e6fa07", "sfondo1",   "Quadro 3", testo1);
-    bottoneQuadro(630, 420, "#e6fa07", "sfondo2",   "Quadro 4", testo2);
-    bottoneQuadro(625, 740, "#e6fa07", "sfondo2",   "Quadro 5", testo2);
-    bottoneQuadro(630, 1040, "#e6fa07", "sfondo2",   "Quadro 6", testo2);
-    bottoneQuadro(623, 1670, "#e6fa07", "sfondo2",   "Quadro 7", testo2);
-    bottoneQuadro(510, 980, "#e6fa07", "sfondo3",  "Quadro 9", testo3);
-    bottoneQuadro(490, 772, "#e6fa07", "sfondo3",  "Quadro 8", testo3);
-    bottoneQuadro(512, 1375, "#e6fa07", "sfondo3",  "Quadro 10", testo3);
-    bottoneQuadro(504, 1660, "#e6fa07", "sfondo3",  "Quadro 11", testo3);
+    //slide 1
+    bottoneQuadro(505, 690, "#e6fa07", "sfondo1",   "Quadro 1", testo1);
+    bottoneQuadro(515, 1015, "#e6fa07", "sfondo1",   "Quadro 2", testo1);
+    bottoneQuadro(515, 1670, "#e6fa07", "sfondo1",   "Quadro 3", testo1);
+    //slide 2
+    bottoneQuadro(630, 688, "#e6fa07", "sfondo2",   "Quadro 4", testo2);
+    bottoneQuadro(625, 960, "#e6fa07", "sfondo2",   "Quadro 5", testo2);
+    bottoneQuadro(630, 1230, "#e6fa07", "sfondo2",   "Quadro 6", testo2);
+    bottoneQuadro(623, 1750, "#e6fa07", "sfondo2",   "Quadro 7", testo2);
+    //slide 3
+    bottoneQuadro(630, 660, "#e6fa07", "sfondo3",  "Quadro 9", testo3);
+    bottoneQuadro(508, 1160, "#e6fa07", "sfondo3",  "Quadro 8", testo3);
+    bottoneQuadro(515, 1455, "#e6fa07", "sfondo3",  "Quadro 10", testo3);
+    bottoneQuadro(515, 1680, "#e6fa07", "sfondo3",  "Quadro 11", testo3);
 
     //variabili SLIDE
     const img = document.querySelector("#sfondoScorriId");
@@ -367,7 +370,6 @@ window.onload = function(){
 //modena
 
     var larghezza100 = window.innerWidth;
-    console.log(larghezza100);
     var larghezzaBordo = (140*larghezza100)/1920;
     console.log(larghezzaBordo);
     var scritteSopraSinistra_p = document.querySelector("#scritteSopraSinistra-p");

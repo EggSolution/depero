@@ -8,7 +8,6 @@ window.onload = function(){
     var altezza100 = window.innerHeight;
     var altezzaSezione = altezza100/2;
     sezioneTitolo.style.height = altezzaSezione + "px";
-    console.log(altezza100);
     //variabili larghezze
     var larghezza100 = window.innerWidth;
     var larghezza50 = larghezza100/2;
@@ -16,6 +15,8 @@ window.onload = function(){
     var Nsezioni = 0;
     var Ntitoli = 0;
 //codice
+    console.log(altezza100);
+    console.log(larghezza100);
 //FUNZIONE QUADRI
     function sezioniQuadri(titolo1, testo, immagine, appartenenza, titoloSezioneQuadro, testoSezioneQuadro){
         var sezioneQuadri = document.querySelector ("#sezioneQuadri");
@@ -151,7 +152,7 @@ window.onload = function(){
         var NsezioniTitoli = (Nsezioni + Ntitoli);
          //altezza sezione quadri
          sezioneQuadri.style.height = (NsezioniTitoli * altezzaSezione) + "px";  
-         console.log (NsezioniTitoli);
+         //console.log (NsezioniTitoli);
     }
 // funzione    titolo sezione quadro/ testo sezione quadro/ immagine / appartenenza/ (titoloSezioneQuadro,/testoSezioneQuadro)
     sezioniQuadri("titoloQuadro","testoQuadro","","",)
