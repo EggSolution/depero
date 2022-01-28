@@ -15,8 +15,6 @@ window.onload = function(){
     var Nsezioni = 0;
     var Ntitoli = 0;
 //codice
-    console.log(altezza100);
-    console.log(larghezza100);
 //FUNZIONE QUADRI
     function sezioniQuadri(titolo1, testo, immagine, appartenenza, titoloSezioneQuadro, testoSezioneQuadro){
         var sezioneQuadri = document.querySelector ("#sezioneQuadri");
@@ -34,7 +32,6 @@ window.onload = function(){
             eval("sezioneTitolo.appendChild (titolo2);");
             eval("titolo2.textContent = '';");
             eval("titolo2.className = 'titolo2';");
-            titolo.style.height = altezzaSezione + "px";
             //SEZIONE TITOLO 2
             eval("var sezioneTitolo2 = document.createElement ('div');");
             eval("titolo2.appendChild (sezioneTitolo2);");
@@ -45,7 +42,6 @@ window.onload = function(){
             eval("sezioneTitolo2.appendChild (titoloRiga2);");
             eval("titoloRiga2.textContent = '';");
             eval("titoloRiga2.className = 'titoloRiga2';");
-            titoloRiga2.style.marginLeft = (larghezza50 - 150) + 'px';
             //SCRITTA TITOLO 2
             eval("var scrittaTitolo2 = document.createElement ('a');");
             eval("titoloRiga2.appendChild (scrittaTitolo2);");
@@ -66,7 +62,6 @@ window.onload = function(){
             eval("sezioneCorpo2.appendChild (scritte2);");
             eval("scritte2.textContent = '" + testoSezioneQuadro +"';");
             eval("scritte2.className = 'scritte2';");
-            scritte2.style.marginLeft = (larghezza50 - 750) + "px";
             Ntitoli += 1;
         }
          // SEZIONE
@@ -150,11 +145,15 @@ window.onload = function(){
             corpoSezione.style.flexDirection = "row";
         }  
         var NsezioniTitoli = (Nsezioni + Ntitoli);
-         //altezza sezione quadri
-         sezioneQuadri.style.height = (NsezioniTitoli * altezzaSezione) + "px";  
-         //console.log (NsezioniTitoli);
+         //stili
+         sezioneQuadri.style.height = (NsezioniTitoli * altezzaSezione) + "px"; 
+         scritte2.style.marginLeft = (larghezza50 - 750) + 'px'; 
+         titoloRiga2.style.marginLeft = (larghezza50 - 150) + 'px';
+         sezioneTitolo.style.height = altezzaSezione + "px";
     }
 // funzione    titolo sezione quadro/ testo sezione quadro/ immagine / appartenenza/ (titoloSezioneQuadro,/testoSezioneQuadro)
     sezioniQuadri("titoloQuadro","testoQuadro","","",)
     sezioniQuadri("titoloQuadro","testoQuadro","","",)
+    sezioniQuadri("titoloQuadro","testoQuadro","","a",)
+    sezioniQuadri("titoloQuadro","testoQuadro","","a",)
 }
