@@ -366,8 +366,10 @@ window.onload = function(){
 
 //modena
 
-var finestra2 = window.innerWidth;
-console.log(finestra2);
-var larghezzaBordo = (140*finestra2)/1920;
-console.log(larghezzaBordo);
+    var larghezza100 = window.innerWidth;
+    console.log(larghezza100);
+    var larghezzaBordo = (140*larghezza100)/1920;
+    console.log(larghezzaBordo);
+    var scritteSopraSinistra_p = document.querySelector("#scritteSopraSinistra-p");
+    scritteSopraSinistra_p.style.marginLeft = larghezzaBordo;
 };
