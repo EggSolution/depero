@@ -155,4 +155,5 @@ window.onload = function(){
     }
 // funzione    titolo sezione quadro/ testo sezione quadro/ immagine / appartenenza/ (titoloSezioneQuadro,/testoSezioneQuadro)
     sezioniQuadri("titoloQuadro","testoQuadro","","",)
+    sezioniQuadri("titoloQuadro","testoQuadro","","",)
 }

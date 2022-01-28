@@ -363,10 +363,11 @@ window.onload = function(){
         bottoneVediAltroT.addEventListener("click", vediAltroT);
         setInterval(hideMenu, 500);
     }
-};
+
 //modena
 
 var finestra2 = window.innerWidth;
 console.log(finestra2);
 var larghezzaBordo = (140*finestra2)/1920;
 console.log(larghezzaBordo);
+};
