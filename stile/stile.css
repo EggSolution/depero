@@ -394,6 +394,7 @@ footer a{
     margin-left: 140px;
     margin-top: 170px;
     margin-right: 20px;
+    text-align: justify;
 }
 .sopraDestra-s{
     width: 40%;
@@ -428,9 +429,10 @@ footer a{
     position: relative;
 }
 .quadroColoriFreddi-s{
-    height: 100%;
+    height: 90%;
     position: relative;
-    margin-left: 50px;
+    margin-left: 140px;
+    margin-right: 20px;
 }
 .mezzoSopraDestra-s{
     width: 50%;
@@ -442,8 +444,10 @@ footer a{
     font-size: 25px;
     color: white;
     position: absolute;
-    margin-right: 40px;
+    margin-right: 140px;
     margin-top: 120px;
+    margin-left: 20px;
+    text-align: justify;
 }
 .mezzoSotto-s{
     width: 100%;
@@ -464,8 +468,10 @@ footer a{
     font-size: 25px;
     color: white;
     position: absolute;
-    margin-left: 50px;
+    margin-left: 140px;
+    margin-right: 20px;
     margin-top: 150px;
+    text-align: justify;
 }
 .mezzoSottoDestra-s{
     width: 40%;
@@ -475,8 +481,9 @@ footer a{
 }
 .manifestoFascista-s{
     position: absolute;
-    height: 100%;
-    margin-left: 50px;
+    height: 90%;
+    margin-left: 160px;
+    margin-right: 140px;
 }
 
 .sotto-s{
@@ -493,8 +500,9 @@ footer a{
     position: relative;
 }
 .quadroArteNucleare-s{
-    height: 90%;
-    margin-left: 45px;
+    height: 75%;
+    margin-left: 140px;
+    margin-right: 20px;
     margin-top: 15px;
 }
 .sottoDestra-s{
@@ -505,11 +513,12 @@ footer a{
 .scritteSottoDestra-s{
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
+    text-align: justify;
     color: white;
     position: absolute;
     margin-top: 80px;
-    margin-left: 30px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 140px;
 }
 /*tecniche*/
 .tecniche{
@@ -534,10 +543,12 @@ footer a{
 }
 .scritteSopraSinistra-t{
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: 25px;
+    text-align: justify;
     color: white;
     position: absolute;
-    margin-left: 40px;
+    margin-left: 140px;
+    margin-right:20px;
     margin-top: 150px;
 }
 .sopraDestra-t{
@@ -549,11 +560,12 @@ footer a{
     height: 90%;
     margin-top: 8px;
     margin-left:20px;
+    margin-right:140px;
 }
 .sotto-t{
     height: 50%;
     width: 100%;
-    position:relative;
+    position: relative;
     display: flex;
     flex-direction: row;
 }
@@ -565,7 +577,8 @@ footer a{
 .fotoTecniche2-t{
     height: 90%;
     margin-top: 5px;
-    margin-left: 20px;
+    margin-left: 140px;
+    margin-right:20px;
 }
 .sottoDestra-t{
     height: 100%;
@@ -575,9 +588,12 @@ footer a{
 .scritteSottoDestra-t{
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
+    text-align: justify;
     color: white;
     position: absolute;
     margin-top: 150px;
+    margin-right: 140px;
+    margin-left: 20px;
 }
 .separatoreTecniche{
     background-color: rgb(46, 46, 46);

@@ -173,8 +173,14 @@
         display: none;
         z-index: 0;
     }
-    .sfondo-scorri{
-        margin-left: 0;
+    .sfondo1{
+        margin-left:0;
+    }
+    .sfondo2{
+        margin-left:0;
+    }
+    .sfondo3{
+        margin-left:0;
     }
     @keyframes freccia1 {
         0% {
