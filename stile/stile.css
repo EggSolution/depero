@@ -337,14 +337,48 @@ footer a{
     display: flex;
     flex-direction: row;
 }
+.scritteSopra-c{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 170px;
+    margin-right: 20px;
+    text-align: justify;
+}
+.immagineCampari1{
+    height: 90%;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 140px;
+    margin-top: 30px;
+}
 .sopraDestra-c{
     height: 100%;
-    width: 50%;
+    width: 60%;
     position: relative;
+}
+.scritteSotto-c{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 170px;
+    margin-right: 140px;
+    text-align: justify;
+}
+.immagineCampari2{
+    height: 90%;
+    position: relative;
+    margin-left: 140px;
+    margin-right: 80px;
+    margin-top: 30px;
 }
 .sopraSinistra-c{
     height: 100%;
-    width: 50%;
+    width: 40%;
     position: relative;
 }
 .sotto-c{
@@ -356,12 +390,12 @@ footer a{
 }
 .sottoDestra-c{
     height: 100%;
-    width: 50%;
+    width: 40%;
     position: relative;
 }
 .sottoSinistra-c{
     height: 100%;
-    width: 50%;
+    width: 60%;
     position: relative;
 }
 /*Storia*/
