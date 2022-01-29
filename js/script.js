@@ -284,7 +284,33 @@ window.onload = function(){
                 }
             }
         }
-        //BOTTONI VEDI ALTRO
+        // BOTTONE MENU CHE DIVENTA X
+        const hamburgherMenu2 = document.querySelector(".hamburgerMenu");
+        const meet12 = document.querySelector(".meet1");
+        const meet22 = document.querySelector(".meet2");
+        const meet32 = document.querySelector(".meet3");
+        meet12.style.transition = "0.2s";
+        meet22.style.transition = "0.2s";
+        meet32.style.transition = "0.2s";
+        function bottoneX(movimento){
+            switch(movimento){
+                case "x":
+                    meet22.style.opacity = "0";
+                    meet32.style.transform = "translateY(-14.5px) rotate(45deg)"
+                    meet12.style.transform = "translateY(14.5px) rotate(-45deg)"
+                    meet32.style.marginTop = "12px";
+                    break;
+                case "hamburgher":
+                    meet22.style.opacity = "1";
+                    meet12.style.transform = "translateY(0px) rotate(0deg)"
+                    meet32.style.transform = "translateY(0px) rotate(0deg)"
+                    meet32.style.marginTop = "6px";
+                    break;
+                default:
+                    alert("Error: funzione bottoneX non funziona corretamente")
+            }
+        }
+        // BOTTONI VEDI ALTRO
         var parteSottoPersonaggio = document.querySelector('.sotto-p');
         var bottoneVediAltroP = document.getElementById('vediAltroP');
         var parteSottoViaggi = document.querySelector('.sotto-v');
@@ -364,6 +390,19 @@ window.onload = function(){
         bottoneVediAltroV.addEventListener("click", vediAltroV);
         bottoneVediAltroS.addEventListener("click", vediAltroS);
         bottoneVediAltroT.addEventListener("click", vediAltroT);
+        var nMenu = 0;
+        hamburgherMenu2.addEventListener("click", function(){
+            if(nMenu == 0){
+                bottoneX("x")
+                nMenu = 1;
+            } else if (nMenu == 1){
+                bottoneX("hamburgher")
+                nMenu = 0;
+            } else {
+                alert("la variabile nMenu")
+            }
+        })
+
         setInterval(hideMenu, 500);
     }
 
