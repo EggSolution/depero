@@ -155,7 +155,6 @@ window.onload = function(){
          scritte2.style.marginLeft = (larghezza50 - 750) + 'px'; 
          titoloRiga2.style.marginLeft = (larghezza50 - 150) + 'px';
          sezioneTitolo.style.height = altezzaSezione + "px";
-         //scrittaTitoloVera2.style.marginLeft = (larghezza50 + 525) + "px";
     }
 // funzione    titolo sezione quadro/ testo sezione quadro/ immagine / appartenenza/ (titoloSezioneQuadro,/testoSezioneQuadro)
     sezioniQuadri("titoloQuadro","testoQuadro","","",)

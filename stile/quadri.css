@@ -122,11 +122,13 @@
     color: white;
     width: 250px;
     display: inline-block;
+    margin-left: calc(50% - 125px);
 }
 .riga2{
-    width: 100%;
+    width: 150px;
     height: 3%;
     background-color: white;
+    margin-left: 75px;
 }
 .sezioneCorpo2{
     width: 100%;
