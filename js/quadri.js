@@ -43,10 +43,15 @@ window.onload = function(){
             eval("titoloRiga2.textContent = '';");
             eval("titoloRiga2.className = 'titoloRiga2';");
             //SCRITTA TITOLO 2
-            eval("var scrittaTitolo2 = document.createElement ('a');");
+            eval("var scrittaTitolo2 = document.createElement ('div');");
             eval("titoloRiga2.appendChild (scrittaTitolo2);");
-            eval("scrittaTitolo2.textContent ='" + titoloSezioneQuadro +"';");
+            eval("scrittaTitolo2.textContent ='';");
             eval("scrittaTitolo2.className = 'scrittaTitolo2';");
+            //SCRITTA TITOLO VERA 2
+            eval("var scrittaTitoloVera2 = document.createElement ('a');");
+            eval("scrittaTitolo2.appendChild (scrittaTitoloVera2);");
+            eval("scrittaTitoloVera2.textContent = '" + titoloSezioneQuadro +"';");
+            eval("scrittaTitoloVera2.className = 'scrittaTitoloVera2';");
             //RIGA2
             eval("var riga2 = document.createElement ('div');");
             eval("titoloRiga2.appendChild (riga2);");
@@ -150,6 +155,7 @@ window.onload = function(){
          scritte2.style.marginLeft = (larghezza50 - 750) + 'px'; 
          titoloRiga2.style.marginLeft = (larghezza50 - 150) + 'px';
          sezioneTitolo.style.height = altezzaSezione + "px";
+         //scrittaTitoloVera2.style.marginLeft = (larghezza50 + 525) + "px";
     }
 // funzione    titolo sezione quadro/ testo sezione quadro/ immagine / appartenenza/ (titoloSezioneQuadro,/testoSezioneQuadro)
     sezioniQuadri("titoloQuadro","testoQuadro","","",)

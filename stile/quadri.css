@@ -52,15 +52,15 @@
     flex-direction: column;
 }
 .scritteTitolo{
-    height: 99%;
+    height: 95%;
     width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 60px;
     color: white;
 }
 .sezioneRiga{
-    height: 1%;
-    width: 60%;
+    height: 5%;
+    width: 80%;
     background-color: white;
     z-index: 2;
 }
@@ -98,6 +98,10 @@
     flex-direction: column;
     flex-shrink: 0;
 }
+.titolo2{
+    height: 100%;
+    width: 100%;
+}
 .sezioneTitolo2{
     width: 100%;
     height: 30%;
@@ -111,9 +115,13 @@
 .scrittaTitolo2{
     height: 97%;
     width: 100%;
+}
+.scrittaTitoloVera2{
     font-family: 'Roboto', sans-serif;
     font-size: 85px;
     color: white;
+    width: 250px;
+    display: inline-block;
 }
 .riga2{
     width: 100%;
