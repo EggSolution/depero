@@ -250,6 +250,7 @@ window.onload = function(){
         meet3.style.backgroundColor = "#242424";
         function menuCliccato(){
             if(menuEsteso.style.opacity === "1"){
+                bottoneX("hamburgher")
                 menuEsteso.style.opacity = "0";
                 meet1.style.backgroundColor = "#242424";
                 meet2.style.backgroundColor = "#242424";
@@ -262,6 +263,7 @@ window.onload = function(){
                 bottoneMenu3.style.zIndex = "1";
                 bottoneMenu4.style.zIndex = "1";
             }else if(menuEsteso.style.opacity === "0"){
+                bottoneX("x")
                 menuEsteso.style.opacity = "1";
                 meet1.style.backgroundColor = "#FFFFFF";
                 meet2.style.backgroundColor = "#FFFFFF";
@@ -406,17 +408,6 @@ window.onload = function(){
         bottoneVediAltroS.addEventListener("click", vediAltroS);
         bottoneVediAltroT.addEventListener("click", vediAltroT);
         var nMenu = 0;
-        hamburgherMenu2.addEventListener("click", function(){
-            if(nMenu == 0){
-                bottoneX("x")
-                nMenu = 1;
-            } else if (nMenu == 1){
-                bottoneX("hamburgher")
-                nMenu = 0;
-            } else {
-                alert("la variabile nMenu")
-            }
-        })
 
         setInterval(hideMenu, 500);
     }
