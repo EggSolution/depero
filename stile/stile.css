@@ -41,11 +41,11 @@ html,body{
     opacity: 0;
 }
 .scritteMenu{
-    margin-top: 200px;
+    margin-top: calc(50%);
     position: absolute;
     margin-left: 30px;
-    height: 500px;
-    width: 240px;
+    height: 600px;
+    width: 280px;
     z-index: 2;
 }
 .hamburgerMenu,
@@ -57,7 +57,7 @@ html,body{
 	font-family: 'Lobster', cursive;
     color: var(--coloreHome);
     font-size: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
     margin-left: 30px;
 }
 .home a{
@@ -84,13 +84,16 @@ html,body{
     width: 200px;
 }
 #scrittaMenu2Id:hover + #lineaSotto{
-    width: 85px;
+    width: 120px;
 }
 #scrittaMenu3Id:hover + #lineaSotto{
-    width: 80px;
+    width: 85px;
 }
 #scrittaMenu4Id:hover + #lineaSotto{
-    width: 190px;
+    width: 80px;
+}
+#scrittaMenu5Id:hover + #lineaSotto{
+    width: 130px;
 }
 .sfondo-scorri{
     width: 300%;
@@ -190,9 +193,7 @@ footer a{
 }
 
 
-
 /* MAGLIO */
-
 
 *{
     padding: 0px;
@@ -315,13 +316,14 @@ footer a{
     margin-top: 150px;
     margin-right: 140px;
 }
-/*bottoni mobile nascosti*/
+/* bottoni mobile nascosti */
 .vediAltroP,
+.vediAltroC,
 .vediAltroS{
     position: absolute;
     display: none;
 }
-/*campari*/
+/* CAMPARI */
 .campari{
     height: 100%;
     width: 100%;
@@ -337,14 +339,48 @@ footer a{
     display: flex;
     flex-direction: row;
 }
+.scritteSopra-c{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 170px;
+    margin-right: 20px;
+    text-align: justify;
+}
+.immagineCampari1{
+    height: 90%;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 140px;
+    margin-top: 30px;
+}
 .sopraDestra-c{
     height: 100%;
-    width: 50%;
+    width: 60%;
     position: relative;
+}
+.scritteSotto-c{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 170px;
+    margin-right: 140px;
+    text-align: justify;
+}
+.immagineCampari2{
+    height: 90%;
+    position: relative;
+    margin-left: 140px;
+    margin-right: 80px;
+    margin-top: 30px;
 }
 .sopraSinistra-c{
     height: 100%;
-    width: 50%;
+    width: 40%;
     position: relative;
 }
 .sotto-c{
@@ -356,15 +392,28 @@ footer a{
 }
 .sottoDestra-c{
     height: 100%;
-    width: 50%;
+    width: 40%;
     position: relative;
 }
 .sottoSinistra-c{
     height: 100%;
-    width: 50%;
+    width: 60%;
     position: relative;
 }
-/*Storia*/
+.spazioVideo{
+    height: 60%;
+    width:100%;
+    background-color: rgb(27, 27, 27);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.videoCampari {
+    height: calc(100% - 60px);
+    margin-top: 30px;
+    position: relative;
+}
+/* STORIA */
 .storia{
     height: 200%;
     width: 100%;
@@ -620,7 +669,6 @@ footer a{
     width: 100%;
     position: relative;
 }
-
 .sopra-v{
     display: flex;
     flex-direction: row;
@@ -628,19 +676,16 @@ footer a{
     height: 50%;
     position: relative;
 }
-
 .sopra_sinistra-v{
     position: relative;
     width: 60%;
     height: 100%;
 }
-
 .sopra_destra-v{
     position: relative;
     width: 40%;
     height: 100%;
 }
-
 .sotto-v{
     display: flex;
     flex-direction: row;
@@ -648,19 +693,16 @@ footer a{
     width: 100%;
     height: 50%;
 }
-
 .sotto_sinistra-v{
     position: relative;
     width: 40%;
     height: 100%;
 }
-
 .sotto_destra-v{
     position: relative;
     width: 60%;
     height: 100%; 
 }
-
 .scritte_sopra-v{
     position: relative;
     font-family: 'Roboto', sans-serif;
@@ -672,7 +714,6 @@ footer a{
     text-align: justify;
 
 }
-
 .immagineDepero1-v{
     height: 95%;
     position: relative;
@@ -681,7 +722,6 @@ footer a{
     margin-right: 20px;
 
 }
-
 .scritte_sotto-v{
     position: relative;
     font-family: 'Roboto', sans-serif;
@@ -692,7 +732,6 @@ footer a{
     margin-right: 140px;
     text-align: justify;
 }
-
 .immagineDepero2-v{
     height: 70%;
     position: relative;
@@ -700,11 +739,9 @@ footer a{
     margin-top: 50px;
     margin-right: 20px;
 }
-
 .colonnaNera{
     height: 100%;
     width: 333px;
-    background-color: #525252;
+    background-color: #292929;
     z-index: 2;
 }
-

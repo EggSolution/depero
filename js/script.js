@@ -69,7 +69,7 @@ window.onload = function(){
             eval('triangoloSopra'+window.Nbottoni+'.style.top = triangoloX'+window.Nbottoni+';');
             eval('triangoloSopra'+window.Nbottoni+'.style.opacity = "0";');
             eval('triangoloSopra'+window.Nbottoni+'.style.transition = "opacity 0.6s";');
-            eval('triangoloSopra'+window.Nbottoni+'.style.zIndex = "6";');
+            eval('triangoloSopra'+window.Nbottoni+'.style.zIndex = "5";');
             eval('bottoniQuadri'+window.Nbottoni+'.style.left = ""+y+"px";');
             eval('bottoniQuadri'+window.Nbottoni+'.style.top = ""+x+"px";');
             eval('bottoniQuadri'+window.Nbottoni+'.style.zIndex = "5";');
@@ -81,7 +81,7 @@ window.onload = function(){
             eval('bottone'+window.Nbottoni+'.style.borderRadius = "50%";');
             eval('bottone'+window.Nbottoni+'.style.left = ""+y+"px";');
             eval('bottone'+window.Nbottoni+'.style.top = ""+x+"px";');
-            eval('bottone'+window.Nbottoni+'.style.zIndex = "6";');
+            eval('bottone'+window.Nbottoni+'.style.zIndex = "5";');
             larghezza = String(larghezza + "px");
             eval('vignetta'+window.Nbottoni+'.style.color = "black";');
             eval('vignetta'+window.Nbottoni+'.style.background = "white";');
@@ -94,17 +94,17 @@ window.onload = function(){
             eval('vignetta'+window.Nbottoni+'.style.flexDirection = "column";');
             eval('vignetta'+window.Nbottoni+'.style.justifyContent = "center";');
             eval('vignetta'+window.Nbottoni+'.style.padding = "10px";');
-            eval('vignetta'+window.Nbottoni+'.style.zIndex = "6";');
+            eval('vignetta'+window.Nbottoni+'.style.zIndex = "5";');
             eval('titoloVignetta'+window.Nbottoni+'.style.width = "'+larghezza+'";');
             eval('titoloVignetta'+window.Nbottoni+'.style.height = "20px";');
-            eval('titoloVignetta'+window.Nbottoni+'.style.zIndex = "6";');
+            eval('titoloVignetta'+window.Nbottoni+'.style.zIndex = "5";');
             larghezza -= 0;
             larghezza = String(larghezza + "px");
             eval('testoSotto'+window.Nbottoni+'.style.marginTop = "20px";');
             eval('testoSotto'+window.Nbottoni+'.style.marginBottom = "10px";');
             eval('testoSotto'+window.Nbottoni+'.style.width = "'+larghezza+'";');
             eval('testoSotto'+window.Nbottoni+'.style.textAlign = "center";');
-            eval('testoSotto'+window.Nbottoni+'.style.zIndex = "6";');
+            eval('testoSotto'+window.Nbottoni+'.style.zIndex = "5";');
             var x2 = x + 30;
             var y2 = y - (250 / 2) + 2;
             eval('vignettaX'+window.Nbottoni+' = String('+x2+'+"px");');
@@ -203,7 +203,6 @@ window.onload = function(){
     setInterval(cambioAutomatico, tempo);
     document.querySelector(".bottoneSlide1").addEventListener("click", function(){
         window.cambioSlide('uno')
-        console.log("ciao");
     });
     document.querySelector(".bottoneSlide2").addEventListener("click", function(){
         window.cambioSlide('due')
@@ -238,18 +237,21 @@ window.onload = function(){
         var bottoneMenu2 = document.querySelector('.scrittaMenu2M');
         var bottoneMenu3 = document.querySelector('.scrittaMenu3M');
         var bottoneMenu4 = document.querySelector('.scrittaMenu4M');
+        var bottoneMenu5 = document.querySelector('.scrittaMenu5M');
         menuEsteso.style.opacity = "0";
         testoMenu.style.zIndex = "0";
         bottoneMenu1.style.zIndex = "0";
         bottoneMenu2.style.zIndex = "0";
         bottoneMenu3.style.zIndex = "0";
         bottoneMenu4.style.zIndex = "0";
+        bottoneMenu5.style.zIndex = "0";
         sfondoSlide.style.zIndex = "2";
         meet1.style.backgroundColor = "#242424";
         meet2.style.backgroundColor = "#242424";
         meet3.style.backgroundColor = "#242424";
         function menuCliccato(){
             if(menuEsteso.style.opacity === "1"){
+                bottoneX("hamburgher")
                 menuEsteso.style.opacity = "0";
                 meet1.style.backgroundColor = "#242424";
                 meet2.style.backgroundColor = "#242424";
@@ -261,7 +263,9 @@ window.onload = function(){
                 bottoneMenu2.style.zIndex = "1";
                 bottoneMenu3.style.zIndex = "1";
                 bottoneMenu4.style.zIndex = "1";
+                bottoneMenu5.style.zIndex = "1";
             }else if(menuEsteso.style.opacity === "0"){
+                bottoneX("x")
                 menuEsteso.style.opacity = "1";
                 meet1.style.backgroundColor = "#FFFFFF";
                 meet2.style.backgroundColor = "#FFFFFF";
@@ -273,6 +277,7 @@ window.onload = function(){
                 bottoneMenu2.style.zIndex = "5";
                 bottoneMenu3.style.zIndex = "5";
                 bottoneMenu4.style.zIndex = "5";
+                bottoneMenu5.style.zIndex = "5";
             }else{
                 console.error('error 4: l event listener che aspetta il click del menu mobile non funziona');
             }
@@ -284,9 +289,37 @@ window.onload = function(){
                 }
             }
         }
-        //BOTTONI VEDI ALTRO
+        // BOTTONE MENU CHE DIVENTA X
+        const hamburgherMenu2 = document.querySelector(".hamburgerMenu");
+        const meet12 = document.querySelector(".meet1");
+        const meet22 = document.querySelector(".meet2");
+        const meet32 = document.querySelector(".meet3");
+        meet12.style.transition = "0.2s";
+        meet22.style.transition = "0.2s";
+        meet32.style.transition = "0.2s";
+        function bottoneX(movimento){
+            switch(movimento){
+                case "x":
+                    meet22.style.opacity = "0";
+                    meet32.style.transform = "translateY(-14.5px) rotate(45deg)"
+                    meet12.style.transform = "translateY(14.5px) rotate(-45deg)"
+                    meet32.style.marginTop = "12px";
+                    break;
+                case "hamburgher":
+                    meet22.style.opacity = "1";
+                    meet12.style.transform = "translateY(0px) rotate(0deg)"
+                    meet32.style.transform = "translateY(0px) rotate(0deg)"
+                    meet32.style.marginTop = "6px";
+                    break;
+                default:
+                    alert("Error: funzione bottoneX non funziona corretamente")
+            }
+        }
+        // BOTTONI VEDI ALTRO
         var parteSottoPersonaggio = document.querySelector('.sotto-p');
         var bottoneVediAltroP = document.getElementById('vediAltroP');
+        var parteSottoCampari = document.querySelector('.sotto-c');
+        var bottoneVediAltroC = document.getElementById('vediAltroC');
         var parteSottoViaggi = document.querySelector('.sotto-v');
         var bottoneVediAltroV = document.querySelector('.vediAltroV');
         var parteSottoStoria1 = document.querySelector('.mezzo-s');
@@ -295,6 +328,7 @@ window.onload = function(){
         var parteSottoTecniche = document.querySelector('.sotto-t');
         var bottoneVediAltroT = document.querySelector('.vediAltroT');
         parteSottoPersonaggio.style.display = 'none';
+        parteSottoCampari.style.display = 'none';
         parteSottoViaggi.style.display = 'none';
         parteSottoTecniche.style.display = 'none';
         parteSottoStoria1.style.display = 'none';
@@ -311,6 +345,17 @@ window.onload = function(){
                 bottoneVediAltroP.innerHTML = text1.replace ('altro', 'meno');
             }else{
                 console.error('Error 5: la funzione vediAltroP non funziona correttamente')
+            }
+        }
+        function vediAltroC(){
+            if(parteSottoCampari.style.display == 'flex'){
+                parteSottoCampari.style.display = 'none';
+                bottoneVediAltroC.innerHTML = text1.replace ('meno', 'altro');
+            }else if(parteSottoCampari.style.display == 'none'){
+                parteSottoCampari.style.display = 'flex';
+                bottoneVediAltroC.innerHTML = text1.replace ('altro', 'meno');
+            }else{
+                console.error('Error 9: la funzione vediAltroC non funziona correttamente')
             }
         }
         function vediAltroV(){
@@ -348,6 +393,7 @@ window.onload = function(){
                 console.error('Error 7: la funzione vediAltroT non funziona correttamente')
             }
         }
+
         menu.addEventListener('click', function(){
             menuCliccato()
         });
@@ -361,9 +407,11 @@ window.onload = function(){
             window.cambioSlide('tre')
         });
         bottoneVediAltroP.addEventListener("click", vediAltroP);
+        bottoneVediAltroC.addEventListener("click", vediAltroC);
         bottoneVediAltroV.addEventListener("click", vediAltroV);
         bottoneVediAltroS.addEventListener("click", vediAltroS);
         bottoneVediAltroT.addEventListener("click", vediAltroT);
+
         setInterval(hideMenu, 500);
     }
 
@@ -371,7 +419,10 @@ window.onload = function(){
 
     var larghezza100 = window.innerWidth;
     var larghezzaBordo = (140*larghezza100)/1920;
+    // togliere alla fine
     console.log(larghezzaBordo);
+    //
     var scritteSopraSinistra_p = document.querySelector("#scritteSopraSinistra-p");
     scritteSopraSinistra_p.style.marginLeft = larghezzaBordo;
+
 };
