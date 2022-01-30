@@ -313,6 +313,8 @@ window.onload = function(){
         // BOTTONI VEDI ALTRO
         var parteSottoPersonaggio = document.querySelector('.sotto-p');
         var bottoneVediAltroP = document.getElementById('vediAltroP');
+        var parteSottoCampari = document.querySelector('.sotto-c');
+        var bottoneVediAltroC = document.getElementById('vediAltroC');
         var parteSottoViaggi = document.querySelector('.sotto-v');
         var bottoneVediAltroV = document.querySelector('.vediAltroV');
         var parteSottoStoria1 = document.querySelector('.mezzo-s');
@@ -321,6 +323,7 @@ window.onload = function(){
         var parteSottoTecniche = document.querySelector('.sotto-t');
         var bottoneVediAltroT = document.querySelector('.vediAltroT');
         parteSottoPersonaggio.style.display = 'none';
+        parteSottoCampari.style.display = 'none';
         parteSottoViaggi.style.display = 'none';
         parteSottoTecniche.style.display = 'none';
         parteSottoStoria1.style.display = 'none';
@@ -337,6 +340,17 @@ window.onload = function(){
                 bottoneVediAltroP.innerHTML = text1.replace ('altro', 'meno');
             }else{
                 console.error('Error 5: la funzione vediAltroP non funziona correttamente')
+            }
+        }
+        function vediAltroC(){
+            if(parteSottoCampari.style.display == 'flex'){
+                parteSottoCampari.style.display = 'none';
+                bottoneVediAltroC.innerHTML = text1.replace ('meno', 'altro');
+            }else if(parteSottoCampari.style.display == 'none'){
+                parteSottoCampari.style.display = 'flex';
+                bottoneVediAltroC.innerHTML = text1.replace ('altro', 'meno');
+            }else{
+                console.error('Error 9: la funzione vediAltroC non funziona correttamente')
             }
         }
         function vediAltroV(){
@@ -387,6 +401,7 @@ window.onload = function(){
             window.cambioSlide('tre')
         });
         bottoneVediAltroP.addEventListener("click", vediAltroP);
+        bottoneVediAltroC.addEventListener("click", vediAltroC);
         bottoneVediAltroV.addEventListener("click", vediAltroV);
         bottoneVediAltroS.addEventListener("click", vediAltroS);
         bottoneVediAltroT.addEventListener("click", vediAltroT);

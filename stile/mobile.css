@@ -223,6 +223,7 @@
 
     /* BOTTONI 'Leggi altro' */
     .vediAltroP,
+    .vediAltroC,
     .vediAltroS,
     .vediAltroT,
     .vediAltroV{
@@ -313,6 +314,58 @@
         height: auto;
     }
     .videoPersone{
+        position: relative;
+        width: calc(100% - 40px);
+        padding-bottom: 20px;
+        height: auto;
+    }
+
+    /* CAMPARI */
+    .campari {
+        height: auto;
+    }
+    .sopra-c {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .sotto-c {
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .sopraSinistra-c,
+    .sottoDestra-c {
+        width: 100%;
+        height: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 30px;
+    }
+    .sopraDestra-c,
+    .sottoSinistra-c {
+        width: calc(100% - 60px);
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        height: auto;
+    }
+    .scritteSopra-c,
+    .scritteSotto-c {
+        position: relative;
+        font-size: 16px;
+        line-height: 40px;
+        margin: 0;
+        padding: 0;
+    }
+    .immagineCampari1,
+    .immagineCampari2 {
+        margin: 0;
+        padding: 0;
+        width: calc(100% - 60px);
+        height: auto;
+    }
+    .videoCampari {
         position: relative;
         width: calc(100% - 40px);
         padding-bottom: 20px;
