@@ -41,11 +41,11 @@ html,body{
     opacity: 0;
 }
 .scritteMenu{
-    margin-top: 200px;
+    margin-top: calc(50%);
     position: absolute;
     margin-left: 30px;
-    height: 500px;
-    width: 240px;
+    height: 600px;
+    width: 280px;
     z-index: 2;
 }
 .hamburgerMenu,
@@ -57,7 +57,7 @@ html,body{
 	font-family: 'Lobster', cursive;
     color: var(--coloreHome);
     font-size: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
     margin-left: 30px;
 }
 .home a{
@@ -84,13 +84,16 @@ html,body{
     width: 200px;
 }
 #scrittaMenu2Id:hover + #lineaSotto{
-    width: 85px;
+    width: 120px;
 }
 #scrittaMenu3Id:hover + #lineaSotto{
-    width: 80px;
+    width: 85px;
 }
 #scrittaMenu4Id:hover + #lineaSotto{
-    width: 190px;
+    width: 80px;
+}
+#scrittaMenu5Id:hover + #lineaSotto{
+    width: 130px;
 }
 .sfondo-scorri{
     width: 300%;
@@ -190,9 +193,7 @@ footer a{
 }
 
 
-
 /* MAGLIO */
-
 
 *{
     padding: 0px;
@@ -741,6 +742,6 @@ footer a{
 .colonnaNera{
     height: 100%;
     width: 333px;
-    background-color: #525252;
+    background-color: #292929;
     z-index: 2;
 }

@@ -64,13 +64,17 @@
         transition: opacity 0.2s;
     }
     .menuMobileScritte{
-        margin-top: 240px;
+        margin-top: 200px;
         position: absolute;
         margin-left: 10px;
         height: 300px;
         width: 260px;
     }
-    .scrittaMenu1M{
+    .scrittaMenu1M,
+    .scrittaMenu2M,
+    .scrittaMenu3M,
+    .scrittaMenu4M,
+    .scrittaMenu5M {
         position: relative;
         color: white;
         font-size: 40px;
@@ -78,28 +82,11 @@
         margin-left: 30px;
         
     }
-    .scrittaMenu2M{
-        position: relative;
-        color: white;
-        font-size: 40px;
-        font-family: 'Roboto', sans-serif;
-        margin-left: 30px;
-    }
-    .scrittaMenu3M{
-        position: relative;
-        color: white;
-        font-size: 40px;
-        font-family: 'Roboto', sans-serif;
-        margin-left: 30px;
-    }
-    .scrittaMenu4M{
-        position: relative;
-        color: white;
-        font-size: 40px;
-        font-family: 'Roboto', sans-serif;
-        margin-left: 30px;
-    }
-    .lS1M{
+    .lS1M,
+    .lS2M,
+    .lS3M,
+    .lS4M,
+    .lS5M {
         background-color: white;
         height: 4px;
         width: 30px;
@@ -108,40 +95,12 @@
         margin-left: 30px;
         margin-bottom: 25px;
         transition: 0.5s;
-    }
-    .lS2M{
-        background-color: white;
-        height: 4px;
-        width: 30px;
-        position: relative;
-        margin-top: 2px;
-        margin-left: 30px;
-        margin-bottom: 25px;
-        transition: 0.5s;
-    }
-    .lS3M{
-        background-color: white;
-        height: 4px;
-        width: 30px;
-        position: relative;
-        margin-top: 2px;
-        margin-left: 30px;
-        margin-bottom: 25px;
-    }
-    .lS4M{
-        background-color: white;
-        height: 4px;
-        width: 30px;
-        position: relative;
-        margin-top: 2px;
-        margin-left: 30px;
-        margin-bottom: 25px;
     }
     #scrittaMenu1Id,
     #scrittaMenu2Id,
     #scrittaMenu3Id,
     #scrittaMenu4Id,
-    #scrittaMenu4Id,
+    #scrittaMenu5Id,
     #lineaSotto{
         display: none;
     }
