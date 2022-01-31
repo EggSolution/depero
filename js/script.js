@@ -2,7 +2,7 @@ window.onload = function(){
     // ALTEZZA SCRITTE MENU
     var altezzaHome = document.querySelector(".home").clientHeight;
     var yBottoni = (200 * altezzaHome) / 955;
-    document.querySelector('.scritteMenu').style.marginTop = String(yBottoni+"px");
+    document.querySelector('.scritteMenu').style.marginTop = String(yBottoni - 70 + "px");
     // BOTTONI QUADRI
     var larghezzaSchermo = screen.width;
     var Nbottoni;

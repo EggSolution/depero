@@ -46,17 +46,17 @@
 }
 .titolo{
     height: 100%;
-    width: 30%;
+    width: 70%;
     margin-left: 200px;
     display: flex;
     flex-direction: column;
 }
 .scritteTitolo{
     height: 95%;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 60px;
     color: white;
-    
 }
 .sezioneRiga{
     height: 5%;
@@ -71,7 +71,7 @@
 .scritteVere{
     height: 90%;
     width: 90%;
-    margin-left: 40px;
+    margin-left: 80px;
     margin-bottom: 20px;
     margin-top: 10px;
 }
