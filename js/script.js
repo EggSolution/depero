@@ -218,7 +218,7 @@ window.onload = function(){
     }
 
     // MOBILE
-    if(window.screen.availWidth < 1480){
+    if(window.screen.availWidth < 1000){
         document.querySelector('.scritteMenu').style.marginTop = '0px';
         // menu
         var corpo = document.querySelector('body');
