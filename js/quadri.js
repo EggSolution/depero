@@ -157,6 +157,17 @@ window.onload = function(){
          sezioneTitolo.style.height = altezzaSezione + "px";
     }
 // funzione    titolo sezione quadro/ testo sezione quadro/ immagine / appartenenza/ (titoloSezioneQuadro,/testoSezioneQuadro)
-    sezioniQuadri("Bitter Campari Soda","testoQuadro","campari1.jpg","",)
-    sezioniQuadri("","testoQuadro","campari2.jpg","",)
+//PUBBLICIT°
+    //QUADRI CAMPARI
+    sezioniQuadri("Bitter Campari Soda","testoQuadro","campari/campari1.jpg","",)
+    sezioniQuadri("Bitter Campari Soda","testoQuadro","campari/campari2.jpg","",)
+    sezioniQuadri("Bitter Campari Soda","testoQuadro","campari/campari3.jpg","",)
+    sezioniQuadri("Bitter Campari Soda","testoQuadro","campari/campari4.jpg","",)
+    //LIQUORI STREGA
+    sezioniQuadri("liquore strega","testoQuadro","strega/strega1.jpg","",)
+    sezioniQuadri("liquore strega","testoQuadro","strega/strega2.jpg","",)
+    //VANITY FAIR
+    sezioniQuadri("Vanity Fair","testoQuadro","vanityFair/vanityfair1.jpg","",)
+    sezioniQuadri("Vanity Fair","testoQuadro","vanityFair/vanityfair2.jpg","",)
+
 }
