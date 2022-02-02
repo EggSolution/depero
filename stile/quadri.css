@@ -70,10 +70,9 @@
 }
 .scritteVere{
     height: 90%;
-    width: 90%;
-    margin-left: 80px;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    width: 60%;
+    margin-left: 200px;
+    margin-top: 60px;
 }
 .scritte{
     font-family: 'Roboto', sans-serif;
@@ -88,6 +87,7 @@
     height: 90%;
     margin-top: 7px;
     margin-left: 30px;
+    position: relative;
     border: 10px solid;
     border-color: rgb(126, 124, 124);
 }
