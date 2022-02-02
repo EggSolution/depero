@@ -46,7 +46,7 @@
 }
 .titolo{
     height: 100%;
-    width: 30%;
+    width: 70%;
     margin-left: 200px;
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@
 .scritteVere{
     height: 90%;
     width: 90%;
-    margin-left: 40px;
+    margin-left: 80px;
     margin-bottom: 20px;
     margin-top: 10px;
 }
@@ -86,9 +86,11 @@
 }
 .quadroSezione{
     height: 90%;
-    margin-top: 15px;
+    margin-top: 7px;
+    margin-left: 30px;
+    border: 10px solid;
+    border-color: rgb(126, 124, 124);
 }
-
 /*TITOLO*/
 .sezioneTitolo{
     width: 100%;

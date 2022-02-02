@@ -157,8 +157,5 @@ window.onload = function(){
          sezioneTitolo.style.height = altezzaSezione + "px";
     }
 // funzione    titolo sezione quadro/ testo sezione quadro/ immagine / appartenenza/ (titoloSezioneQuadro,/testoSezioneQuadro)
-    sezioniQuadri("titoloQuadro","testoQuadro","","",)
-    sezioniQuadri("titoloQuadro","testoQuadro","","",)
-    sezioniQuadri("titoloQuadro","testoQuadro","","a","titolo","scritte")
-    sezioniQuadri("titoloQuadro","testoQuadro","","a",)
+    sezioniQuadri("Bitter Campari Soda","testoQuadro","campari1.jpg","",)
 }
