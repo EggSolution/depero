@@ -41,12 +41,23 @@ html,body{
     opacity: 0;
 }
 .scritteMenu{
-    margin-top: calc(50%);
     position: absolute;
-    margin-left: 30px;
-    height: 600px;
+    padding-left: 30px;
+    height: 100%;
     width: 280px;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.menuCentrato {
+    transform: translateY(-50%);
+    top: 40%;
+    position: relative;
+    height: 400px;
+}
+.menuBasso {
+    position: absolute;
+    bottom: 0px;
 }
 .hamburgerMenu,
 .frecciaScendi {
@@ -54,10 +65,10 @@ html,body{
     display: none;
 }
 .logo{
+    margin-top: 30px;
 	font-family: 'Lobster', cursive;
     color: var(--coloreHome);
     font-size: 60px;
-    margin-bottom: 120px;
     margin-left: 30px;
 }
 .home a{
@@ -742,6 +753,6 @@ footer a{
 .colonnaNera{
     height: 100%;
     width: 333px;
-    background-color: #292929;
+    background-color: black;
     z-index: 2;
 }

@@ -1,8 +1,4 @@
 window.onload = function(){
-    // ALTEZZA SCRITTE MENU
-    var altezzaHome = document.querySelector(".home").clientHeight;
-    var yBottoni = (200 * altezzaHome) / 955;
-    document.querySelector('.scritteMenu').style.marginTop = String(yBottoni+"px");
     // BOTTONI QUADRI
     var larghezzaSchermo = screen.width;
     var Nbottoni;
@@ -416,7 +412,7 @@ window.onload = function(){
     }
 
 //modena
-
+/*
     var larghezza100 = window.innerWidth;
     var larghezzaBordo = (140*larghezza100)/1920;
     // togliere alla fine
@@ -424,5 +420,5 @@ window.onload = function(){
     //
     var scritteSopraSinistra_p = document.querySelector("#scritteSopraSinistra-p");
     scritteSopraSinistra_p.style.marginLeft = larghezzaBordo;
-
+*/
 };
