@@ -158,4 +158,5 @@ window.onload = function(){
     }
 // funzione    titolo sezione quadro/ testo sezione quadro/ immagine / appartenenza/ (titoloSezioneQuadro,/testoSezioneQuadro)
     sezioniQuadri("Bitter Campari Soda","testoQuadro","campari1.jpg","",)
+    sezioniQuadri("","testoQuadro","campari2.jpg","",)
 }
