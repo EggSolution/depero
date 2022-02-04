@@ -296,12 +296,13 @@ footer a{
     height: 50%;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     position: relative;
 }
 .sopraSinistra-p{
-    height: 100%;
-    width: 60%;
+    margin-left: 40px;
+    height: 100px;
+    max-width: 600px;
     position: relative;
 }
 .scritteSopraSinistra-p{
@@ -334,7 +335,9 @@ footer a{
 .sottoSinistra-p{
     height: 100%;
     width: 40%;
-    position: relative;
+    position: absolute;
+    
+    display: none; 
 }
 .immagineDepero1-p{
     height: 90%;
@@ -369,7 +372,7 @@ footer a{
     height: 100%;
     width: 100%;
     position: relative;
-    background-color: rgb(46, 46, 46);
+    background-color: #474747;
     display: flex;
     flex-direction: column;
 }
@@ -459,7 +462,7 @@ footer a{
     height: 200%;
     width: 100%;
     position: relative;
-    background-color: rgb(46, 46, 46);
+    background-color:#2E2E2E;
     display: flex;
     flex-direction: column;
 }
