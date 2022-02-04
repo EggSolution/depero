@@ -288,6 +288,9 @@
     .campari {
         height: auto;
     }
+    .campari-pc{
+        display: none;
+    }
     .sopra-c {
         display: flex;
         flex-direction: column;
@@ -419,6 +422,9 @@
     .storia{
         height: auto;
     }
+    .storia-pc{
+        display: none;
+    }
     .sopra-s{
         display: flex;
         flex-direction: column;
@@ -503,6 +509,9 @@
         flex-direction: column;
         position: relative;
         height: auto;
+    }
+    .tencniche-pc{
+        display: none;
     }
     .sezioneFlex {
         height: auto;
