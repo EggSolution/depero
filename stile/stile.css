@@ -459,26 +459,6 @@ footer a{
     margin-top: 30px;
     position: relative;
 }
-/*CAMPARI PC*/
-.campari-pc{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-.sinistraC-pc{
-    height: 100%;
-    width: 50%;
-    background-color: blue;
-}
-.destraC-pc{
-    height: 100%;
-    width: 50%;
-    background-color: red;
-}
-.quadroC-pc{
-    height: 80%;
-}
 /* STORIA */
 .storia{
     height: 200%;
@@ -819,7 +799,11 @@ footer a{
 <<<<<<< HEAD
 .viaggi-pc,
 .storia-pc,
+<<<<<<< HEAD
 .tecniche-pc {
+=======
+.campari-pc {
+>>>>>>> cfe4248b14932054be502697121d6e45ab157302
 =======
 .viaggi-pc {
 >>>>>>> 70e3021d64fd0b720254a99cde4ca423aa3d10f6
@@ -861,7 +845,11 @@ footer a{
 .sinistra-p-pc,
 .sinistra-v-pc,
 .sinistra-s-pc,
+<<<<<<< HEAD
 .sinistra-t-pc {
+=======
+.destra-c-pc{
+>>>>>>> cfe4248b14932054be502697121d6e45ab157302
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -870,7 +858,11 @@ footer a{
 .destra-p-pc,
 .destra-v-pc,
 .destra-s-pc,
+<<<<<<< HEAD
 .destra-t-pc {
+=======
+.sinistra-c-pc {
+>>>>>>> cfe4248b14932054be502697121d6e45ab157302
     margin-top:100px;
     display: flex;
     flex-direction: row;
