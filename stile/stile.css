@@ -987,3 +987,15 @@ footer a{
     padding-top: 180px;
     padding-left: 50px;
 }
+.immg-c-pc{
+    display: block;
+    margin-left:auto;
+    margin-top:auto;
+    margin-right:auto;
+    margin-bottom: auto;
+    position: relative;
+    height: 70%;
+    border: 35px solid #000000;
+    box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
+    border-radius: 21px;
+}
