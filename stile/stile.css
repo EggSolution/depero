@@ -793,20 +793,44 @@ footer a{
 }
 /*sezioni pc*/
 /*personaggio*/
-.personaggio-pc{
+.personaggio-pc,
+.viaggi-pc {
     display: flex;
     flex-direction:row;
     height: 100%;
     width: 100%;
     background-color: rgb(46, 46, 46);
 }
-.sinistra-p-pc{
+.titoloSezione-pc {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.titoloTestoSezione-pc {
+    display: block;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    padding-top: 20px;
+}
+.titoloDivSezione-pc{
+    position: relative;
+    height: 6px;
+    background-color: white;
+    width: 60px;
+}
+.sinistra-p-pc,
+.sinistra-v-pc {
     display: flex;
     flex-direction: row;
     height: 100%;
     width: 50%;
 }
-.destra-p-pc{
+.destra-p-pc,
+.destra-v-pc {
     margin-top:100px;
     display: flex;
     flex-direction: row;
@@ -838,48 +862,6 @@ footer a{
     text-align: justify;
     color: #FFFFFF;
 }
-.titoloSezione-pc {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.titoloTestoSezione-pc {
-    display: block;
-    height: auto;
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    color: white;
-    position: relative;
-    padding-top: 20px;
-}
-.titoloDivSezione-pc{
-    position: relative;
-    height: 6px;
-    background-color: white;
-    width: 60px;
-}
-/*viaggi*/
-.viaggi-pc{
-    display: flex;
-    flex-direction:row;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(46, 46, 46);
-}
-.sinistra-v-pc{
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 50%;
-}
-.destra-v-pc{
-    margin-top:100px;
-    display: flex;
-    flex-direction: row;
-    height: calc(100% - 100px);
-    width: 50%;
-}
 .immg-v-pc{
     display: block;
     margin-left:auto;
@@ -904,25 +886,4 @@ footer a{
     line-height: 36px;
     text-align: justify;
     color: #FFFFFF;
-}
-.titoloSezione-pc {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.titoloTestoSezione-pc {
-    display: block;
-    height: auto;
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    color: white;
-    position: relative;
-    padding-top: 20px;
-}
-.titoloDivSezione-pc{
-    position: relative;
-    height: 6px;
-    background-color: white;
-    width: 60px;
 }
