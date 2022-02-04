@@ -111,6 +111,13 @@ window.onload = function(){
             eval('vignetta'+window.Nbottoni+'.style.transition = "opacity 0.6s";');
             eval('window.mostraVignetta'+window.Nbottoni+' = function(){vignetta'+window.Nbottoni+'.style.opacity = "1";triangoloSopra'+window.Nbottoni+'.style.opacity = "1";}');
             eval('window.nascondiVignetta'+window.Nbottoni+' = function(){vignetta'+window.Nbottoni+'.style.opacity = "0";triangoloSopra'+window.Nbottoni+'.style.opacity = "0";}');
+
+            function redirectToQudri() {
+                var realLink = window.location.href.replace(window.location.pathname, "/depero/quadri.html");
+                console.log("ciao")
+                window.location.replace(realLink);
+            }
+            eval('bottone'+window.Nbottoni+'.addEventListener("click", redirectToQudri)');
         }
         bottoneQuadro2(Nbottoni, x1, y1);
     }
