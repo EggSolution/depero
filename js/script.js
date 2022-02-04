@@ -113,7 +113,7 @@ window.onload = function(){
             eval('window.nascondiVignetta'+window.Nbottoni+' = function(){vignetta'+window.Nbottoni+'.style.opacity = "0";triangoloSopra'+window.Nbottoni+'.style.opacity = "0";}');
 
             function redirectToQudri() {
-                var realLink = window.location.href.replace(window.location.pathname, "/depero/quadri.html/#" + idQuadro);
+                var realLink = window.location.href.replace(window.location.pathname, "/depero/quadri.html#" + idQuadro);
                 window.location.replace(realLink);
             }
             eval('bottone'+window.Nbottoni+'.addEventListener("click", redirectToQudri)');
