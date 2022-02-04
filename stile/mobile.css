@@ -504,6 +504,9 @@
     }
 
     /* TECNICHE */
+    .teciche-pc{
+        display:none;
+    }
     .tecniche{
         display: flex;
         flex-direction: column;
