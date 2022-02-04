@@ -7,7 +7,7 @@ window.onload = function(){
     var bottoniQuadri0 = document.createElement("div");
     bottoniQuadri0.textContent = "";
     bottoniQuadri0.className = "bottoniQuadri0";
-    function bottoneQuadro(x1, y1, colore, apparteneza, titolo, testo){
+    function bottoneQuadro(x1, y1, colore, apparteneza, titolo, testo, idQuadro){
         window.Nbottoni += 1;
         x1 = (x1 * window.innerHeight) / 947;
         y1 = (y1 * window.innerWidth) / 1920;
@@ -111,27 +111,33 @@ window.onload = function(){
             eval('vignetta'+window.Nbottoni+'.style.transition = "opacity 0.6s";');
             eval('window.mostraVignetta'+window.Nbottoni+' = function(){vignetta'+window.Nbottoni+'.style.opacity = "1";triangoloSopra'+window.Nbottoni+'.style.opacity = "1";}');
             eval('window.nascondiVignetta'+window.Nbottoni+' = function(){vignetta'+window.Nbottoni+'.style.opacity = "0";triangoloSopra'+window.Nbottoni+'.style.opacity = "0";}');
+
+            function redirectToQudri() {
+                var realLink = window.location.href.replace(window.location.pathname, "/depero/quadri.html/#" + idQuadro);
+                window.location.replace(realLink);
+            }
+            eval('bottone'+window.Nbottoni+'.addEventListener("click", redirectToQudri)');
         }
         bottoneQuadro2(Nbottoni, x1, y1);
     }
     var testo1 = "Quis ut sed sed perferendis excepturi. Qui sit ut temporibus qui earum doloribus. Voluptatum sit hic voluptatem distinctio cum dolorum eveniet et. Incidunt consequuntur a ea sunt quae dolor neque sunt. Laboriosam in ut eveniet quos odit quo numquam qui."
     var testo2 = "Fugit voluptatem ipsa consequatur fugiat distinctio veritatis nihil aperiam. Quia vel laudantium doloribus ea architecto itaque earum."
     var testo3 = "Blanditiis laboriosam assumenda quisquam atque inventore illo. Et nulla et blanditiis natus quia aut omnis."
-    //            x:   y:    colore:   appartenenza: titolo:     testo:
+    //            x:   y:    colore:   appartenenza: titolo:     testo:  id quadro
     //slide 1
-    bottoneQuadro(505, 690, "#e6fa07", "sfondo1",   "Quadro 1", testo1);
-    bottoneQuadro(515, 1015, "#e6fa07", "sfondo1",   "Quadro 2", testo1);
-    bottoneQuadro(515, 1670, "#e6fa07", "sfondo1",   "Quadro 3", testo1);
+    bottoneQuadro(505, 690, "#e6fa07", "sfondo1",    "Quadro 1", testo1, "");
+    bottoneQuadro(515, 1015, "#e6fa07", "sfondo1",   "Quadro 2", testo1, "");
+    bottoneQuadro(515, 1670, "#e6fa07", "sfondo1",   "Quadro 3", testo1, "");
     //slide 2
-    bottoneQuadro(630, 688, "#e6fa07", "sfondo2",   "Quadro 4", testo2);
-    bottoneQuadro(625, 960, "#e6fa07", "sfondo2",   "Quadro 5", testo2);
-    bottoneQuadro(630, 1230, "#e6fa07", "sfondo2",   "Quadro 6", testo2);
-    bottoneQuadro(623, 1750, "#e6fa07", "sfondo2",   "Quadro 7", testo2);
+    bottoneQuadro(630, 688, "#e6fa07", "sfondo2",    "Quadro 4", testo2, "");
+    bottoneQuadro(625, 960, "#e6fa07", "sfondo2",    "Quadro 5", testo2, "");
+    bottoneQuadro(630, 1230, "#e6fa07", "sfondo2",   "Quadro 6", testo2, "");
+    bottoneQuadro(623, 1750, "#e6fa07", "sfondo2",   "Quadro 7", testo2, "");
     //slide 3
-    bottoneQuadro(630, 660, "#e6fa07", "sfondo3",  "Mandorlato Vido", "Nel quadro è rappresentato la mascotte dell'azienda Mandorlato Vido.");
-    bottoneQuadro(508, 1160, "#e6fa07", "sfondo3",  "Liquore Strega", "Nel quadro è rappresentato un picchio posato sopra ad un bicchiere di liquore strega.");
-    bottoneQuadro(515, 1455, "#e6fa07", "sfondo3",  "Quadro 10", testo3);
-    bottoneQuadro(515, 1680, "#e6fa07", "sfondo3",  "Quadro 11", testo3);
+    bottoneQuadro(630, 660, "#e6fa07", "sfondo3",   "Mandorlato Vido", "Nel quadro è rappresentato la mascotte dell'azienda Mandorlato Vido.");
+    bottoneQuadro(508, 1160, "#e6fa07", "sfondo3",  "Liquore Strega",  "Nel quadro è rappresentato un picchio posato sopra ad un bicchiere di liquore strega.");
+    bottoneQuadro(515, 1455, "#e6fa07", "sfondo3",  "Quadro 10", testo3, "");
+    bottoneQuadro(515, 1680, "#e6fa07", "sfondo3",  "Quadro 11", testo3, "");
 
     //variabili SLIDE
     const img = document.querySelector("#sfondoScorriId");
