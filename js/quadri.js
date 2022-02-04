@@ -3,7 +3,6 @@ window.onload = function(){
     //variabili elementi
     //var sezioneQuadri = document.querySelector ("#sezioneQuadri");
     var sezioneTitolo = document.querySelector ("#sezioneTitolo");
-    var titolo = document.querySelector ("#titolo")
     // variabili altezze
     var altezza100 = window.innerHeight;
     var altezzaSezione = altezza100/2;
@@ -13,7 +12,7 @@ window.onload = function(){
     var larghezza50 = larghezza100/2;
     // variabile n° sezioni
     var Nsezioni = 0;
-    var Ntitoli = 0;
+    var Ntitoli = 1;
 //codice
 //FUNZIONE QUADRI
     function sezioniQuadri(titolo1, testo, immagine, appartenenza, titoloSezioneQuadro, testoSezioneQuadro){
@@ -157,5 +156,16 @@ window.onload = function(){
          sezioneTitolo.style.height = altezzaSezione + "px";
     }
 // funzione    titolo sezione quadro/ testo sezione quadro/ immagine / appartenenza/ (titoloSezioneQuadro,/testoSezioneQuadro)
-    sezioniQuadri("Bitter Campari Soda","testoQuadro","campari1.jpg","",)
+//PUBBLICITA'
+    //QUADRI CAMPARI
+    sezioniQuadri("Bitter Campari Soda","In questo quadro sono visibili oltre alle 2 persone sedute ai tavoli, 2 sifoni che hanno caratterizzato i quadri di depero nella collaborazione con Campari.","campari/campari1.jpg","",)
+    sezioniQuadri("Cordial Campari Liquor","Nel quadro sono presenti una persona stilizzata ed il classico bicchiere della Campari, inventato proprio da fortunato Depero.","campari/campari2.jpg","",)
+    sezioniQuadri("Personaggio Camapari","Nel quadro è presente la mascotte del Campari, che Depero ha inventato, bevendo un Campari.","campari/campari3.jpg","",)
+    //LIQUORI STREGA
+    sezioniQuadri("Picchio Liquore Strega","Nel quadro è rappresentato un picchio posato sopra ad un bicchiere di liquore strega, un altra importantissima collaborazione di Depero.","strega/strega1.jpg","",)
+    sezioniQuadri("Personaggio Liquore Strega","Nel quadro è rappresentato la mascotte del liquore Strega, formato da molti dei caratteristici bicchieri del liquore. ","strega/strega2.jpg","",)
+    //VANITY FAIR
+    sezioniQuadri("Uomo Vanity Fair","Nel quadro è rappresentata una persona con una sigaretta, disegnata con forme molto rotondeggianti. Questo quadro è stato realizzato per Vanity fair, un azienda di moda.","vanityFair/vanityfair1.jpg","",)
+    
+
 }
