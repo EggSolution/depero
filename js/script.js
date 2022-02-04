@@ -123,7 +123,7 @@ window.onload = function(){
     var testo1 = "Quis ut sed sed perferendis excepturi. Qui sit ut temporibus qui earum doloribus. Voluptatum sit hic voluptatem distinctio cum dolorum eveniet et. Incidunt consequuntur a ea sunt quae dolor neque sunt. Laboriosam in ut eveniet quos odit quo numquam qui."
     var testo2 = "Fugit voluptatem ipsa consequatur fugiat distinctio veritatis nihil aperiam. Quia vel laudantium doloribus ea architecto itaque earum."
     var testo3 = "Blanditiis laboriosam assumenda quisquam atque inventore illo. Et nulla et blanditiis natus quia aut omnis."
-    //            x:   y:    colore:   appartenenza: titolo:     testo:  id quadro
+    //            x:   y:    colore:   appartenenza: titolo:     testo:  id quadro:
     //slide 1
     bottoneQuadro(505, 690, "#e6fa07", "sfondo1",    "Quadro 1", testo1, "");
     bottoneQuadro(515, 1015, "#e6fa07", "sfondo1",   "Quadro 2", testo1, "");
