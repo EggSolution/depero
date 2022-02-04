@@ -337,7 +337,11 @@
     }
 
     /* VIAGGI */
+    .viaggi-pc{
+        display:none;
+    }
     .viaggi {
+        display: block;
         height: auto;
     }
     .titolo-sezione{
