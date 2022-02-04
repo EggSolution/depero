@@ -476,6 +476,9 @@ footer a{
     width: 50%;
     background-color: red;
 }
+.quadroC-pc{
+    height: 80%;
+}
 /* STORIA */
 .storia{
     height: 200%;
@@ -811,7 +814,6 @@ footer a{
     z-index: 2;
 }
 /*sezioni pc*/
-/*personaggio*/
 .personaggio-pc,
 .viaggi-pc,
 .storia-pc {
@@ -891,13 +893,13 @@ footer a{
     margin-right:auto;
     margin-bottom: auto;
     position: relative;
-    height: 55%;
+    height: 70%;
     border: 35px solid #000000;
     box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
     border-radius: 21px;
 }
 .scritte-v-pc{
-    margin-top: 260px;
+    margin-top: 130px;
     position: absolute;
     width: 792px;
     height: 432px;
