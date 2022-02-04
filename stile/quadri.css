@@ -69,10 +69,10 @@
     width: 100%;
 }
 .scritteVere{
-    height: 90%;
-    width: 60%;
+    height: 85%;
+    width: 65%;
     margin-left: 200px;
-    margin-top: 60px;
+    margin-top: 45px;
 }
 .scritte{
     font-family: 'Roboto', sans-serif;
@@ -82,11 +82,12 @@
 .fotoCorpo{
     height: 100%;
     width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .quadroSezione{
-    height: 90%;
-    margin-top: 7px;
-    margin-left: 30px;
+    height: 80%;
     position: relative;
     border: 10px solid;
     border-color: rgb(126, 124, 124);
@@ -137,11 +138,15 @@
     height: 70%;
     position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .scritte2{
-    width: 1500px;
-    height: 80%;
-    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: auto;
+    max-height: 70%;
+    margin-top: 40px;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     color: white;

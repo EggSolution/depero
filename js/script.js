@@ -128,8 +128,8 @@ window.onload = function(){
     bottoneQuadro(630, 1230, "#e6fa07", "sfondo2",   "Quadro 6", testo2);
     bottoneQuadro(623, 1750, "#e6fa07", "sfondo2",   "Quadro 7", testo2);
     //slide 3
-    bottoneQuadro(630, 660, "#e6fa07", "sfondo3",  "Quadro 9", testo3);
-    bottoneQuadro(508, 1160, "#e6fa07", "sfondo3",  "Quadro 8", testo3);
+    bottoneQuadro(630, 660, "#e6fa07", "sfondo3",  "Mandorlato Vido", "Nel quadro è rappresentato la mascotte dell'azienda Mandorlato Vido.");
+    bottoneQuadro(508, 1160, "#e6fa07", "sfondo3",  "Liquore Strega", "Nel quadro è rappresentato un picchio posato sopra ad un bicchiere di liquore strega.");
     bottoneQuadro(515, 1455, "#e6fa07", "sfondo3",  "Quadro 10", testo3);
     bottoneQuadro(515, 1680, "#e6fa07", "sfondo3",  "Quadro 11", testo3);
 
