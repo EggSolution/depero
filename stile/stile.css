@@ -284,6 +284,7 @@ footer a{
     background-color: rgb(46, 46, 46);
     display: flex;
     flex-direction: column;
+    display: none;
 }
 .sezioneFlex{
     flex-direction: column;
@@ -788,4 +789,71 @@ footer a{
     width: 333px;
     background-color: black;
     z-index: 2;
+}
+.personaggio-pc{
+    display: flex;
+    flex-direction:row;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+}
+.sinistra-p-pc{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 50%;
+}
+.destra-p-pc{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 50%;
+}
+.immg-p-pc{
+    display: block;
+    margin-left:auto;
+    margin-top:auto;
+    margin-right:auto;
+    margin-bottom: auto;
+    position: relative;
+    height: 675px;
+    width: 719px;
+    border: 35px solid #000000;
+    box-shadow: 0px 0px 23px 4px rgba(7, 7, 7, 0.4);
+    border-radius: 21px;
+}
+.scritte-p-pc{
+    margin-top: 320px;
+    position: absolute;
+    width: 792px;
+    height: 432px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    line-height: 36px;
+    text-align: justify;
+    color: #FFFFFF;
+}
+.titoloSezione-pc {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15Spx
+}
+.titoloTestoSezione-pc {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    padding-top: 20px;
+}
+.titoloDivSezione-pc{
+    position: relative;
+    height: 4px;
+    background-color: white;
+    width: 100px;
+    margin-top: 70px;
 }
