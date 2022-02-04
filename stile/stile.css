@@ -376,6 +376,7 @@ footer a{
     background-color: #474747;
     display: flex;
     flex-direction: column;
+    display: none;
 }
 .sopra-c{
     height: 50%;
@@ -457,6 +458,23 @@ footer a{
     height: calc(100% - 60px);
     margin-top: 30px;
     position: relative;
+}
+/*CAMPARI PC*/
+.campari-pc{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.sinistraC-pc{
+    height: 100%;
+    width: 50%;
+    background-color: blue;
+}
+.destraC-pc{
+    height: 100%;
+    width: 50%;
+    background-color: red;
 }
 /* STORIA */
 .storia{
