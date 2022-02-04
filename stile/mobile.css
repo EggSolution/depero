@@ -203,7 +203,11 @@
     }
 
     /* PERSONAGGIO */
+    .personaggio-pc{
+        display: none;
+    }
     .personaggio{
+        display:block;
         height: auto;
     }
     .titoloTesto-sezione{
