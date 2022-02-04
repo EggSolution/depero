@@ -816,14 +816,26 @@ footer a{
 }
 /*sezioni pc*/
 .personaggio-pc,
+<<<<<<< HEAD
 .viaggi-pc,
 .storia-pc,
 .tecniche-pc {
+=======
+.viaggi-pc {
+>>>>>>> 70e3021d64fd0b720254a99cde4ca423aa3d10f6
     display: flex;
     flex-direction:row;
     height: 100%;
     width: 100%;
     background-color: rgb(46, 46, 46);
+}
+.campari-pc,
+.storia-pc {
+    display: flex;
+    flex-direction:row;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(60, 60, 60);
 }
 .titoloSezione-pc {
     position: relative;
@@ -915,14 +927,26 @@ footer a{
     text-align: justify;
     color: #FFFFFF;
 }
-.immg-s-pc{
+.immg-s1-pc{
     display: block;
     margin-left:auto;
     margin-top:auto;
     margin-right:auto;
     margin-bottom: auto;
     position: relative;
-    height: 55%;
+    height: 60%;
+    border: 35px solid #000000;
+    box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
+    border-radius: 21px;
+}
+.immg-s2-pc{
+    display: block;
+    margin-left:auto;
+    margin-top:auto;
+    margin-right:auto;
+    margin-bottom: auto;
+    position: relative;
+    height: 70%;
     border: 35px solid #000000;
     box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
     border-radius: 21px;
@@ -944,6 +968,7 @@ footer a{
     flex-direction: row-reverse;
 }
 #destra-s1-pc {
+<<<<<<< HEAD
     padding-left: 50px;
 }
 .scritte-t-pc{
@@ -970,4 +995,11 @@ footer a{
     border: 35px solid #000000;
     box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
     border-radius: 21px;
+=======
+    padding-top: 50px;
+    padding-left: 80px;
+}
+#scritte-s2-pc {
+    margin-top: 30px;
+>>>>>>> 70e3021d64fd0b720254a99cde4ca423aa3d10f6
 }
