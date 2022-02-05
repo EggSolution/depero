@@ -504,16 +504,13 @@
     }
 
     /* TECNICHE */
-    .teciche-pc{
-        display:none;
-    }
     .tecniche{
         display: flex;
         flex-direction: column;
         position: relative;
         height: auto;
     }
-    .tencniche-pc{
+    .tecniche-pc{
         display: none;
     }
     .sezioneFlex {
