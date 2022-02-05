@@ -130,8 +130,8 @@ window.onload = function(){
     bottoneQuadro(515, 1670, "#e6fa07", "sfondo1",   "Quadro 3", testo1, "");
     //slide 2
     bottoneQuadro(630, 688, "#e6fa07", "sfondo2",    "Quadro 4", testo2, "");
-    bottoneQuadro(625, 960, "#e6fa07", "sfondo2",    "Quadro 5", testo2, "");
-    bottoneQuadro(630, 1230, "#e6fa07", "sfondo2",   "Quadro 6", testo2, "");
+    bottoneQuadro(625, 960, "#e6fa07", "sfondo2",    "Campari 1931", "Una semplicissima scritta resa unica da Fortunato Depero", "");
+    bottoneQuadro(630, 1230, "#e6fa07", "sfondo2",   "Palazzi Intrecciati", "Nel quadro sono rappresentati una serie di palazzi intrecciati.", "");
     bottoneQuadro(623, 1750, "#e6fa07", "sfondo2",   "Quadro 7", testo2, "");
     //slide 3
     bottoneQuadro(630, 660, "#e6fa07", "sfondo3",   "Mandorlato Vido", "Nel quadro è rappresentato la mascotte dell'azienda Mandorlato Vido.");
