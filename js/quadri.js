@@ -149,11 +149,16 @@ window.onload = function(){
             corpoSezione.style.flexDirection = "row";
         }  
         var NsezioniTitoli = (Nsezioni + Ntitoli);
+        //RANDOM OSCILLATORE
+        var randomOscillatore = Math.floor(Math.random() * 20);
+        var oscillatore = (randomOscillatore -10);
+        console.log (oscillatore);
          //stili
          sezioneQuadri.style.height = (NsezioniTitoli * altezzaSezione) + "px"; 
          scritte2.style.marginLeft = (larghezza50 - 750) + 'px'; 
          titoloRiga2.style.marginLeft = (larghezza50 - 150) + 'px';
          sezioneTitolo.style.height = altezzaSezione + "px";
+         quadroSezione.style.transform = "rotate(" + oscillatore + "deg)";
     }
 // funzione    titolo sezione quadro/ testo sezione quadro/ immagine / appartenenza/ (titoloSezioneQuadro,/testoSezioneQuadro)
 //PUBBLICITA'
