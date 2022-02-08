@@ -855,6 +855,10 @@ footer a{
     flex-direction: column;
     height: 100%;
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .destra-p-pc{
     padding-top: 200px;
@@ -878,10 +882,9 @@ footer a{
     border-radius: 21px;
 }
 .scritte-p-pc{
-    margin-top: 260px;
-    position: absolute;
-    width: 792px;
-    height: 432px;
+    margin-top: 26%;
+    margin-bottom: 50px;
+    position: relative;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -1001,16 +1004,16 @@ footer a{
     margin-right:auto;
     margin-bottom: auto;
     position: relative;
-    height: 70%;
+    height: 55%;
     border: 35px solid #000000;
     box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
     border-radius: 21px;
 }
 .scritte-c-pc{
     margin-top: 260px;
-    position: absolute;
-    width: 792px;
-    height: 432px;
+    position: relative;
+    max-width: 100%;
+    height: auto;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
