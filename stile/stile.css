@@ -884,6 +884,7 @@ footer a{
 .scritte-p-pc{
     margin-top: 26%;
     margin-bottom: 50px;
+    margin-right: 75px;
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -900,16 +901,17 @@ footer a{
     margin-right:auto;
     margin-bottom: auto;
     position: relative;
-    height: 70%;
+    margin-top: 18%;
+    width: 80%;
     border: 35px solid #000000;
     box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
     border-radius: 21px;
 }
 .scritte-v-pc{
     margin-top: 130px;
-    position: absolute;
-    width: 792px;
-    height: 432px;
+    position: relative;
+    margin-right: 75px;
+    margin-bottom: 50px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -925,7 +927,8 @@ footer a{
     margin-right:auto;
     margin-bottom: auto;
     position: relative;
-    height: 60%;
+    width: 80%;
+    margin-top: 15%;
     border: 35px solid #000000;
     box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
     border-radius: 21px;
@@ -937,16 +940,17 @@ footer a{
     margin-right:auto;
     margin-bottom: auto;
     position: relative;
-    height: 70%;
+    width: 80%;
+    margin-top: 10%;
+    margin-bottom: 50px;
     border: 35px solid #000000;
     box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
     border-radius: 21px;
 }
 .scritte-s-pc{
-    margin-top: 260px;
-    position: absolute;
-    width: 792px;
-    height: 432px;
+    margin-top: 20%;
+    margin-right: 75px;
+    position: relative;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -962,10 +966,8 @@ footer a{
     padding-left: 50px;
 }
 .scritte-t-pc{
-    margin-top: 300px;
-    position: absolute;
-    width: 792px;
-    height: 432px;
+    margin-top: 15%;
+    position: relative;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -973,6 +975,8 @@ footer a{
     line-height: 36px;
     text-align: justify;
     color: #FFFFFF;
+    margin-bottom: 50px;
+    margin-right: 75px;
 }
 .immg-t-pc{
     display: block;
@@ -981,7 +985,8 @@ footer a{
     margin-right:auto;
     margin-bottom: auto;
     position: relative;
-    height: 55%;
+    width: 80%;
+    margin-top: 18%;
     border: 35px solid #000000;
     box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
     border-radius: 21px;
