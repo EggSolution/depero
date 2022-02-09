@@ -1033,10 +1033,15 @@ footer a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: rgb(60, 60, 60);
 }
-.bottoneSu{
-    height: 55%;
+.bottoneSuSfondo{
+    height: 85%;
     width: 25%;
-    background-color: black;
+    background-color: rgba(102,102,105);
+}
+.immagineHome{
+    height: 12%;
+    z-index: 2;
+    position: absolute;
 }
