@@ -160,6 +160,9 @@ window.onload = function(){
          sezioneTitolo.style.height = altezzaSezione + "px";
          quadroSezione.style.transform = "rotate(" + oscillatore + "deg)";
     }
+    function prova(){
+        console.log("prova")
+    }
     // BOTTONE HOME
     function bottoneHome(){
         //SEZIONE BOTTONE HOME
@@ -180,6 +183,7 @@ window.onload = function(){
         eval("immagineHome.className = 'immagineHome';");
         //STILI
         sezioneBottoneHome.style.height = (altezza1 * 15) + 'px';
+        immagineHome.addEventListener("click", prova())
     }
 // funzione    titolo sezione quadro/ testo sezione quadro/ immagine / appartenenza/ (titoloSezioneQuadro,/testoSezioneQuadro)
 //PUBBLICITA'
