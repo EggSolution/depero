@@ -122,20 +122,18 @@ window.onload = function(){
     }
     var testo1 = "Quis ut sed sed perferendis excepturi. Qui sit ut temporibus qui earum doloribus. Voluptatum sit hic voluptatem distinctio cum dolorum eveniet et. Incidunt consequuntur a ea sunt quae dolor neque sunt. Laboriosam in ut eveniet quos odit quo numquam qui."
     var testo2 = "Fugit voluptatem ipsa consequatur fugiat distinctio veritatis nihil aperiam. Quia vel laudantium doloribus ea architecto itaque earum."
-    var testo3 = "Blanditiis laboriosam assumenda quisquam atque inventore illo. Et nulla et blanditiis natus quia aut omnis."
     //            x:   y:    colore:   appartenenza: titolo:     testo:  id quadro:
     //slide 1
     bottoneQuadro(505, 690, "#e6fa07", "sfondo1",    "Quadro 1", testo1, "");
     bottoneQuadro(515, 1015, "#e6fa07", "sfondo1",   "Quadro 2", testo1, "");
     bottoneQuadro(515, 1670, "#e6fa07", "sfondo1",   "Quadro 3", testo1, "");
     //slide 2
-    bottoneQuadro(630, 688, "#e6fa07", "sfondo2",    "Quadro 4", testo2, "");
+    bottoneQuadro(630, 688, "#e6fa07", "sfondo2",    "Palazzo Campari", "Nel quadro è rappresentato un palazzo sezionato con un bicchiere campari.", "sezione4");
     bottoneQuadro(625, 960, "#e6fa07", "sfondo2",    "Campari 1931", "Una semplicissima scritta resa unica da Fortunato Depero", "sezione5");
-    bottoneQuadro(630, 1230, "#e6fa07", "sfondo2",   "Palazzi Intrecciati", "Nel quadro sono rappresentati una serie di palazzi intrecciati.", "");
-    bottoneQuadro(623, 1750, "#e6fa07", "sfondo2",   "Quadro 7", testo2, "");
+    bottoneQuadro(630, 1230, "#e6fa07", "sfondo2",   "Palazzi Intrecciati", "Nel quadro sono rappresentati una serie di palazzi intrecciati.", "sezione6");
     //slide 3
-    bottoneQuadro(630, 660, "#e6fa07", "sfondo3",   "Mandorlato Vido", "Nel quadro è rappresentato la mascotte dell'azienda Mandorlato Vido.");
-    bottoneQuadro(508, 1160, "#e6fa07", "sfondo3",  "Liquore Strega",  "Nel quadro è rappresentato un picchio posato sopra ad un bicchiere di liquore strega.");
+    bottoneQuadro(630, 660, "#e6fa07", "sfondo3",   "Mandorlato Vido", "Nel quadro è rappresentato la mascotte dell'azienda Mandorlato Vido.","sezione10");
+    bottoneQuadro(508, 1160, "#e6fa07", "sfondo3",  "Liquore Strega",  "Nel quadro è rappresentato un picchio posato sopra ad un bicchiere di liquore strega.","sezione7");
 
     //variabili SLIDE
     const img = document.querySelector("#sfondoScorriId");
