@@ -151,3 +151,21 @@
     font-size: 30px;
     color: white;
 }
+/*BOTTONE PER TORNARE ALLA HOME*/
+.sezioneBottoneHome{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(60, 60, 60);
+}
+.bottoneHomeSfondo{
+    height: 85%;
+    width: 25%;
+    background-color: rgba(102,102,105);
+}
+.immagineHome{
+    height: 12%;
+    z-index: 2;
+    position: absolute;
+}

@@ -6,6 +6,7 @@ window.onload = function(){
     // variabili altezze
     var altezza100 = window.innerHeight;
     var altezzaSezione = altezza100/2;
+    var altezza1 = altezza100/100;
     sezioneTitolo.style.height = altezzaSezione + "px";
     //variabili larghezze
     var larghezza100 = window.innerWidth;
@@ -160,6 +161,27 @@ window.onload = function(){
          sezioneTitolo.style.height = altezzaSezione + "px";
          quadroSezione.style.transform = "rotate(" + oscillatore + "deg)";
     }
+    // BOTTONE HOME
+    function bottoneHome(){
+        //SEZIONE BOTTONE HOME
+        eval("var sezioneBottoneHome = document.createElement('div');");
+        eval("sezioneQuadri.appendChild(sezioneBottoneHome);");
+        eval("sezioneBottoneHome.textContent ='';");
+        eval("sezioneBottoneHome.className = 'sezioneBottoneHome';");
+        //BOTTONE HOME SFONDO
+        eval("var bottoneHomeSfondo = document.createElement('div');");
+        eval("sezioneBottoneHome.appendChild(bottoneHomeSfondo);");
+        eval("bottoneHomeSfondo.textContent = '';");
+        eval("bottoneHomeSfondo.className = 'bottoneHomeSfondo';");
+        //IMMAGINE HOME
+        eval("var immagineHome = document.createElement('img');");
+        eval("sezioneBottoneHome.appendChild(immagineHome);");
+        eval("immagineHome.src = 'media/logoEggs/home.svg';");
+        eval("immagineHome.textContent = '';")
+        eval("immagineHome.className = 'immagineHome';");
+        //STILI
+        sezioneBottoneHome.style.height = (altezza1 * 15) + 'px';
+    }
 // funzione    titolo sezione quadro/ testo sezione quadro/ immagine / appartenenza/ (titoloSezioneQuadro,/testoSezioneQuadro)
 //PUBBLICITA'
     //QUADRI CAMPARI
@@ -175,6 +197,7 @@ window.onload = function(){
     //VANITY FAIR
     sezioniQuadri("Vanity Fair","Nel quadro è rappresentata una persona con una sigaretta, disegnata con forme molto rotondeggianti. Questo quadro è stato realizzato per Vanity fair, un azienda di moda.","vanityFair/vanityfair1.jpg","",);
     //MANDORLATO
-    sezioniQuadri("Mandorlato Vido","Nel quadro è rappresentata una persona con una sigaretta, disegnata con forme molto rotondeggianti. Questo quadro è stato realizzato per Vanity fair, un azienda di moda.","/mandorlato/mandorlatoVido.jpg","",);
-
+    sezioniQuadri("Mandorlato Vido","Nel quadro è rappresentata una persona con una sigaretta, disegnata con forme molto rotondeggianti. Questo quadro è stato realizzato per Vanity fair, un azienda di moda.","/mandorlato/mandorlatoVido.jpg","",);    
+//IMMAGINE HOME
+    bottoneHome();
 }

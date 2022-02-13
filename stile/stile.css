@@ -1027,7 +1027,7 @@ footer a{
     padding-top: 50px;
     padding-left: 50px;
 }
-.sezioneBottoneSu{
+.sezioneBottoneHome{
     width: 100%;
     height: 15%;
     display: flex;
@@ -1035,7 +1035,7 @@ footer a{
     justify-content: center;
     background-color: rgb(60, 60, 60);
 }
-.bottoneSuSfondo{
+.bottoneHomeSfondo{
     height: 85%;
     width: 25%;
     background-color: rgba(102,102,105);
