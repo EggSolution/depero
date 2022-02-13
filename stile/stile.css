@@ -686,11 +686,13 @@ footer a{
 .separatoreTecniche{
     background-color: rgb(46, 46, 46);
     height:10%;
+    
+    display: none;
 }
 
 /* MODENA */
 
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
@@ -797,6 +799,7 @@ footer a{
     height: auto;
     width: 100%;
     background-color: rgb(46, 46, 46);
+    padding-bottom: 40px;
 }
 .campari-pc,
 .storia-pc {
@@ -838,6 +841,9 @@ footer a{
     height: calc(100% - 100px);
     width: 50%;
 }
+.sinistra-t-pc{
+    margin-top: 0px;
+}
 .destra-p-pc,
 .destra-v-pc,
 .destra-s-pc,
@@ -853,7 +859,7 @@ footer a{
 
 }
 .destra-p-pc{
-    padding-top: 200px;
+    padding-top: 5%;
 }
 .destra-v-pc{
     padding-top: 170px;
@@ -868,15 +874,15 @@ footer a{
     margin-right:auto;
     margin-bottom: auto;
     position: relative;
-    width: 80%;
+    width: 70%;
     border: 35px solid #000000;
     box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
     border-radius: 21px;
 }
 .scritte-p-pc{
-    margin-top: 26%;
-    margin-bottom: 50px;
-    margin-right: 75px;
+    margin-top: 16%;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -892,8 +898,9 @@ footer a{
     margin-top:auto;
     margin-right:auto;
     margin-bottom: auto;
+    max-width: 500px;
     position: relative;
-    margin-top: 18%;
+    margin-top: 10%;
     width: 80%;
     border: 35px solid #000000;
     box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
@@ -920,6 +927,7 @@ footer a{
     margin-bottom: auto;
     position: relative;
     width: 80%;
+    max-width: 600px;
     margin-top: 15%;
     border: 35px solid #000000;
     box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
@@ -933,6 +941,7 @@ footer a{
     margin-bottom: auto;
     position: relative;
     width: 80%;
+    max-width: 600px;
     margin-top: 10%;
     margin-bottom: 50px;
     border: 35px solid #000000;
@@ -978,6 +987,7 @@ footer a{
     margin-bottom: auto;
     position: relative;
     width: 80%;
+    max-width: 700px;
     margin-top: 18%;
     border: 35px solid #000000;
     box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
@@ -1003,13 +1013,14 @@ footer a{
     position: relative;
     margin-top: 13%;
     margin-bottom: 30px;
-    width: 80%;
+    width: 60%;
+    max-width: 400px;
     border: 35px solid #000000;
     box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
     border-radius: 21px;
 }
 .scritte-c-pc{
-    margin-top: 26%;
+    margin-top: 16%;
     margin-right: 30px;
     margin-bottom: 30px;
     position: relative;
