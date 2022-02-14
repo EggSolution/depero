@@ -250,7 +250,7 @@ footer a{
 .sezioneBottone{
     height: 50px;
     width: 60px;
-    background-color: transparent;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
