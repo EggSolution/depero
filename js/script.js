@@ -128,12 +128,12 @@ window.onload = function(){
    // bottoneQuadro(515, 1015, "#e6fa07", "sfondo1",   "Quadro 2", testo1, "");
    // bottoneQuadro(515, 1670, "#e6fa07", "sfondo1",   "Quadro 3", testo1, "");
     //slide 2
-  //  bottoneQuadro(630, 688, "#e6fa07", "sfondo2",    "Palazzo Campari", "Nel quadro è rappresentato un palazzo sezionato con un bicchiere campari.", "sezione4");
-    //bottoneQuadro(625, 960, "#e6fa07", "sfondo2",    "Campari 1931", "Una semplicissima scritta resa unica da Fortunato Depero", "sezione5");
-    //bottoneQuadro(630, 1230, "#e6fa07", "sfondo2",   "Palazzi Intrecciati", "Nel quadro sono rappresentati una serie di palazzi intrecciati.", "sezione6");
+      bottoneQuadro(630, 688, "#e6fa07", "sfondo2",    "Palazzo Campari", "Nel quadro è rappresentato un palazzo sezionato con un bicchiere campari.", "sezione4");
+      bottoneQuadro(625, 960, "#e6fa07", "sfondo2",    "Campari 1931", "Una semplicissima scritta resa unica da Fortunato Depero", "sezione5");
+      bottoneQuadro(630, 1230, "#e6fa07", "sfondo2",   "Palazzi Intrecciati", "Nel quadro sono rappresentati una serie di palazzi intrecciati.", "sezione6");
     //slide 3
-   // bottoneQuadro(630, 660, "#e6fa07", "sfondo3",   "Mandorlato Vido", "Nel quadro è rappresentato la mascotte dell'azienda Mandorlato Vido.","sezione10");
-   // bottoneQuadro(508, 1160, "#e6fa07", "sfondo3",  "Liquore Strega",  "Nel quadro è rappresentato un picchio posato sopra ad un bicchiere di liquore strega.","sezione7");
+      bottoneQuadro(630, 660, "#e6fa07", "sfondo3",   "Mandorlato Vido", "Nel quadro è rappresentato la mascotte dell'azienda Mandorlato Vido.","sezione10");
+      bottoneQuadro(508, 1160, "#e6fa07", "sfondo3",  "Liquore Strega",  "Nel quadro è rappresentato un picchio posato sopra ad un bicchiere di liquore strega.","sezione7");
 
     //variabili SLIDE
     const img = document.querySelector("#sfondoScorriId");
