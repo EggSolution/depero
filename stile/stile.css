@@ -246,18 +246,18 @@ footer a{
     margin-top: 20px;
     top: 50px;
 }
-/* bottone per tornare alla home
+/* bottone per tornare alla home*/
 .sezioneBottone{
     height: 50px;
     width: 60px;
-    background-color: red;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     z-index: 2;
 }
-/* freccia back to home 
+/* freccia back to home */
 .sezioneBottone div{
     height: 8px;
     width: 30px;
@@ -265,7 +265,7 @@ footer a{
     transform: rotate(45deg) translateX(-9px);
 }
 .sezioneBottone div:nth-child(1){
-    transform: rotate(-45deg) translateX(9px);;*/
+    transform: rotate(-45deg) translateX(9px);;
     
 }
 /* personaggio */
