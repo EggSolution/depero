@@ -155,8 +155,6 @@ window.onload = function(){
         var oscillatore = (randomOscillatore -10);
          //stili
          sezioneQuadri.style.height = (NsezioniTitoli * altezzaSezione) + (altezza1 * 15) + "px"; 
-         scritte2.style.marginLeft = (larghezza50 - 750) + 'px'; 
-         titoloRiga2.style.marginLeft = (larghezza50 - 150) + 'px';
          sezioneTitolo.style.height = altezzaSezione + "px";
          quadroSezione.style.transform = "rotate(" + oscillatore + "deg)";
     }
