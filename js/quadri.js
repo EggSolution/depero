@@ -192,7 +192,7 @@ window.onload = function(){
     sezioniQuadri("Picchio Strega","Nel quadro è rappresentato un picchio posato sopra ad un bicchiere di liquore strega, un altra importantissima collaborazione di Depero.","strega/strega1.jpg","",);
     sezioniQuadri("Liquore Strega","Nel quadro è rappresentato la mascotte del liquore Strega, formato da molti dei caratteristici bicchieri del liquore. ","strega/strega2.jpg","");
     //VANITY FAIR
-    sezioniQuadri("Vanity Fair","Nel quadro è rappresentata una persona con una sigaretta, disegnata con forme molto rotondeggianti. Questo quadro è stato realizzato per Vanity fair, un azienda di moda.","VanityFair/vanityfair1.jpg","",);
+    //sezioniQuadri("Vanity Fair","Nel quadro è rappresentata una persona con una sigaretta, disegnata con forme molto rotondeggianti. Questo quadro è stato realizzato per Vanity fair, un azienda di moda.","VanityFair/vanityfair1.jpg","",);
     //MANDORLATO
     sezioniQuadri("Mandorlato Vido","Nel quadro è rappresentata una persona con una sigaretta, disegnata con forme molto rotondeggianti. Questo quadro è stato realizzato per Vanity fair, un azienda di moda.","/mandorlato/mandorlatoVido.jpg","",);    
 //IMMAGINE HOME
