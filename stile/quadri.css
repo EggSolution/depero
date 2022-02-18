@@ -21,6 +21,7 @@
     height: 96%;
     display: flex;
     position: relative;
+    padding: 40px;
 }
 .rigaSopra{
     width: 100%;
@@ -110,28 +111,29 @@
     height: 30%;
 }
 .titoloRiga2{
-    width: 300px;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 .scrittaTitolo2{
-    height: 97%;
+    height: 100px;
     width: 100%;
 }
 .scrittaTitoloVera2{
     font-family: 'Roboto', sans-serif;
     font-size: 85px;
     color: white;
-    width: 250px;
+    width: 400px;
+    text-align: center;
     display: inline-block;
-    margin-left: calc(50% - 125px);
+    margin-left: calc(50% - 200px);
 }
 .riga2{
     width: 150px;
-    height: 3%;
+    height: 4px;
     background-color: white;
-    margin-left: 75px;
+    margin-left: calc(50% - 150px/2);
 }
 .sezioneCorpo2{
     width: 100%;

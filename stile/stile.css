@@ -385,7 +385,6 @@ footer a{
     margin-left: 140px;
     margin-top: 170px;
     margin-right: 20px;
-    text-align: justify;
 }
 .immagineCampari1{
     height: 90%;
@@ -407,7 +406,6 @@ footer a{
     margin-left: 20px;
     margin-top: 170px;
     margin-right: 140px;
-    text-align: justify;
 }
 .immagineCampari2{
     height: 90%;
@@ -481,7 +479,6 @@ footer a{
     margin-left: 140px;
     margin-top: 170px;
     margin-right: 20px;
-    text-align: justify;
 }
 .sopraDestra-s{
     width: 40%;
@@ -534,7 +531,6 @@ footer a{
     margin-right: 140px;
     margin-top: 120px;
     margin-left: 20px;
-    text-align: justify;
 }
 .mezzoSotto-s{
     width: 100%;
@@ -558,7 +554,6 @@ footer a{
     margin-left: 140px;
     margin-right: 20px;
     margin-top: 150px;
-    text-align: justify;
 }
 .mezzoSottoDestra-s{
     width: 40%;
@@ -600,7 +595,6 @@ footer a{
 .scritteSottoDestra-s{
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
-    text-align: justify;
     color: white;
     position: absolute;
     margin-top: 80px;
@@ -632,7 +626,6 @@ footer a{
 .scritteSopraSinistra-t{
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
-    text-align: justify;
     color: white;
     position: absolute;
     margin-left: 140px;
@@ -676,7 +669,6 @@ footer a{
 .scritteSottoDestra-t{
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
-    text-align: justify;
     color: white;
     position: absolute;
     margin-top: 150px;
@@ -754,7 +746,6 @@ footer a{
     margin-left: 140px;
     margin-top: 190px;
     margin-right: 20px;
-    text-align: justify;
 
 }
 .immagineDepero1-v{
@@ -773,7 +764,6 @@ footer a{
     margin-left: 20px;
     margin-top: 170px;
     margin-right: 140px;
-    text-align: justify;
 }
 .immagineDepero2-v{
     height: 70%;
@@ -797,17 +787,22 @@ footer a{
     display: flex;
     flex-direction:row;
     height: auto;
+    min-height: 100%;
+    min-height: 100%;
     width: 100%;
     background-color: rgb(46, 46, 46);
     padding-bottom: 40px;
 }
 .campari-pc,
-.storia-pc {
+.storia-pc{
     display: flex;
     flex-direction:row;
     height: auto;
     width: 100%;
     background-color: rgb(60, 60, 60);
+}
+.tecniche-pc {
+    flex-direction: row-reverse;
 }
 .titoloSezione-pc {
     position: relative;
@@ -841,6 +836,12 @@ footer a{
     height: calc(100% - 100px);
     width: 50%;
 }
+.sinistra-s-pc{
+    margin-top: 0px;
+}
+.sinistra-v-pc {
+    margin-top: 10px;
+}
 .sinistra-t-pc{
     margin-top: 0px;
 }
@@ -856,16 +857,16 @@ footer a{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .destra-p-pc{
     padding-top: 5%;
 }
 .destra-v-pc{
-    padding-top: 170px;
+    padding-top: 40px;
 }
 .destra-t-pc{
     padding-top: 140px;
+    padding-left: 50px;
 }
 .immg-p-pc{
     display: block;
@@ -889,7 +890,6 @@ footer a{
     font-weight: normal;
     font-size: 31px;
     line-height: 36px;
-    text-align: justify;
     color: #FFFFFF;
 }
 .immg-v-pc{
@@ -908,7 +908,6 @@ footer a{
 }
 .scritte-v-pc{
     margin-top: 130px;
-    position: relative;
     margin-right: 75px;
     margin-bottom: 50px;
     font-family: 'Roboto', sans-serif;
@@ -916,8 +915,8 @@ footer a{
     font-weight: normal;
     font-size: 31px;
     line-height: 36px;
-    text-align: justify;
     color: #FFFFFF;
+    height: auto;
 }
 .immg-s1-pc{
     display: block;
@@ -928,7 +927,7 @@ footer a{
     position: relative;
     width: 80%;
     max-width: 600px;
-    margin-top: 15%;
+    margin-top: 25%;
     border: 35px solid #000000;
     box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
     border-radius: 21px;
@@ -942,7 +941,7 @@ footer a{
     position: relative;
     width: 80%;
     max-width: 600px;
-    margin-top: 10%;
+    margin-top: 0;
     margin-bottom: 50px;
     border: 35px solid #000000;
     box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
@@ -957,7 +956,6 @@ footer a{
     font-weight: normal;
     font-size: 31px;
     line-height: 36px;
-    text-align: justify;
     color: #FFFFFF;
 }
 #storia1-pc {
@@ -974,7 +972,6 @@ footer a{
     font-weight: normal;
     font-size: 31px;
     line-height: 36px;
-    text-align: justify;
     color: #FFFFFF;
     margin-bottom: 50px;
     margin-right: 75px;
@@ -987,7 +984,7 @@ footer a{
     margin-bottom: auto;
     position: relative;
     width: 80%;
-    max-width: 700px;
+    max-width: 760px;
     margin-top: 18%;
     border: 35px solid #000000;
     box-shadow: 0px 0px 23px 7px rgba(7, 7, 7, 0.8);
@@ -1001,7 +998,7 @@ footer a{
     padding-left: 50px;
 }
 #destra-s2-pc {
-    padding-top: 180px;
+    padding-top: 0;
     padding-left: 50px;
 }
 .immg-c-pc{
@@ -1031,7 +1028,6 @@ footer a{
     font-weight: normal;
     font-size: 31px;
     line-height: 36px;
-    text-align: justify;
     color: #FFFFFF;
 }
 #sinistra-c-pc{
