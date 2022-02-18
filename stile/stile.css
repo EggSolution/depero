@@ -254,18 +254,19 @@ footer a{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     z-index: 2;
 }
 /* freccia back to home */
 .sezioneBottone div{
     height: 8px;
     width: 30px;
+    position: fixed;
     background-color: white;
-    transform: rotate(45deg) translateX(-9px);
+    transform: rotate(-45deg) translateX(-12px);
 }
 .sezioneBottone div:nth-child(1){
-    transform: rotate(-45deg) translateX(9px);;
+    transform: rotate(45deg) translateX(12px);;
     
 }
 /* personaggio */

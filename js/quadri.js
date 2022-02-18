@@ -155,12 +155,12 @@ window.onload = function(){
         var oscillatore = (randomOscillatore -10);
          //stili
          sezioneQuadri.style.height = (NsezioniTitoli * altezzaSezione) + (altezza1 * 15) + "px"; 
+<<<<<<< HEAD
          scritte2.style.marginLeft = (larghezza50 - 750) + 'px'; 
+=======
+>>>>>>> 3abb9ac3cd84fa861bef3c6387df6840be341d55
          sezioneTitolo.style.height = altezzaSezione + "px";
          quadroSezione.style.transform = "rotate(" + oscillatore + "deg)";
-    }
-    function prova(){
-        console.log("prova")
     }
     // BOTTONE HOME
     function bottoneHome(){
@@ -182,7 +182,6 @@ window.onload = function(){
         eval("immagineHome.className = 'immagineHome';");
         //STILI
         sezioneBottoneHome.style.height = (altezza1 * 15) + 'px';
-        immagineHome.addEventListener("click", prova())
     }
 // funzione    titolo sezione quadro/ testo sezione quadro/ immagine / appartenenza/ (titoloSezioneQuadro,/testoSezioneQuadro)
 //PUBBLICITA'
@@ -202,4 +201,5 @@ window.onload = function(){
     sezioniQuadri("Mandorlato Vido","Nel quadro è rappresentata una persona con una sigaretta, disegnata con forme molto rotondeggianti. Questo quadro è stato realizzato per Vanity fair, un azienda di moda.","/mandorlato/mandorlatoVido.jpg","",);    
 //IMMAGINE HOME
     bottoneHome();
+    immagineHome.addEventListener("click", console.log("funziona"));
 }
