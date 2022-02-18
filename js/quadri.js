@@ -196,5 +196,4 @@ window.onload = function(){
     //MANDORLATO
     sezioniQuadri("Mandorlato Vido","Nel quadro è rappresentata una persona con una sigaretta, disegnata con forme molto rotondeggianti. Questo quadro è stato realizzato per Vanity fair, un azienda di moda.","/mandorlato/mandorlatoVido.jpg","",);    
 //IMMAGINE HOME
-    bottoneHome();
 }
