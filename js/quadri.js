@@ -154,11 +154,8 @@ window.onload = function(){
         var randomOscillatore = Math.floor(Math.random() * 20);
         var oscillatore = (randomOscillatore -10);
          //stili
-         sezioneQuadri.style.height = (NsezioniTitoli * altezzaSezione) + (altezza1 * 15) + "px"; 
-<<<<<<< HEAD
-         scritte2.style.marginLeft = (larghezza50 - 750) + 'px'; 
-=======
->>>>>>> 3abb9ac3cd84fa861bef3c6387df6840be341d55
+         sezioneQuadri.style.height = (NsezioniTitoli * altezzaSezione) + (altezza1 * 15) + "px";
+         scritte2.style.marginLeft = (larghezza50 - 750) + 'px';
          sezioneTitolo.style.height = altezzaSezione + "px";
          quadroSezione.style.transform = "rotate(" + oscillatore + "deg)";
     }
