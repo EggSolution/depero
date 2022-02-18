@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 .sezioneQuadri{
     display: flex;
     flex-direction: column;
